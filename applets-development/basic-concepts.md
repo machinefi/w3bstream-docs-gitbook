@@ -6,9 +6,9 @@
 
 ## Event Messages
 
-While running, a W3bstream node emits internal **Event Messages** when something relevant happens. A W3bstream event can be currently generated  for the following reasons:
+While running, a W3bstream node emits internal **Event Messages** when something relevant happens. A W3bstream event can be currently generated  for one of the following reasons:
 
-* A call to an HTTP API _project_ _endpoint_
+* A message sent to an HTTP API _project_ _endpoint_
 * A message published on the MQTT broker
 * A smart contract event detected by a _blockchain monitor_
 
@@ -28,7 +28,15 @@ A W3bstream event message looks like the following:
 
 Once a W3bstream message is emitted, it's routed to the recipient [Project](basic-concepts.md#projects) which, in turn, routes the event **payload** to the corresponding [Applet](basic-concepts.md#applets) handler.
 
-To learn more about how to send messages to a W3bstream node check out [sending-messages-to-w3bstream.md](sending-messages-to-w3bstream.md "mention")
+#### Learn more
+
+{% content-ref url="sending-messages-to-w3bstream.md" %}
+[sending-messages-to-w3bstream.md](sending-messages-to-w3bstream.md)
+{% endcontent-ref %}
+
+{% content-ref url="monitoring-contracts.md" %}
+[monitoring-contracts.md](monitoring-contracts.md)
+{% endcontent-ref %}
 
 ## Projects
 

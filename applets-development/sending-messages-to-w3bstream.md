@@ -1,10 +1,10 @@
 # Sending messages to W3bstream
 
-W3bstream provides two different network endpoints that allow sending messages to the various projects running in the node, described below.
+W3bstream provides two different network service endpoints that allow sending messages to the various projects running in the node.
 
-### HTTP Endpoint
+### HTTP Project Endpoints
 
-The HTTP endpoint runs on port 8888 by default, and it can be used to both manage the node and its projects and send data messages to it. The best way to in
+HTTP Project endpoint runs on port 8888 by default, and it can be used to both manage the node and its projects and send data messages to it. The best way to in
 
 #### Command HTTP API
 
@@ -21,6 +21,6 @@ echo '{"username":"admin","password":"${password}"}' | http put :8888/srv-applet
 
 #### TODO
 
-### MQTT Endpoint
+### MQTT Project Topics
 
 TODO
