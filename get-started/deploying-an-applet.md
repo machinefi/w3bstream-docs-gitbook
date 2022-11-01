@@ -10,17 +10,17 @@ Make sure the [W3bstream node is running](running-a-node.md#start-the-w3bstream-
 
 Open W3bstream Studio at `https://localhost:3000`
 
-<figure><img src="../.gitbook/assets/image (3).png" alt=""><figcaption><p><code>W3bstream Studio Loging screen</code></p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (9).png" alt=""><figcaption><p><code>W3bstream Studio Loging screen</code></p></figcaption></figure>
 
 Use the default password to login in the Studio dashboard. For a newly installed node, you will see something like this:
 
-<figure><img src="../.gitbook/assets/image (10).png" alt=""><figcaption><p>W3bstream Studio Home</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (14).png" alt=""><figcaption><p>W3bstream Studio Home</p></figcaption></figure>
 
 ### Create a new Project
 
 The first step is to **create** a new _W3bstream Project:_ click the <mark style="color:blue;background-color:blue;">**`Create a project now`**</mark> button to create a new W3bstream project.
 
-<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (10).png" alt=""><figcaption></figcaption></figure>
 
 Assign a the "HelloW3bstream" name to the project and click the <mark style="color:blue;">**`Submit`**</mark> button to confirm. The new project will show up on the left side panel, under the **Project Management** section.
 
@@ -36,13 +36,13 @@ Download the `log.wasm` file from the link below, and save it in a known locatio
 
 In W3bstream Studio, select the HelloW3bstream project, and click the <mark style="color:blue;">**`Add Applet`**</mark> button:
 
-<figure><img src="../.gitbook/assets/image (18).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (11).png" alt=""><figcaption></figcaption></figure>
 
 Select the `log.wasm` file you just downloaded, select the _HelloWebstream_ project from the Project ID dropdown, name this applet "_LogExample"_ and finally hit the **`Submit`** button to upload the applet to the _HelloW3bstream_ project:
 
 <div>
 
-<figure><img src="../.gitbook/assets/image (16).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
 
  
 
@@ -54,5 +54,5 @@ Select the `log.wasm` file you just downloaded, select the _HelloWebstream_ proj
 
 Now that the logic module is uploaded to the project, we can deploy it to the Webstream VM by clicking the <mark style="color:blue;">**`Deploy`**</mark> button. If the module is correct, it will be successfully deployed, and you will be able to start/stop the module from the dashboard:
 
-<figure><img src="../.gitbook/assets/image (9).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (15).png" alt=""><figcaption></figcaption></figure>
 

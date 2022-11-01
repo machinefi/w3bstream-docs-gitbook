@@ -7,8 +7,9 @@
 
 * [Prerequisites](get-started/prerequisites.md)
 * [Running a Node](get-started/running-a-node.md)
-* [Creating a Project](get-started/creating-a-project.md)
-* [Running a Project](get-started/running-a-project.md)
+* [Creating a Project](get-started/deploying-an-applet.md)
+* [Running a Project](get-started/running-an-applet.md)
+* [Testing the Project](get-started/testing-the-project.md)
 * [W3bstream Studio](get-started/w3bstream-studio.md)
 * [Command-line Client](get-started/command-line-client.md)
 

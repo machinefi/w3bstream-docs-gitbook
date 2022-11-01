@@ -108,7 +108,7 @@ You can now access the [W3bstream Studio ](w3bstream-studio.md)admin dashboard b
 https://localhost:3000
 ```
 
-<figure><img src="../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (7).png" alt=""><figcaption></figcaption></figure>
 
 ### Run using the CLI
 
