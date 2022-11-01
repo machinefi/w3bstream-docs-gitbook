@@ -1,8 +1,38 @@
 # Basic concepts
 
+{% hint style="info" %}
+**🚧 This document is a work in progress**
+{% endhint %}
+
+## Event Messages
+
+While running, a W3bstream node emits internal **Event Messages** when something relevant happens. A W3bstream event can be currently generated  for the following reasons:
+
+* A call to an HTTP API _project_ _endpoint_
+* A message published on the MQTT broker
+* A smart contract event detected by a _blockchain monitor_
+
+A W3bstream event message looks like the following:
+
+```json
+{
+  "header": {
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJQYXlsb2FkIjoiNDUwNTI4NzAxMjc2NTcwMyIsImlzcyI6InNydi1hcHBsZXQtbWdyIiwiZXhwIjoxNjY4Mzk4MDYxfQ._Q5ZaBP5FSa09s0FCn7CBcMCty9hkM5TDu5q1wTvwB8",
+    "event_type": "ANY",
+    "pub_id": "my_publisher_id",
+    "pub_time": 1667343986249
+  },
+    "payload": "This is the event payload data",
+}
+```
+
+Once a W3bstream message is emitted, it's routed to the recipient [Project](basic-concepts.md#projects) which, in turn, routes the event **payload** to the corresponding [Applet](basic-concepts.md#applets) handler.
+
+To learn more about how to send messages to a W3bstream node check out [sending-messages-to-w3bstream.md](sending-messages-to-w3bstream.md "mention")
+
 ## Projects
 
-A W3bstream project implements the logic of a MachineFi dApp at the W3bstream node level. During its normal execution, W3bstream emits internal events when something relevant happens. A W3bstream event can be currently generated in one of the following ways:
+A W3bstream Project is a container for node logic, events configuration and authorizations.  Each event has a recipient project to which the event will be routed A W3bstream event can be currently generated in one of the following ways:
 
 * Sending a message to the W3bstream node to an HTTP API endpoint
 * Sending a message to the W3bstream node to the MQTT endpoint
@@ -21,8 +51,6 @@ WebAssembly provides a way to create safe and portable code written in multiple 
 </details>
 
 In this document, we will use [W3bstream Studio](../get-started/w3bstream-studio.md), accessible on port :3000, that allows you to perform applets deployment.
-
-## Events
 
 A W3bstream Event represents a notification&#x20;
 
