@@ -5,9 +5,10 @@
 
 ## Get Started
 
+* [Prerequisites](get-started/prerequisites.md)
 * [Running a Node](get-started/running-a-node.md)
-* [Deploying an Applet](get-started/deploying-an-applet.md)
-* [Running an Applet](get-started/running-an-applet.md)
+* [Creating a Project](get-started/creating-a-project.md)
+* [Running a Project](get-started/running-a-project.md)
 * [W3bstream Studio](get-started/w3bstream-studio.md)
 * [Command-line Client](get-started/command-line-client.md)
 
