@@ -10,7 +10,7 @@ To create a publisher account, just go to the **`Publishers`** section on the le
 
 Select the Project, give a name to the publisher and assign it a unique key like in the image below. Then click the <mark style="color:blue;">**`Submit Button`**</mark> to confirm:
 
-<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (23).png" alt=""><figcaption></figcaption></figure>
 
 ## Default event strategy
 
