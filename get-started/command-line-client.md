@@ -1,3 +1,5 @@
 # Command-line Client
 
-<mark style="background-color:red;">TODO - Client not released yet</mark>
+{% hint style="info" %}
+**🚧 This document is a work in progress**
+{% endhint %}

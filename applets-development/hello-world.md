@@ -1,10 +1,10 @@
 # Hello World!
 
-{% hint style="warning" %}
-**Notice**: This documentation is a Work in Progress and subject to change frequently.
-{% endhint %}
+{% hint style="info" %}
+**Notice:** W3bstream is under development.&#x20;
 
-### Prerequisites
+The current documentation refers to _W3bstream 1.0 Alpha release,_ and is subject to frequent changes.Prerequisites
+{% endhint %}
 
 A W3bstream applet is supposed to contain event handlers associated to the various events supported by the W3bstream runtime. <mark style="background-color:red;">(TODO: Document WS events).</mark> When creating a W3bstream applet in the language of your choice, you will have to follow a few simple rules:
 
