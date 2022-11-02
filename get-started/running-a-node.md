@@ -102,7 +102,7 @@ w3bstream         | Listening on port 3000 url: http://localhost:3000
 Notice at the end of the log, you will find the admin credentials to log in and interact with the W3bstream runtime:
 ```
 
-You can now access the [W3bstream Studio ](w3bstream-studio.md)admin dashboard by pointing a browser to port `3000` for the W3bstream node server:
+You can now access the [W3bstream Studio ](w3bstream-studio/)admin dashboard by pointing a browser to port `3000` for the W3bstream node server:
 
 ```
 https://localhost:3000

@@ -8,9 +8,9 @@
 
 While running, a W3bstream node emits internal **Event Messages** when something relevant happens. A W3bstream event can be currently generated  for one of the following reasons:
 
-* A message sent to an HTTP API _project_ _endpoint_
-* A message published on the MQTT broker
-* A smart contract event detected by a _blockchain monitor_
+* A message sent to an HTTP API [_project_ _endpoint_](sending-messages-to-w3bstream.md#http-project-endpoints)__
+* A message published to an MQTT [_project topic_](sending-messages-to-w3bstream.md#mqtt-project-topics)__
+* A smart contract event detected by a [_blockchain monitor_](basic-concepts.md#blockchain-monitor)__
 
 A W3bstream event message looks like the following:
 
@@ -26,9 +26,9 @@ A W3bstream event message looks like the following:
 }
 ```
 
-Once a W3bstream message is emitted, it's routed to the recipient [Project](basic-concepts.md#projects) which, in turn, routes the event **payload** to the corresponding [Applet](basic-concepts.md#applets) handler.
+Once a W3bstream message is emitted, it's routed to the recipient [Project](basic-concepts.md#projects) which, in turn, routes the event's **payload** to the corresponding [Applet](basic-concepts.md#applets) handler.
 
-#### Learn more
+#### <mark style="color:purple;"></mark>[<mark style="color:purple;">💡</mark>](https://emojipedia.org/light-bulb/) <mark style="color:purple;">Learn more</mark>
 
 {% content-ref url="sending-messages-to-w3bstream.md" %}
 [sending-messages-to-w3bstream.md](sending-messages-to-w3bstream.md)
@@ -40,15 +40,31 @@ Once a W3bstream message is emitted, it's routed to the recipient [Project](basi
 
 ## Projects
 
-A W3bstream Project is a container for node logic, events configuration and authorizations.  Each event has a recipient project to which the event will be routed A W3bstream event can be currently generated in one of the following ways:
+W3bstream Projects represent containers for the node logic. Each project also includes one or more [event strategy](basic-concepts.md#event-strategies) configurations, as well as [publisher](basic-concepts.md#publishers) authorizations.&#x20;
 
-* Sending a message to the W3bstream node to an HTTP API endpoint
-* Sending a message to the W3bstream node to the MQTT endpoint
-* Configuring a blockchain monitor&#x20;
+Every time a W3bstream event is emitted with a specific project as its recipient, the project's event strategy is evaluated. If a strategy is matched for the `event_type` field of the event, then the respective [Applet](basic-concepts.md#applets) handler is called with the event<mark style="color:purple;">'s</mark> `resource id` as the argument of the call.
 
-&#x20;projects configured in W3bstream respond to such events by running specific "event handlers".&#x20;
+&#x20;**** [<mark style="color:purple;">**💡**</mark>](https://emojipedia.org/light-bulb/) <mark style="color:purple;">**Learn more**</mark>
 
-Since W3bstream runtime's _execution engine_ is based on a [WebAssembly](https://webassembly.org/) virtual machine, the project's logic must be compiled as WASM modules.&#x20;
+{% content-ref url="getting-events-data.md" %}
+[getting-events-data.md](getting-events-data.md)
+{% endcontent-ref %}
+
+## Publishers
+
+Publishers can be used as a basic way of authorizing external sources to send data to W3bstream projects through one of the network service endpoints (HTTP or MQTT). Therefore, a publisher represents an "account", with its unique _id_ and _auth_ _token,_ which are supposed to be included in the message header sent to W3bstream.&#x20;
+
+{% hint style="success" %}
+Messages that do not include in their header a _publisher_ _id_ and _token, that are_ valid for their recipient project, will be ignored by W3bstream.
+{% endhint %}
+
+##
+
+## Event Strategies
+
+
+
+## Applets
 
 <details>
 
@@ -57,12 +73,6 @@ Since W3bstream runtime's _execution engine_ is based on a [WebAssembly](https:/
 WebAssembly provides a way to create safe and portable code written in multiple languages that can run at near native speed. The full WebAssembly documentation is available at [https://developer.mozilla.org/en-US/docs/WebAssembly](https://developer.mozilla.org/en-US/docs/WebAssembly)&#x20;
 
 </details>
-
-In this document, we will use [W3bstream Studio](../get-started/w3bstream-studio.md), accessible on port :3000, that allows you to perform applets deployment.
-
-A W3bstream Event represents a notification&#x20;
-
-## Applets
 
 W3bstream's execution engine is based on a WebAssembly virtual machine, therefore W3bstream applets must be compiled as WebAssembly Modules (WASM). WASM is a binary instruction format designed for the WebAssembly abstract, stack-based machine.
 
@@ -80,8 +90,7 @@ Other resources to learn WebAssembly are:
 * [WebAssembly Developer Guide](https://webassembly.org/getting-started/developers-guide/)
 * [WebAssembly Tutorial](https://marcoselvatici.github.io/WASM\_tutorial/)
 
+
+
 ## Blockchain Monitor
 
-
-
-## Strategies

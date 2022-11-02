@@ -8,7 +8,7 @@ HTTP Project endpoint runs on port 8888 by default, and it can be used to both m
 
 #### Command HTTP API
 
-The suggested way to manage W3bstream is to use the integrated [W3bstream Studio](../get-started/w3bstream-studio.md) web app. However, if you want to build your own management tools, the API below allows you to login into W3bstream and manage projects and applets. We are using [httpie](https://httpie.io) in the examples below.
+The suggested way to manage W3bstream is to use the integrated [W3bstream Studio](../get-started/w3bstream-studio/) web app. However, if you want to build your own management tools, the API below allows you to login into W3bstream and manage projects and applets. We are using [httpie](https://httpie.io) in the examples below.
 
 **Login**
 
