@@ -14,7 +14,7 @@ An example message is shown below:
     "event_type": "DEVICE_EVENT_0001",
     "pub_time": 1667343986249
   },
-    "payload": "This is the event payload data"
+    "payload": "This is the message payload data"
 }
 ```
 
@@ -91,15 +91,31 @@ The name of the Project as it appears in W3bstream Studio
 {% endswagger-response %}
 {% endswagger %}
 
-## &#x20;Sending data using MQTT
+The example below uses curl to send a message over HTTP:
+
+```bash
+curl --location --request POST 'localhost:8888/srv-applet-mgr/v0/event/PROJECT_NAME' --header 'Content-Type: text/plain' --data-raw '{
+    "header": {
+        "event_type": "DEVICE_EVENT_0001",
+        "pub_id": "my_publisher_id",
+        "pub_time": 1666211451,
+        "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.e"                                
+    },
+    "payload":"This is the message payload"
+}' 
+```
+
+## Sending data using MQTT
 
 {% hint style="info" %}
 **Notice:** Client authentication with MQTT certificates is not supported yet.&#x20;
 {% endhint %}
 
-The W3bstream MQTT broker default port is 1883. To send a message to a specific W3bstream Project using MQTT, the project name should be used as the topic for the message. The example below uses [mosquitto](https://mosquitto.org/) as a test client:
+The W3bstream MQTT broker default port is 1883. To send a message to a specific W3bstream Project using MQTT, the project name should be used as the topic for the message.&#x20;
 
-```javascript
+The example below uses [mosquitto](https://mosquitto.org/) as a test client:
+
+```bash
 mosquitto_pub -h localhost -t PROJECT_NAME -m '{
   "header": {
     "pub_id": "my_publisher_id",
@@ -107,6 +123,6 @@ mosquitto_pub -h localhost -t PROJECT_NAME -m '{
     "event_type": "DEVICE_EVENT_0001",
     "pub_time": 1667343986249
   },
-    "payload": "This is the event payload data"
+    "payload": "This is the message payload"
 }' 
 ```
