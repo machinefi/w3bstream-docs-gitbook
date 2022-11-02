@@ -9,7 +9,6 @@
 * [Running a Node](get-started/running-a-node.md)
 * [Creating a Project](get-started/deploying-an-applet.md)
 * [Running a Project](get-started/running-an-applet.md)
-* [Testing the Project](get-started/testing-the-project.md)
 * [W3bstream Studio](get-started/w3bstream-studio/README.md)
   * [Creating Projects](get-started/w3bstream-studio/creating-projects.md)
   * [Adding Publishers](get-started/w3bstream-studio/adding-publishers.md)
