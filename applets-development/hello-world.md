@@ -82,7 +82,7 @@ extern EM_IMPORT(ws_log) int ws_log(int, int, int);
 {% tab title="Rust" %}
 ```rust
 #[link(wasm_import_module = "env")]
-extern "C" fn ws_log(log_level: i32, ptr: *const u8, size: i32) -> i32;r
+extern "C" fn ws_log(log_level: i32, ptr: *const u8, size: i32) -> i32;
 ```
 {% endtab %}
 {% endtabs %}
@@ -106,11 +106,12 @@ import (
 // main is required for TinyGo to compile to Wasm.
 func main() {}
 
-func _log(ptr uint32, size uint32)
+func _log(uint32 logLevel, strPtr uint32, strSize uint32)
 
 func _start(rid uint32) int32 {
-  	ptr, size := stringToPtr(message)
-  	_log(ptr, size)
+  	ptr, size := stringToPtr("Hello World!)
+  	const LOG_LEVEL_INFO = 3
+  	_log(LOG_LEVEL_INFO, ptr, size)
   	return 0
 }
 
@@ -123,7 +124,7 @@ func stringToPtr(s string) (uint32, uint32) {
 
 ```
 
-Use the TiniGo compiler to build this module:
+Use the TinyGo to build the WASM module
 
 ```bash
 tinygo build -o log.wasm -scheduler=none --no-debug -target=wasi log.go
@@ -137,12 +138,14 @@ tinygo build -o log.wasm -scheduler=none --no-debug -target=wasi log.go
 #include <string.h>
 #include <stdio.h>
 
-extern EM_IMPORT(ws_log) int ws_log(int, int, int);
+extern EM_IMPORT(ws_log) int ws_log(int logLevel, int strPtr, int strSize);
+
+const LOG_LEVEL_INFO = 3;
 
 EMSCRIPTEN_KEEPALIVE int start(int)
 {
-    char str[] = "Hello IoTeX!";
-    ws_log((int)str, strlen(str));
+    char str[] = "Hello World!";
+    ws_log(LOG_LEVEL_INFO, (int)str, strlen(str));
     return 0;
 }
 
@@ -154,7 +157,7 @@ EMSCRIPTEN_KEEPALIVE int malloc(int size)
 
 
 
-Use the emscripten compiler to build this module:
+Use the emscripten compiler to build the WASM module:
 
 ```bash
 emcc -o helloworld.wasm -O2 --no-entry -s LLD_REPORT_UNDEFINED -s ERROR_ON_UNDEFINED_SYMBOLS=0 helloworld.c
@@ -165,18 +168,21 @@ emcc -o helloworld.wasm -O2 --no-entry -s LLD_REPORT_UNDEFINED -s ERROR_ON_UNDEF
 ```rust
 #[link(wasm_import_module = "env")]
 extern "C" {
-    fn log(ptr: *const u8, size: i32);
+    fn ws_log(log_level: i32, ptr: *const u8, size: i32) -> i32;
 }
 
 #[no_mangle]
 pub extern "C" fn start(resource_id: i32) -> i32 {
+    let log_level_info: i32 = 3;
     let str = String::from("hello world");
-    unsafe { log(str.as_bytes().as_ptr(), str.len() as _) };
+    unsafe { ws_log(log_level_info, str.as_bytes().as_ptr(), str.len() as _) };
     return 0;
 }
+
+pub fn main() {}
 ```
 
-Use cargo-wasi to build the module:
+Use cargo-wasi to build the WASM module:
 
 ```
 cargo wasi build
@@ -186,17 +192,37 @@ cargo wasi build
 
 ## Test Hello World!
 
-Once you built the Hello World! example as a WASM module you can upload and deploy it to the W3bstream node:
+Once you built the Hello World! example as a WASM module, you can upload and deploy it to the W3bstream node as explained in the Get Started section of this documentation:
 
 {% content-ref url="../get-started/deploying-an-applet.md" %}
 [deploying-an-applet.md](../get-started/deploying-an-applet.md)
 {% endcontent-ref %}
 
-then use the W3bstream Studio to send any message to your project and check the log:
+then use the W3bstream Studio to send any message to your project (make sure the applet is running!):
 
 {% content-ref url="../get-started/w3bstream-studio/testing-events.md" %}
 [testing-events.md](../get-started/w3bstream-studio/testing-events.md)
 {% endcontent-ref %}
 
-You should see the "Hello World!" string printed in the W3bstream log:
+finally, check the log of your W3bstream node: you should see the "Hello World!" string printed:
 
+```json
+...
+// W3bstream calling the "start" handler upon message received
+{
+  "@lv": "info",
+  "@prj": "srv-applet-mgr",
+  "@ts": "20221102-140006.340Z",
+  "msg": "call handler:start"
+}
+// This is the log from the start function
+{
+  "@applet": "MyApplet",
+  "@lv": "info",
+  "@namespace": "HelloWorldProject",
+  "@prj": "srv-applet-mgr",
+  "@src": "wasm",
+  "@ts": "20221102-140006.340Z",
+  "msg": "hello world"
+}
+```
