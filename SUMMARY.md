@@ -30,10 +30,10 @@
 * [Sending blockchain actions](applets-development/sending-blockchain-actions.md)
 * [Reference](applets-development/reference.md)
 
-## Sending IoT Data
+## Client SDKs
 
-* [Get Started](sending-iot-data/get-started.md)
-* [SDKs](sending-iot-data/sdks/README.md)
-  * [Android](sending-iot-data/sdks/android.md)
-  * [iOS](sending-iot-data/sdks/ios.md)
-  * [IoT Devices](sending-iot-data/sdks/iot-devices.md)
+* [Get Started](client-sdks/get-started.md)
+* [SDKs](client-sdks/sdks/README.md)
+  * [Android](client-sdks/sdks/android.md)
+  * [iOS](client-sdks/sdks/ios.md)
+  * [IoT Devices](client-sdks/sdks/iot-devices.md)
