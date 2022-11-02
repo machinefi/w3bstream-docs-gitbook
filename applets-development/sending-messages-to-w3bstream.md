@@ -24,7 +24,7 @@ An example message is shown below:
 
 <mark style="color:blue;">**`token:`**</mark>`<string>` is the authorization token associated to the Publisher Identifier (`pub_id`)
 
-<mark style="color:blue;">**`event_tipe:`**</mark>`<string>` this can be anything, as long as it's matched in an event strategy of the destination W3bstream Project
+<mark style="color:blue;">**`event_type:`**</mark>`<string>` this can be anything, as long as it's matched in an event strategy of the destination W3bstream Project
 
 <mark style="color:blue;">**`pub_time`**</mark>`:<number>` this is the timestamp when the message was actually sent.
 
