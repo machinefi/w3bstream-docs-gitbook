@@ -41,7 +41,7 @@ The W3bstream HTTP API default port is `8888`. Aside from being used to manage t
 The name of the Project as it appears in W3bstream Studio 
 {% endswagger-parameter %}
 
-{% swagger-response status="201: Created" description="" %}
+{% swagger-response status="201: Created" description="This is returned when a project with the specified name has been found and the message has been correctly routed to an applet" %}
 ```javascript
 {
   "results": [
@@ -71,10 +71,25 @@ The name of the Project as it appears in W3bstream Studio
 }
 ```
 {% endswagger-response %}
+
+{% swagger-response status="404: Not Found" description="This is returned when a project with the specified name has been found but the message could not be routed to an applet because the event_type did not match any strategy in the project" %}
+```javascript
+{
+  "key": "NotFound",
+  "code": 404999001,
+  "msg": "NotFound",
+  "desc": "not found strategy",
+  "canBeTalk": false,
+  "id": "",
+  "sources": [
+    "srv-applet-mgr@0.0.1"
+  ],
+  "fields": null
+}
+-
+```
+{% endswagger-response %}
 {% endswagger %}
 
-&#x20;
+## &#x20;Sending data using MQTT
 
-## Sending data using MQTT
-
-TODO

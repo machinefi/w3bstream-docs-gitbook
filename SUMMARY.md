@@ -22,7 +22,7 @@
 * [Basic concepts](applets-development/basic-concepts.md)
 * [Configuring W3bstream](applets-development/configuring-w3bstream.md)
 * [Hello World!](applets-development/hello-world.md)
-* [Sending data to W3bstream](applets-development/sending-data-to-w3bstream.md)
+* [Sending data to W3bstream](applets-development/sending-messages-to-w3bstream.md)
 * [Getting Events Data](applets-development/getting-events-data.md)
 * [Storing Data](applets-development/storing-data.md)
 * [Querying Data](applets-development/querying-data.md)

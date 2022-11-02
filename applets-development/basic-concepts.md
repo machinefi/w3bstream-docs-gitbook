@@ -8,8 +8,8 @@
 
 While running, a W3bstream node emits internal **Event Messages** when something relevant happens. A W3bstream event can be currently generated  for one of the following reasons:
 
-* A message sent to an HTTP API [_project_ _endpoint_](sending-data-to-w3bstream.md#http-project-endpoints)__
-* A message published to an MQTT [_project topic_](sending-data-to-w3bstream.md#mqtt-project-topics)__
+* A message sent to an HTTP API [_project_ _endpoint_](sending-messages-to-w3bstream.md#http-project-endpoints)__
+* A message published to an MQTT [_project topic_](sending-messages-to-w3bstream.md#mqtt-project-topics)__
 * A smart contract event detected by a [_blockchain monitor_](basic-concepts.md#blockchain-monitor)__
 
 A W3bstream event message looks like the following:
@@ -30,8 +30,8 @@ Once a W3bstream message is emitted, it's routed to the recipient [Project](basi
 
 #### <mark style="color:purple;"></mark>[<mark style="color:purple;">💡</mark>](https://emojipedia.org/light-bulb/) <mark style="color:purple;">Learn more</mark>
 
-{% content-ref url="sending-data-to-w3bstream.md" %}
-[sending-data-to-w3bstream.md](sending-data-to-w3bstream.md)
+{% content-ref url="sending-messages-to-w3bstream.md" %}
+[sending-messages-to-w3bstream.md](sending-messages-to-w3bstream.md)
 {% endcontent-ref %}
 
 {% content-ref url="monitoring-contracts.md" %}
@@ -68,8 +68,8 @@ Messages that do not include in their header a _publisher_ _id_ and _token that 
 [adding-publishers.md](../get-started/w3bstream-studio/adding-publishers.md)
 {% endcontent-ref %}
 
-{% content-ref url="sending-data-to-w3bstream.md" %}
-[sending-data-to-w3bstream.md](sending-data-to-w3bstream.md)
+{% content-ref url="sending-messages-to-w3bstream.md" %}
+[sending-messages-to-w3bstream.md](sending-messages-to-w3bstream.md)
 {% endcontent-ref %}
 
 ## Event Strategies
