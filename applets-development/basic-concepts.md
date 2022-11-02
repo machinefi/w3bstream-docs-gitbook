@@ -46,25 +46,60 @@ Every time a W3bstream event is emitted with a specific project as its recipient
 
 &#x20;**** [<mark style="color:purple;">**💡**</mark>](https://emojipedia.org/light-bulb/) <mark style="color:purple;">**Learn more**</mark>
 
+{% content-ref url="../get-started/w3bstream-studio/creating-projects.md" %}
+[creating-projects.md](../get-started/w3bstream-studio/creating-projects.md)
+{% endcontent-ref %}
+
 {% content-ref url="getting-events-data.md" %}
 [getting-events-data.md](getting-events-data.md)
 {% endcontent-ref %}
 
 ## Publishers
 
-Publishers can be used as a basic way of authorizing external sources to send data to W3bstream projects through one of the network service endpoints (HTTP or MQTT). Therefore, a publisher represents an "account", with its unique _id_ and _auth_ _token,_ which are supposed to be included in the message header sent to W3bstream.&#x20;
+Publishers can be used as a basic way of authorizing external sources to send data to W3bstream projects through one of the network service endpoints (HTTP or MQTT). Therefore, a publisher represents an "account", with its unique _id_ and _auth_ _token, that belong to a specific project._ The publisher id and auth token must be included in the message header when sending a message to a W3bstream project, in the `pub_id` and `token` fields, respectively.
 
 {% hint style="success" %}
-Messages that do not include in their header a _publisher_ _id_ and _token, that are_ valid for their recipient project, will be ignored by W3bstream.
+Messages that do not include in their header a _publisher_ _id_ and _token that are_ valid for their recipient project, will be ignored by W3bstream.
 {% endhint %}
 
-##
+&#x20;**** [<mark style="color:purple;">**💡**</mark>](https://emojipedia.org/light-bulb/) <mark style="color:purple;">**Learn more**</mark>
+
+{% content-ref url="../get-started/w3bstream-studio/adding-publishers.md" %}
+[adding-publishers.md](../get-started/w3bstream-studio/adding-publishers.md)
+{% endcontent-ref %}
+
+{% content-ref url="sending-messages-to-w3bstream.md" %}
+[sending-messages-to-w3bstream.md](sending-messages-to-w3bstream.md)
+{% endcontent-ref %}
 
 ## Event Strategies
 
+Event strategies can be used to define "_what to do"_ when a certain event is emitted in W3bstream. Therefore, an event strategy represents a _rule_ that assigns an applet's function (aka "_event handler_") to a certain _event type_. The event type must be specified in the message header when sending a message to a w3bstream project, using the `event_type` field. The event type can be any string, as long as it's matched by an event strategy.
 
+{% hint style="success" %}
+Messages that do not include in their header an _event\_type_ _that is_ matched by an event strategy of their recipient project, will not trigger any logic exectution. Instead they will just be logged in the console, before being dropped by W3bstream.
+{% endhint %}
+
+&#x20;**** [<mark style="color:purple;">**💡**</mark>](https://emojipedia.org/light-bulb/) <mark style="color:purple;">**Learn more**</mark>
+
+{% content-ref url="../get-started/w3bstream-studio/creating-strategies.md" %}
+[creating-strategies.md](../get-started/w3bstream-studio/creating-strategies.md)
+{% endcontent-ref %}
 
 ## Applets
+
+A W3bstream Applet is a container for the actual logic of a W3bstrem node. Since W3bstream's execution engine is based on a W3bAssembly virtual machine, Applets must be compiled as WASM modules.
+
+An applet can include one or more functions, however, at least one of them must be publicly exported to be called by the W3bstream VM. Exported functions in an Applet are also called _event handlers_, since they can be used as a target function in a Project's [event strategy.](basic-concepts.md#event-strategies)
+
+Event Handlers in an applet must have the following signature:
+
+```rust
+// An applet's event handler
+pub extern "C" fn do_something(resource_id: i32) -> i32 
+```
+
+&#x20;**** [<mark style="color:purple;">**💡**</mark>](https://emojipedia.org/light-bulb/) <mark style="color:purple;">**Learn more**</mark>
 
 <details>
 
@@ -72,25 +107,64 @@ Messages that do not include in their header a _publisher_ _id_ and _token, that
 
 WebAssembly provides a way to create safe and portable code written in multiple languages that can run at near native speed. The full WebAssembly documentation is available at [https://developer.mozilla.org/en-US/docs/WebAssembly](https://developer.mozilla.org/en-US/docs/WebAssembly)&#x20;
 
-</details>
+W3bstream is based on the WASI interface. To learn more about WASI, check out [https://github.com/bytecodealliance/wasmtime/blob/main/docs/WASI-intro.md](https://github.com/bytecodealliance/wasmtime/blob/main/docs/WASI-intro.md)
 
-W3bstream's execution engine is based on a WebAssembly virtual machine, therefore W3bstream applets must be compiled as WebAssembly Modules (WASM). WASM is a binary instruction format designed for the WebAssembly abstract, stack-based machine.
-
-WASM binaries can be generated from multiple high-level languages, including:
+**Supported toolchains**
 
 * WebAssembly Text Format ([natively supported](https://developer.mozilla.org/en-US/docs/WebAssembly/Understanding\_the\_text\_format))
-* AssemblyScript [(natively supported)](https://www.assemblyscript.org/introduction.html)
 * Rust ([natively supported)](https://rustwasm.github.io/docs/book/introduction.html)
 * C/C++ (supported through [emscripten](https://emscripten.org/index.html))
 * Golang (supported through [tiny go](https://tinygo.org/docs/))
 
-Other resources to learn WebAssembly are:
+**More resources**
 
-* [WebAssembly Full Documentation](https://developer.mozilla.org/en-US/docs/WebAssembly)
 * [WebAssembly Developer Guide](https://webassembly.org/getting-started/developers-guide/)
 * [WebAssembly Tutorial](https://marcoselvatici.github.io/WASM\_tutorial/)
 
-
+</details>
 
 ## Blockchain Monitor
 
+{% hint style="info" %}
+**Notice**
+
+* The current implementation of the blockchain monitor is experimental, and will be replaced soon.&#x20;
+* Only the IoTeX blockchain is currently supposrted.&#x20;
+* Only HTTP API can be used to enable the monitor.
+{% endhint %}
+
+The blockchain monitor is an internal W3bstream module that can emit W3bstream events when a specific event is emitted by a blockchain smart contract.
+
+You can configure and start one monitor for each smart contract event you are interested in.&#x20;
+
+Make sure you log in using the API first:
+
+```bash
+export TOK=$(echo '{"username":"admin","password":"iotex.W3B.admin"}' | http put :8888/srv-applet-mgr/v0/login | jq .token -r)To configure and start a blockchain monitor, make sure your W3bstream node is running, then type the command below. Make sure you replace: 
+```
+
+then you can start a blockchain event monitor typing the commend below (please notice it's using the [httpie](https://httpie.io/) client), after replacing:
+
+* `chainID` with 4690 for the IoTeX Testnet, 4689 for the IoTeX Mainnet; &#x20;
+* `contractAddress` with the actual address of the contract you want to monitor;&#x20;
+* `topic0` with the topic of the smart contract event that you want to detect
+* `eventType` with the event type code that matches your [Project strategy](basic-concepts.md#event-strategies) for this specific event
+
+```bash
+echo '{\
+  "contractLog": {\
+    "chainID": 4690,\ 
+    "contractAddress": "0x6a0BFf625A70C43bcEEFAC51aF928ae545941b4A",\
+    "blockStart": 17058530,\
+    "blockEnd": 100000000,\
+    "topic0":"0x766e6460a49ca518797200f8d2b455a80962f1e6acdcda61000fc3dc2004db88",\
+    "eventType":"EXAMP1"\
+  }\
+}' | http :8888/srv-applet-mgr/v0/project/monitor/<PROJECT_ID> -A bearer -a $TOK
+```
+
+&#x20;**** [<mark style="color:purple;">**💡**</mark>](https://emojipedia.org/light-bulb/) <mark style="color:purple;">**Learn more**</mark>
+
+{% content-ref url="monitoring-contracts.md" %}
+[monitoring-contracts.md](monitoring-contracts.md)
+{% endcontent-ref %}
