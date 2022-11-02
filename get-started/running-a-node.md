@@ -30,9 +30,11 @@ Pull the W3bstream runtime docker image with:
 docker pull w3bstream/w3bstream:latest
 ```
 
-### Start the node
+### Prepare docker-compose.yaml
 
-To start the node, create a `docker-compose.yaml` file with the following content to quickly start the node using the _docker-compose_ command:
+To start the node, create a `docker-compose.yaml` file with the following content to quickly start the node with required services using _docker-compose_:
+
+_See the file on GitHub**:**_ [docker-compose.yaml](https://github.com/machinefi/w3bstream/blob/82b1537711f4d89b9a3802ecc464d5988aa2970e/docker-compose.yaml)
 
 ```yaml
 version: '3.6'
@@ -77,6 +79,8 @@ services:
       HASURA_GRAPHQL_ADMIN_SECRET: w3baAdmiNsecrEtkey
 ```
 
+### Start the node
+
 Start the W3bstream node with:
 
 ```bash
@@ -108,7 +112,7 @@ You can now access the [W3bstream Studio ](w3bstream-studio/)admin dashboard by 
 https://localhost:3000
 ```
 
-<figure><img src="../.gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (6) (2).png" alt=""><figcaption></figcaption></figure>
 
 ### Run using the command line client
 

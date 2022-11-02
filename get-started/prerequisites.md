@@ -3,7 +3,7 @@
 {% hint style="info" %}
 **Notice:** W3bstream is under development.&#x20;
 
-The current documentation refers to _W3bstream 1.0 Alpha release,_ and is subject to frequent changes.
+The current documentation refers to _<mark style="color:blue;">W3bstream 1.0 Alpha</mark> release,_ and is subject to frequent changes.
 {% endhint %}
 
 This document contains the requirements and instructions to run a W3bstream node.
@@ -37,8 +37,6 @@ The performances of your node are closely linked to the number of client devices
 The W3bstream runtime supports Linux and MacOS systems.&#x20;
 
 ## Blockchain client
-
-
 
 For your W3bstream node to be able to interact with a blockchain application (e.g., react to smart contract events, send proofs of real-world events to smart contracts), you will also need access to a blockchain gateway.&#x20;
 

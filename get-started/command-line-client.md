@@ -1,5 +1,5 @@
 # Command-line Client
 
 {% hint style="info" %}
-**🚧 This document is a work in progress**
+****<img src="../.gitbook/assets/image (7).png" alt="" data-size="original">**This feature is coming soon**
 {% endhint %}
