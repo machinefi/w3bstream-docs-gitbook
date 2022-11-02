@@ -10,7 +10,7 @@ This document contains the requirements and instructions to run a W3bstream node
 
 ## Supported Blockchains
 
-Currently, W3bstream supports the IoTeX Blockchain, Ethereum 2.0, and any Ethereum-compatible chain.
+Currently, W3bstream supports the IoTeX, Ethereum, and any EVM-compatible blockchain.
 
 ## Requirements
 
@@ -24,13 +24,19 @@ Because your W3bstream node will act as a network endpoint for devices to send t
 
 The minimum hardware requirements to run a W3bstream node are:
 
-* 2 Cores, 2 GB RAM, 10 GB storage, 100 Mbit network
+* 2 Cores, 2 GB RAM, 10 GB storage, 100 Mbps network
 
 Recommended requirements to get started running a W3bstream node are:
 
-* 4 Cores, 4 GB RAM, 20 GB storage, 100 Mbit network
+* 4 Cores, 4 GB RAM, 20 GB storage, 100 Mbps network
 
-The performances of your node are closely linked to the number of client devices, the volumes of IoT data, and the complexity of the application logic. It's recommended to  accurately evaluate the hardware configuration based on the application specific requirements.&#x20;
+{% hint style="info" %}
+**Notice**
+
+The performances and storage requirements of your node are closely related to the number of client devices, the volumes of IoT data, the data retention policy, and the complexity of the application logic. It's recommended to  accurately evaluate the hardware configuration based on the application specific requirements.
+{% endhint %}
+
+&#x20;
 
 ## Supported OS
 

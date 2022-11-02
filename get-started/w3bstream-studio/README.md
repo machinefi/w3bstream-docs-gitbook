@@ -8,7 +8,7 @@ W3bstream studio is available as a W3bserver integrated in the W3bstream service
 
 [https://localhost:3000](https://app.gitbook.com/o/-MQ9LhchTp7\_QJr-AYG0/s/f2s3zCHPO4kfjqwDZ9Gw/)
 
-<figure><img src="../../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (4) (3).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 **🚧 This document is a work in progress**

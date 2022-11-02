@@ -16,19 +16,19 @@ Blockchain developers can build their dApps getting access to trusted real-world
 
 To support a wide range of applications and business requirements, a W3bStream node includes the following connectivity, computing, storage, and consensus components, for interacting with the IoT devices, blockchain, and node operators:
 
-<figure><img src=".gitbook/assets/image (15) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image.png" alt=""><figcaption><p>W3bstream Runtime Modules</p></figcaption></figure>
 
 #### **Service Endpoint**
 
-The service endpoint implements a number of communication protocols (e.g., MQTT, HTTP, RPC, etc.) to communicate with IoT devices, blockchain, and node operators.
+The service endpoint implements a number of communication protocols (e.g., MQTT, HTTP, RPC, etc.) to communicate with smart devices, blockchain, and node operators.
 
 #### **Virtual File System**
 
-The virtual file system is used to store a business program (i.e., a WebAssembly module that implements the business logic of a specific MachineFi application) and intermediate computation results**.**
+The virtual file system is used to store a business program (i.e., WebAssembly modules that implement the business logic of a specific MachineFi application) as well as intermediate computation results**.**
 
 #### **Execution Engine**
 
-The execution engine executes the pre-defined business program.
+The W3bstream execution engine runs the pre-defined business logic that process incoming data from smart devices, blockchain events, and more. The execution engine is based on a WebAssembly VM and the WASI interface, and it can run multiple WASM modules in parallel.
 
 #### Consensus
 
@@ -36,7 +36,7 @@ The consensus module implements a number of consensus algorithms (e.g., Proof of
 
 #### **Database**
 
-The database stores the raw or encrypted data received from IoT devices with a data retention policy in place.
+The database component represents an abstract storage interface and its goal is to serve as the long term storage of the raw/encrypted data received from smart devices. Different storage implementations can be plugged in: from a simple local relational database, to a decentralized storage solution like IPFS. Data retention policies can also be configured for this module, depending on the application needs.
 
 #### SSI Wallet
 
