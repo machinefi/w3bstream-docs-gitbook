@@ -14,7 +14,7 @@ An example message is shown below:
     "event_type": "DEVICE_EVENT_0001",
     "pub_time": 1667343986249
   },
-    "payload": "This is the event payload data",
+    "payload": "This is the event payload data"
 }
 ```
 
@@ -93,3 +93,20 @@ The name of the Project as it appears in W3bstream Studio
 
 ## &#x20;Sending data using MQTT
 
+{% hint style="info" %}
+**Notice:** Client authentication with MQTT certificates is not supported yet.&#x20;
+{% endhint %}
+
+The W3bstream MQTT broker default port is 1883. To send a message to a specific W3bstream Project using MQTT, the project name should be used as the topic for the message. The example below uses [mosquitto](https://mosquitto.org/) as a test client:
+
+```javascript
+mosquitto_pub -h localhost -t PROJECT_NAME -m '{
+  "header": {
+    "pub_id": "my_publisher_id",
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJQYXlsb2FkIjoiNDUwNTI4NzAxMjc2NTcwMyIsImlzcyI6InNydi1hcHBsZXQtbWdyIiwiZXhwIjoxNjY4Mzk4MDYxfQ._Q5ZaBP5FSa09s0FCn7CBcMCty9hkM5TDu5q1wTvwB8",
+    "event_type": "DEVICE_EVENT_0001",
+    "pub_time": 1667343986249
+  },
+    "payload": "This is the event payload data"
+}' 
+```
