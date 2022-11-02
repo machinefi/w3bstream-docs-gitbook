@@ -30,53 +30,58 @@ In Rust you don't need to provide a malloc implementation as it's automatically 
 {% endtab %}
 {% endtabs %}
 
-#### The start function
+#### Event handlers
 
-It's assumed that you have at least one event handler defined in your applet. This handler should be linked to a W3bstream event in the node configuration (<mark style="background-color:red;">TODO: document and add link to project configuration</mark>). However, if you have not configured any event handler for your W3bstream project (<mark style="background-color:red;">TODO: introduce the concept of "projects" before</mark>) W3bstream expects you included a `_start()` function to serve as a default event handler, with the following signature:
+It's assumed that you have at least one event handler defined in your applet. This handler should be linked to a W3bstream event in the project [event strategies](basic-concepts.md#event-strategies) configuration. By default, when deploying an applet to a project, W3bstream creates a default event strategy that connects any event to a default `_start()` function  with the following signature:
 
 {% tabs %}
 {% tab title="Golang" %}
 ```go
-func _start(rid uint32) int32
+func _start(resource_id uint32) int32
 ```
 {% endtab %}
 
 {% tab title="C/C++" %}
 ```cpp
-EMSCRIPTEN_KEEPALIVE uint32_t _start(uint32_t resId = 0)
+EMSCRIPTEN_KEEPALIVE uint32_t _start(uint32_t resource_id = 0)
 ```
 {% endtab %}
 
 {% tab title="Rust" %}
 ```rust
-func _start(rid uint32) int32uThe log function
+func _start(resource_id uint32) int32uThe log function
 ```
 {% endtab %}
 {% endtabs %}
 
-W3bstream provides applets with a text console to output text to. Since WebAssembly is independent of the availability of a console on the host, you will have to declare a `_log()` function that is exported by W3bstream and gives you access to the console.&#x20;
+**Accessing the W3bstream console**
 
-So if you want to access the W3bstream console in your applet, you must declare this `_log()` function as an _`extern`_ function in your code:
+W3bstream provides a text console for applets to output text to. In order to be able to sen output to the W3bstream console, you'll have to declare an external `_log()` function that is exported by W3bstream node and gives you access to the console:
 
 {% tabs %}
 {% tab title="Golang" %}
 ```go
-func _log(ptr uint32, size uint32)
+//go:wasm-module env 
+//export ws_log 
+func _ws_log(logLevel, ptr, size uint32) int32
 ```
 {% endtab %}
 
 {% tab title="C/C++" %}
-<pre class="language-c"><code class="lang-c"><strong>extern void _log(const char* msg, uint32_t size);</strong></code></pre>
+```cpp
+#include <emscripten.h>
+
+extern EM_IMPORT(ws_log) int ws_log(int, int, int);
+```
 {% endtab %}
 
 {% tab title="Rust" %}
-<mark style="background-color:red;">TODO</mark>
+```rust
+#[link(wasm_import_module = "env")]
+extern "C" fn ws_log(log_level: i32, ptr: *const u8, size: i32) -> i32;r
+```
 {% endtab %}
 {% endtabs %}
-
-Where `msg` is a pointer to the string you want to output, and `size` is the size in bytes of the string.
-
-### Hello World!
 
 Creating a “_Hello World!_” example for W3bstream is now very simple:
 
@@ -126,12 +131,12 @@ tinygo build -o log.wasm -scheduler=none --no-debug -target=wasi log.go
 #include <string.h>
 #include <stdio.h>
 
-extern EM_IMPORT(log) void _log(int, int);
+extern EM_IMPORT(ws_log) int ws_log(int, int, int);
 
 EMSCRIPTEN_KEEPALIVE int start(int)
 {
     char str[] = "Hello IoTeX!";
-    _log((int)str, strlen(str));
+    ws_log((int)str, strlen(str));
     return 0;
 }
 
