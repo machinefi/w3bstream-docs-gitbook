@@ -37,7 +37,7 @@ pub extern "C" fn start(event_id: i32) -> i32 {
     log_info(
         &#x26;format!("Start handler called with event_id: {}", event_id));
 
-    let payload = get_data_as_str(resource_id).unwrap();
+    let payload = get_data_as_str(event_id).unwrap();
     log_info(&#x26;format!("event data as string: {}", payload));
     return 0;
 }
