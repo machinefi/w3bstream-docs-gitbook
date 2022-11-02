@@ -32,8 +32,4 @@
 
 ## Client SDKs
 
-* [Get Started](client-sdks/get-started.md)
-* [SDKs](client-sdks/sdks/README.md)
-  * [Android](client-sdks/sdks/android.md)
-  * [iOS](client-sdks/sdks/ios.md)
-  * [IoT Devices](client-sdks/sdks/iot-devices.md)
+* [Get Started](sending-iot-data/get-started.md)
