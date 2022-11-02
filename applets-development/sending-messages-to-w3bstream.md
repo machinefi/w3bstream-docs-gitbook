@@ -2,9 +2,9 @@
 
 W3bstream provides two different network service endpoints that allow sending messages to the various projects running in the node.
 
-### HTTP Project Endpoints
+### Sending messages using HTTP
 
-HTTP Project endpoint runs on port 8888 by default, and it can be used to both manage the node and its projects and send data messages to it. The best way to in
+The W3bstream HTTP API default port is `8888`, and it can be used to both manage the node and send to data messages to it.&#x20;
 
 #### Command HTTP API
 
