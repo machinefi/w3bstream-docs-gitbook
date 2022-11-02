@@ -30,7 +30,7 @@ Click the HelloW3bstream project in the side panel, and click the <mark style="c
 
 In the Send Event dialog, select the publisher account, then edit the message payload value and make it "Hello W3bstream!"
 
-<figure><img src="../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (5) (1).png" alt=""><figcaption></figcaption></figure>
 
 Click the Submit Button to send the event to the W3bstream node, then check the W3bstream docker log to see that the event has been detected by the node and routed to the HelloW3bstream project:&#x20;
 

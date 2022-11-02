@@ -28,7 +28,7 @@ A W3bstream event message looks like the following:
 
 Once a W3bstream message is emitted, it's routed to the recipient [Project](basic-concepts.md#projects) which, in turn, routes the event's **payload** to the corresponding [Applet](basic-concepts.md#applets) handler.
 
-#### <mark style="color:purple;"></mark>[<mark style="color:purple;">💡</mark>](https://emojipedia.org/light-bulb/) <mark style="color:purple;">Learn more</mark>
+#### &#x20;** **<mark style="color:purple;">**💡**</mark> <mark style="color:purple;"></mark><mark style="color:purple;">Learn more</mark>
 
 {% content-ref url="sending-messages-to-w3bstream.md" %}
 [sending-messages-to-w3bstream.md](sending-messages-to-w3bstream.md)
@@ -44,7 +44,7 @@ W3bstream Projects represent containers for the node logic. Each project also in
 
 Every time a W3bstream event is emitted with a specific project as its recipient, the project's event strategy is evaluated. If a strategy is matched for the `event_type` field of the event, then the respective [Applet](basic-concepts.md#applets) handler is called with the event<mark style="color:purple;">'s</mark> `resource id` as the argument of the call.
 
-&#x20;**** [<mark style="color:purple;">**💡**</mark>](https://emojipedia.org/light-bulb/) <mark style="color:purple;">**Learn more**</mark>
+&#x20; **  **<mark style="color:purple;">**💡 Learn more**</mark>
 
 {% content-ref url="../get-started/w3bstream-studio/creating-projects.md" %}
 [creating-projects.md](../get-started/w3bstream-studio/creating-projects.md)
@@ -62,7 +62,7 @@ Publishers can be used as a basic way of authorizing external sources to send da
 Messages that do not include in their header a _publisher_ _id_ and _token that are_ valid for their recipient project, will be ignored by W3bstream.
 {% endhint %}
 
-&#x20;**** [<mark style="color:purple;">**💡**</mark>](https://emojipedia.org/light-bulb/) <mark style="color:purple;">**Learn more**</mark>
+&#x20; **  **<mark style="color:purple;">**💡 Learn more**</mark>
 
 {% content-ref url="../get-started/w3bstream-studio/adding-publishers.md" %}
 [adding-publishers.md](../get-started/w3bstream-studio/adding-publishers.md)
@@ -80,7 +80,7 @@ Event strategies can be used to define "_what to do"_ when a certain event is em
 Messages that do not include in their header an _event\_type_ _that is_ matched by an event strategy of their recipient project, will not trigger any logic exectution. Instead they will just be logged in the console, before being dropped by W3bstream.
 {% endhint %}
 
-&#x20;**** [<mark style="color:purple;">**💡**</mark>](https://emojipedia.org/light-bulb/) <mark style="color:purple;">**Learn more**</mark>
+&#x20; **  **<mark style="color:purple;">**💡 Learn more**</mark>
 
 {% content-ref url="../get-started/w3bstream-studio/creating-strategies.md" %}
 [creating-strategies.md](../get-started/w3bstream-studio/creating-strategies.md)
@@ -99,7 +99,7 @@ Event Handlers in an applet must have the following signature:
 pub extern "C" fn do_something(resource_id: i32) -> i32 
 ```
 
-&#x20;**** [<mark style="color:purple;">**💡**</mark>](https://emojipedia.org/light-bulb/) <mark style="color:purple;">**Learn more**</mark>
+&#x20; **  **<mark style="color:purple;">**💡 Learn more**</mark>
 
 <details>
 
@@ -163,8 +163,9 @@ echo '{\
 }' | http :8888/srv-applet-mgr/v0/project/monitor/<PROJECT_ID> -A bearer -a $TOK
 ```
 
-&#x20;**** [<mark style="color:purple;">**💡**</mark>](https://emojipedia.org/light-bulb/) <mark style="color:purple;">**Learn more**</mark>
+💡 <mark style="color:purple;">**Learn more**</mark>
 
 {% content-ref url="monitoring-contracts.md" %}
 [monitoring-contracts.md](monitoring-contracts.md)
 {% endcontent-ref %}
+

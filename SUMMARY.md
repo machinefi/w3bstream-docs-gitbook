@@ -28,7 +28,7 @@
 * [Querying Data](applets-development/querying-data.md)
 * [Monitoring Contracts](applets-development/monitoring-contracts.md)
 * [Sending blockchain actions](applets-development/sending-blockchain-actions.md)
-* [Reference](applets-development/reference.md)
+* [Host Functions Reference](applets-development/host-functions-reference.md)
 
 ## Client SDKs
 
