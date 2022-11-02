@@ -137,7 +137,7 @@ The blockchain monitor is an internal W3bstream module that can emit W3bstream e
 
 You can configure and start one monitor for each smart contract event you are interested in.&#x20;
 
-Make sure you log in using the API first:
+Make sure you login on the W3bstream node using the API first:
 
 ```bash
 export TOK=$(echo '{"username":"admin","password":"iotex.W3B.admin"}' | http put :8888/srv-applet-mgr/v0/login | jq .token -r)To configure and start a blockchain monitor, make sure your W3bstream node is running, then type the command below. Make sure you replace: 
