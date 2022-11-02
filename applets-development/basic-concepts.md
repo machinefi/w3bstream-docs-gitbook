@@ -133,7 +133,7 @@ W3bstream is based on the WASI interface. To learn more about WASI, check out [h
 * Only the HTTP API can be used to enable the monitor.
 {% endhint %}
 
-The blockchain monitor is an internal W3bstream module that can emit W3bstream events when a specific event is emitted by a blockchain smart contract.
+The blockchain monitor is an internal W3bstream module that can emit W3bstream events when a certain blockchain event is emitted by a smart contract.
 
 You can configure and start one monitor for each smart contract event you are interested in.&#x20;
 
