@@ -16,11 +16,11 @@
   * [Creating Strategies](get-started/w3bstream-studio/creating-strategies.md)
   * [Testing Events](get-started/w3bstream-studio/testing-events.md)
 * [Command-line Client](get-started/command-line-client.md)
-* [Configuring W3bstream](get-started/configuring-w3bstream.md)
 
 ## Applets Development
 
 * [Basic concepts](applets-development/basic-concepts.md)
+* [Configuring W3bstream](applets-development/configuring-w3bstream.md)
 * [Hello World!](applets-development/hello-world.md)
 * [Sending messages to W3bstream](applets-development/sending-messages-to-w3bstream.md)
 * [Getting Events Data](applets-development/getting-events-data.md)

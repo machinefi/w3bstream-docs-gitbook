@@ -3,22 +3,24 @@
 {% hint style="info" %}
 **Notice:** W3bstream is under development.&#x20;
 
-The current documentation refers to _W3bstream 1.0 Alpha release,_ and is subject to frequent changes.Prerequisites
+The current documentation refers to _<mark style="color:blue;">W3bstream 1.0 Alpha</mark> release,_ and is subject to frequent changes.
 {% endhint %}
 
-A W3bstream applet is supposed to contain event handlers associated to the various events supported by the W3bstream runtime. <mark style="background-color:red;">(TODO: Document WS events).</mark> When creating a W3bstream applet in the language of your choice, you will have to follow a few simple rules:
+## Prerequisites
 
-#### Memory allocation
+When creating a W3bstream applet in the [language of your choice](basic-concepts.md#applets), you will have to follow a few simple rules:
 
-You need to declare an implementation of the `malloc` function for the WebAssembly machine to be able to allocate memory in the host. This depends on the programming language you are using:
+#### Provide a malloc() implementation
+
+You need to provide an implementation of the `malloc()` function for the WebAssembly virtual machine to be able to allocate memory in the host. This depends on the programming language you are using:
 
 {% tabs %}
 {% tab title="Golang" %}
-In Rust you don't need to provide a malloc implementation as it's automatically added by the tiniGo compiler
+In Go you don't need to provide a malloc implementation as it's automatically added by the tiniGo compiler
 {% endtab %}
 
 {% tab title="C/C++" %}
-In C you are supposed to provide an implementation of malloc and make sure it's exported:
+In C you are supposed to provide an implementation of `malloc` and make sure it's exported:
 
 ```cpp
 EMSCRIPTEN_KEEPALIVE uint32_t malloc(uint32_t size) { return malloc(size); } 
@@ -32,7 +34,9 @@ In Rust you don't need to provide a malloc implementation as it's automatically 
 
 #### Event handlers
 
-It's assumed that you have at least one event handler defined in your applet. This handler should be linked to a W3bstream event in the project [event strategies](basic-concepts.md#event-strategies) configuration. By default, when deploying an applet to a project, W3bstream creates a default event strategy that connects any event to a default `_start()` function  with the following signature:
+It's assumed that you have at least one function publicly exported in your applet to serve as an _event handler_ in W3bstream. This handler should be linked to a W3bstream _event type_ in the project's [event strategies](basic-concepts.md#event-strategies) configuration.&#x20;
+
+Notice that, by default, when [deploying an applet](../get-started/deploying-an-applet.md#deploy-the-logic) to a project, W3bstream creates a default event strategy that connects **any** node event to a default `_start()` handler function with the following signature:
 
 {% tabs %}
 {% tab title="Golang" %}
@@ -56,7 +60,7 @@ func _start(resource_id uint32) int32uThe log function
 
 **Accessing the W3bstream console**
 
-W3bstream provides a text console for applets to output text to. In order to be able to sen output to the W3bstream console, you'll have to declare an external `_log()` function that is exported by W3bstream node and gives you access to the console:
+W3bstream provides a text console for applets to output text to. In order to be able to send output to the W3bstream console, you'll have to declare an external `_log()` function that is exported by the W3bstream node, giving you access to the console:
 
 {% tabs %}
 {% tab title="Golang" %}
@@ -82,6 +86,8 @@ extern "C" fn ws_log(log_level: i32, ptr: *const u8, size: i32) -> i32;r
 ```
 {% endtab %}
 {% endtabs %}
+
+## Create Hello World!
 
 Creating a “_Hello World!_” example for W3bstream is now very simple:
 
@@ -151,7 +157,7 @@ EMSCRIPTEN_KEEPALIVE int malloc(int size)
 Use the emscripten compiler to build this module:
 
 ```bash
-emcc -o helloworld.wasm -O2 --no-entry -s LLD_REPORT_UNDEFINED -s ERROR_ON_UNDEFINED_SYMBOLS=0 helloworld2.c
+emcc -o helloworld.wasm -O2 --no-entry -s LLD_REPORT_UNDEFINED -s ERROR_ON_UNDEFINED_SYMBOLS=0 helloworld.c
 ```
 {% endtab %}
 
@@ -177,3 +183,20 @@ cargo wasi build
 ```
 {% endtab %}
 {% endtabs %}
+
+## Test Hello World!
+
+Once you built the Hello World! example as a WASM module you can upload and deploy it to the W3bstream node:
+
+{% content-ref url="../get-started/deploying-an-applet.md" %}
+[deploying-an-applet.md](../get-started/deploying-an-applet.md)
+{% endcontent-ref %}
+
+then use the W3bstream Studio to send any message to your project and check the log:
+
+{% content-ref url="../get-started/w3bstream-studio/testing-events.md" %}
+[testing-events.md](../get-started/w3bstream-studio/testing-events.md)
+{% endcontent-ref %}
+
+You should see the "Hello World!" string printed in the W3bstream log:
+
