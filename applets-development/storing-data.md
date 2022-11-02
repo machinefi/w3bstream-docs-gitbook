@@ -60,6 +60,6 @@ pub extern "C" fn start(event_id: i32) -> i32 {
 
 <mark style="color:purple;">**💡 Learn more**</mark>
 
-{% content-ref url="host-functions-reference.md" %}
-[host-functions-reference.md](host-functions-reference.md)
+{% content-ref url="reference.md" %}
+[reference.md](reference.md)
 {% endcontent-ref %}

@@ -16,7 +16,7 @@ Blockchain developers can build their dApps getting access to trusted real-world
 
 To support a wide range of applications and business requirements, a W3bStream node includes the following connectivity, computing, storage, and consensus components, for interacting with the IoT devices, blockchain, and node operators:
 
-<figure><img src=".gitbook/assets/image (3).png" alt=""><figcaption><p>W3bstream Node Architecture</p></figcaption></figure>
+<figure><img src=".gitbook/assets/image (1).png" alt=""><figcaption><p>W3bstream Node Architecture</p></figcaption></figure>
 
 #### **Service Endpoint**
 

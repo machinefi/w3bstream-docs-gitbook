@@ -1,3 +1,5 @@
 # Monitoring Contracts
 
-TODO - Blockchain monitor not released yet
+{% hint style="info" %}
+**🚧 This document is a work in progress**
+{% endhint %}

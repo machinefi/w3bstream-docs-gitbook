@@ -1,4 +1,4 @@
-# Reference
+# Host Functions Reference
 
 ### W3bstream host functions
 
@@ -14,7 +14,7 @@ Below is the list of functions exported by the W3bstream VM that you can import 
  * @param return_size the size in bytes of the data buffer
  * @return 0 if no errors.
  */
-fn ws_get_data(resource_id i32, return_ptr i32, return_size i32) i32 
+fn ws_get_data(resource_id i32, return_ptr i32, return_size i32) -> i32 
 
 /**
  * Set event data.
@@ -27,7 +27,7 @@ fn ws_get_data(resource_id i32, return_ptr i32, return_size i32) i32
  * @size the size in bytes of the data buffer
  * @return 0 if no errors.
 */
-fn ws_set_data(resource_id i32, ptr i32, size i32) i32 
+fn ws_set_data(resource_id i32, ptr i32, size i32) -> i32 
 
 /**
  * Read data from DB
@@ -43,7 +43,7 @@ fn ws_set_data(resource_id i32, ptr i32, size i32) i32
  * @return 0 if there are no errors.
 */
 fn ws_get_db(namespace_data i32, namespace_size i32, key_data i32, key_size i32,
-    return_value_ptr i32, return_value_size i32) i32 
+    return_value_ptr i32, return_value_size i32) -> i32 
 
 /**
  * Store data in DB
@@ -59,19 +59,20 @@ fn ws_get_db(namespace_data i32, namespace_size i32, key_data i32, key_size i32,
  * @return 0 if there are no errors.
 */
 fn ws_set_db(namespace_data i32, namespace_size i32, key_data i32, key_size i32,
-    value_ptr i32, value_size i32) i32 
+    value_ptr i32, value_size i32) -> i32 
 
 /**
  * Log a message
  *
  * Log a string to the W3bstream console
  * 
+ * @param log_level The log level (Trace = 1, Debug, Info, Warn, Error) 
  * @param ptr The pointer to the string to be logged
  * @param size the length of the string
  * @param key_data the key you want to fetch from the DB
  * @return 0 if no errors.
 */
-fn ws_log(ptr i32, size i32) i32 
+fn ws_log(log_level i32, ptr i32, size i32) -> i32 
 
 /**
  * Send a blockchain transaction

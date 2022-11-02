@@ -1,3 +1,5 @@
 # Sending blockchain actions
 
-TODO - Blockchain writer not released yet
+{% hint style="info" %}
+**🚧 This document is a work in progress**
+{% endhint %}

@@ -61,6 +61,6 @@ fn log_info(str: &#x26;str) {
 
 &#x20;** **<mark style="color:purple;">**💡 Learn more**</mark>
 
-{% content-ref url="host-functions-reference.md" %}
-[host-functions-reference.md](host-functions-reference.md)
+{% content-ref url="reference.md" %}
+[reference.md](reference.md)
 {% endcontent-ref %}
