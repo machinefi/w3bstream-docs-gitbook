@@ -28,8 +28,8 @@ Once a W3bstream message is emitted, it's routed to the recipient [Project](basi
 [sending-messages-to-w3bstream.md](sending-messages-to-w3bstream.md)
 {% endcontent-ref %}
 
-{% content-ref url="monitoring-smart-contracts.md" %}
-[monitoring-smart-contracts.md](monitoring-smart-contracts.md)
+{% content-ref url="reacting-to-blockchain-events.md" %}
+[reacting-to-blockchain-events.md](reacting-to-blockchain-events.md)
 {% endcontent-ref %}
 
 ## Projects

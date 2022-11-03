@@ -28,7 +28,7 @@
 * [Getting Events Data](applets-development/getting-events-data.md)
 * [Storing Data](applets-development/storing-data.md)
 * [Querying Stored Data](applets-development/querying-stored-data.md)
-* [Monitoring Smart Contracts](applets-development/monitoring-smart-contracts.md)
+* [Reacting to blockchain events](applets-development/reacting-to-blockchain-events.md)
 * [Sending blockchain actions](applets-development/sending-blockchain-actions.md)
 * [ABI Functions Reference](applets-development/abi-functions-reference.md)
 
