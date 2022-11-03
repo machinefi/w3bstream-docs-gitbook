@@ -30,7 +30,6 @@
 * [Querying Stored Data](applets-development/querying-stored-data.md)
 * [Monitoring Smart Contracts](applets-development/monitoring-smart-contracts.md)
 * [Sending blockchain actions](applets-development/sending-blockchain-actions.md)
-* [Executing Smart Contracts](applets-development/executing-smart-contracts.md)
 * [ABI Functions Reference](applets-development/abi-functions-reference.md)
 
 ## Client SDKs
