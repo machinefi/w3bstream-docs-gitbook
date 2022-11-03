@@ -13,6 +13,8 @@
   * [Creating Projects](get-started/w3bstream-studio/creating-projects.md)
   * [Adding Publishers](get-started/w3bstream-studio/adding-publishers.md)
   * [Deploying Applets](get-started/w3bstream-studio/deploying-applets.md)
+  * [Monitoring smart contracts](get-started/w3bstream-studio/monitoring-smart-contracts.md)
+  * [Monitoring](get-started/w3bstream-studio/monitoring.md)
   * [Creating Strategies](get-started/w3bstream-studio/creating-strategies.md)
   * [Testing Events](get-started/w3bstream-studio/testing-events.md)
 * [Command-line Client](get-started/command-line-client.md)
@@ -25,9 +27,10 @@
 * [Sending data to W3bstream](applets-development/sending-messages-to-w3bstream.md)
 * [Getting Events Data](applets-development/getting-events-data.md)
 * [Storing Data](applets-development/storing-data.md)
-* [Querying Data](applets-development/querying-data.md)
-* [Monitoring Contracts](applets-development/monitoring-contracts.md)
+* [Querying Stored Data](applets-development/querying-stored-data.md)
+* [Monitoring Smart Contracts](applets-development/monitoring-smart-contracts.md)
 * [Sending blockchain actions](applets-development/sending-blockchain-actions.md)
+* [Executing Smart Contracts](applets-development/executing-smart-contracts.md)
 * [Host Functions Reference](applets-development/reference.md)
 
 ## Client SDKs
