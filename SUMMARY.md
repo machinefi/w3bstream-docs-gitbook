@@ -31,7 +31,7 @@
 * [Monitoring Smart Contracts](applets-development/monitoring-smart-contracts.md)
 * [Sending blockchain actions](applets-development/sending-blockchain-actions.md)
 * [Executing Smart Contracts](applets-development/executing-smart-contracts.md)
-* [Host Functions Reference](applets-development/reference.md)
+* [ABI Functions Reference](applets-development/abi-functions-reference.md)
 
 ## Client SDKs
 

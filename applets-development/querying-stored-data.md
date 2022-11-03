@@ -4,7 +4,7 @@ description: >-
   return_size: *const i32) -> i32;
 ---
 
-# Querying Data
+# Querying Stored Data
 
 
 
@@ -61,6 +61,6 @@ pub fn get_db(key: &String) -> Option<String> {
 
 <mark style="color:purple;">**💡 Learn more**</mark>
 
-{% content-ref url="reference.md" %}
-[reference.md](reference.md)
+{% content-ref url="abi-functions-reference.md" %}
+[abi-functions-reference.md](abi-functions-reference.md)
 {% endcontent-ref %}
