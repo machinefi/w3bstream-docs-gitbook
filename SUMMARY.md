@@ -11,8 +11,9 @@
 * [Running a Project](get-started/running-an-applet.md)
 * [W3bstream Studio](get-started/w3bstream-studio/README.md)
   * [Creating Projects](get-started/w3bstream-studio/creating-projects.md)
-  * [Adding Publishers](get-started/w3bstream-studio/adding-publishers.md)
   * [Deploying Applets](get-started/w3bstream-studio/deploying-applets.md)
+  * [Managing Applets Execution](get-started/w3bstream-studio/managing-applets-execution.md)
+  * [Adding Publishers](get-started/w3bstream-studio/adding-publishers.md)
   * [Monitoring smart contracts](get-started/w3bstream-studio/monitoring-smart-contracts.md)
   * [Monitoring](get-started/w3bstream-studio/monitoring.md)
   * [Creating Strategies](get-started/w3bstream-studio/creating-strategies.md)
@@ -21,7 +22,12 @@
 
 ## Applets Development
 
-* [Basic concepts](applets-development/basic-concepts.md)
+* [Basic concepts](applets-development/basic-concepts/README.md)
+  * [Events](applets-development/basic-concepts/events.md)
+  * [Projects](applets-development/basic-concepts/projects.md)
+  * [Publishers](applets-development/basic-concepts/publishers.md)
+  * [Event strategies](applets-development/basic-concepts/event-strategies.md)
+  * [Applets and Handlers](applets-development/basic-concepts/applets-and-handlers.md)
 * [Configuring W3bstream](applets-development/configuring-w3bstream.md)
 * [Hello World!](applets-development/hello-world.md)
 * [Sending data to W3bstream](applets-development/sending-messages-to-w3bstream.md)

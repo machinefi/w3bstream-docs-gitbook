@@ -10,7 +10,7 @@ Make sure the [W3bstream node is running](running-a-node.md#start-the-w3bstream-
 
 Open W3bstream Studio at `https://localhost:3000`
 
-<figure><img src="../.gitbook/assets/image (9) (2).png" alt=""><figcaption><p><code>W3bstream Studio Loging screen</code></p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (9) (2) (1).png" alt=""><figcaption><p><code>W3bstream Studio Loging screen</code></p></figcaption></figure>
 
 Use the default password to login in the Studio dashboard. For a newly installed node, you will see something like this:
 
@@ -26,7 +26,7 @@ Assign a the "HelloW3bstream" name to the project and click the <mark style="col
 
 ### Upload the logic
 
-Once we have a project ready to host our W3bstream logic, we are ready to deploy a logic module, also called [Applet](../applets-development/basic-concepts.md#applets). Check out [create a W3bstream applet](../applets-development/basic-concepts.md) to learn more about how to create an Applet.
+Once we have a project ready to host our W3bstream logic, we are ready to deploy a logic module, also called [Applet](../applets-development/basic-concepts/#applets). Check out [create a W3bstream applet](../applets-development/basic-concepts/) to learn more about how to create an Applet.
 
 In this guide, we will deploy a simple wasm applet called "**Log**": it will simply echo to the w3bstream console any data that is sent to our node over the HTTP or MQTT network endpoints.&#x20;
 

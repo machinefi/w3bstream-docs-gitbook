@@ -18,7 +18,7 @@ Select the Project, give a name to the publisher and assign it a unique key like
 
 ## Default event strategy
 
-When deploying a logic module to a project, W3bstream configures a default event strategy that just routes any event to the module's start handler. To learn more about event strategies, check out the [#strategies](../applets-development/basic-concepts.md#strategies "mention") section.&#x20;
+When deploying a logic module to a project, W3bstream configures a default event strategy that just routes any event to the module's start handler. To learn more about event strategies, check out the [#strategies](../applets-development/basic-concepts/#strategies "mention") section.&#x20;
 
 ## Test the Project logic
 
@@ -26,7 +26,7 @@ To test this simple logic, we can use the W3bstream Studio interface itself to s
 
 Click the HelloW3bstream project in the side panel, and click the <mark style="color:blue;">**`Send Event`**</mark> button:
 
-<figure><img src="../.gitbook/assets/image (21).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (21) (1).png" alt=""><figcaption></figcaption></figure>
 
 In the Send Event dialog, select the publisher account, then edit the message payload value and make it "Hello W3bstream!"
 

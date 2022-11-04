@@ -117,5 +117,5 @@ https://localhost:3000
 ### Run using the command line client
 
 {% hint style="info" %}
-****<img src="../.gitbook/assets/image (7).png" alt="" data-size="original">**The W3bstream command line client will be available soon.**
+****<img src="../.gitbook/assets/image (7) (2).png" alt="" data-size="original">**The W3bstream command line client will be available soon.**
 {% endhint %}

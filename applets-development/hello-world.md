@@ -8,7 +8,7 @@ The current documentation refers to _<mark style="color:blue;">W3bstream 1.0 Alp
 
 ## Prerequisites
 
-When creating a W3bstream applet in the [language of your choice](basic-concepts.md#applets), you will have to follow a few simple rules:
+When creating a W3bstream applet in the [language of your choice](basic-concepts/#applets), you will have to follow a few simple rules:
 
 #### Provide a malloc() implementation
 
@@ -34,7 +34,7 @@ In Rust you don't need to provide a malloc implementation as it's automatically 
 
 #### Event handlers
 
-It's assumed that you have at least one function publicly exported in your applet to serve as an _event handler_ in W3bstream. This handler should be linked to a W3bstream _event type_ in the project's [event strategies](basic-concepts.md#event-strategies) configuration.&#x20;
+It's assumed that you have at least one function publicly exported in your applet to serve as an _event handler_ in W3bstream. This handler should be linked to a W3bstream _event type_ in the project's [event strategies](basic-concepts/#event-strategies) configuration.&#x20;
 
 Notice that, by default, when [deploying an applet](../get-started/deploying-an-applet.md#deploy-the-logic) to a project, W3bstream creates a default event strategy that connects **any** node event to a default `_start()` handler function with the following signature:
 
