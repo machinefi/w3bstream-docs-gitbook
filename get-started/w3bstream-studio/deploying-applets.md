@@ -14,6 +14,10 @@ Once an an Applet is uploaded to a Project, it can be deployed by clicking the D
 
 #### <mark style="color:purple;">**💡**</mark> <mark style="color:purple;"></mark><mark style="color:purple;">Learn more</mark>
 
+{% content-ref url="../../applets-development/basic-concepts/applets-and-handlers.md" %}
+[applets-and-handlers.md](../../applets-development/basic-concepts/applets-and-handlers.md)
+{% endcontent-ref %}
+
 {% content-ref url="broken-reference" %}
 [Broken link](broken-reference)
 {% endcontent-ref %}

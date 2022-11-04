@@ -8,5 +8,9 @@ Pick a unique name for your project, then click the <mark style="color:blue;">**
 
 <figure><img src="../../.gitbook/assets/image (7).png" alt=""><figcaption></figcaption></figure>
 
+#### <mark style="color:purple;">**💡**</mark> <mark style="color:purple;"></mark><mark style="color:purple;">Learn more</mark>
 
+{% content-ref url="../../applets-development/basic-concepts/projects.md" %}
+[projects.md](../../applets-development/basic-concepts/projects.md)
+{% endcontent-ref %}
 
