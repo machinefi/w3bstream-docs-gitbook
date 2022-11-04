@@ -14,9 +14,9 @@
   * [Deploying Applets](get-started/w3bstream-studio/deploying-applets.md)
   * [Managing Applets Execution](get-started/w3bstream-studio/managing-applets-execution.md)
   * [Adding Publishers](get-started/w3bstream-studio/adding-publishers.md)
-  * [Monitoring smart contracts](get-started/w3bstream-studio/monitoring-smart-contracts.md)
-  * [Monitoring](get-started/w3bstream-studio/monitoring.md)
   * [Creating Strategies](get-started/w3bstream-studio/creating-strategies.md)
+  * [Monitoring smart contracts](get-started/w3bstream-studio/monitoring-smart-contracts.md)
+  * [Monitoring Blockchain Height](get-started/w3bstream-studio/monitoring-blockchain-height.md)
   * [Testing Events](get-started/w3bstream-studio/testing-events.md)
 * [Command-line Client](get-started/command-line-client.md)
 
