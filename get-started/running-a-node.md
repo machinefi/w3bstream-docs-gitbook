@@ -4,11 +4,13 @@
 
 The recommended way of running a W3bstream node is by using [Docker](https://www.docker.com/). With docker, you can easily fetch new releases and update the W3bstream runtime, you won't have to configure a development environment to build the runtime from the source code yourself.
 
-Make sure you have Docker and Docker-Compose installed in your system:
+<details>
 
-{% embed url="https://www.docker.com/" %}
-Install Docker
-{% endembed %}
+<summary>Make sure you have Docker and Docker-Compose installed in your system</summary>
+
+Install Docker from the official website:
+
+[https://www.docker.com](https://www.docker.com)
 
 Once you have Docker installed in your system, make sure your user is allowed to run the docker command with:
 
@@ -21,6 +23,8 @@ Log out and log back in so that your group membership is re-evaluated, then veri
 ```bash
 docker run hello-world
 ```
+
+</details>
 
 ### Start the W3bstream docker image
 
