@@ -22,74 +22,19 @@ Log out and log back in so that your group membership is re-evaluated, then veri
 docker run hello-world
 ```
 
-### Pull the Docker image
+### Start the W3bstream docker image
 
-Pull the W3bstream runtime docker image with:
-
-```bash
-docker pull w3bstream/w3bstream:latest
+```
+curl https://raw.githubusercontent.com/machinefi/w3bstream/main/docker-compose.yaml > w3bstream/docker-compose.yaml
+export WS_WORKING_DIR=$PWD/build_image
+docker-compose -p w3bstream -f ./docker-compose.yaml up -d
 ```
 
-### Prepare docker-compose.yaml
-
-To start the node, create a `docker-compose.yaml` file with the following content to quickly start the node with required services using _docker-compose_:
-
-_See the file on GitHub**:**_ [docker-compose.yaml](https://github.com/machinefi/w3bstream/blob/82b1537711f4d89b9a3802ecc464d5988aa2970e/docker-compose.yaml)
-
-```yaml
-version: '3.6'
-services:
-  w3bapp:
-    image: iotex/w3bstream:v3
-    container_name: w3bstream
-    restart: always
-    ports:
-    - "5432:5432"
-    - "8888:8888"
-    - "1883:1883"
-    - "3000:3000"
-    command: ["/bin/sh","/init.sh"]
-    volumes:
-    - $PWD/build_image/pgdata:/var/lib/postgresql_data
-    - $PWD/build_image/asserts:/w3bstream/cmd/srv-applet-mgr/asserts
-    - $PWD/build_image/conf/srv-applet-mgr/config/local.yml:/w3bstream/cmd/srv-applet-mgr/config/local.yml
-    environment:
-      DATABASE_URL: "postgresql://test_user:test_passwd@127.0.0.1/test?schema=applet_management"
-      NEXT_PUBLIC_API_URL: "http://127.0.0.1:8888"
-  graphql-engine:
-    image: hasura/graphql-engine:v2.2.0
-    depends_on:
-    - "w3bapp"
-    restart: always
-    ports:
-    - "8080:8080"
-    environment:
-      ## postgres database to store Hasura metadata
-      HASURA_GRAPHQL_METADATA_DATABASE_URL: postgresql://test_user:test_passwd@w3bapp/test
-      ## enable the console served by server
-      HASURA_GRAPHQL_ENABLE_CONSOLE: "true" # set "false" to disable console
-      ## enable debugging mode. It is recommended to disable this in production
-      HASURA_GRAPHQL_DEV_MODE: "true"
-      ## enable debugging mode. It is recommended to disable this in production
-      HASURA_GRAPHQL_DEV_MODE: "true"
-      HASURA_GRAPHQL_ENABLED_LOG_TYPES: startup, http-log, webhook-log, websocket-log, query-log
-      ## uncomment next line to run console offline (i.e load console assets from server instead of CDN)
-      # HASURA_GRAPHQL_CONSOLE_ASSETS_DIR: /srv/console-assets
-      ## uncomment next line to set an admin secret
-      HASURA_GRAPHQL_ADMIN_SECRET: w3baAdmiNsecrEtkey
-```
-
-### Start the node
-
-Start the W3bstream node with:
+You can see the log with:
 
 ```bash
-docker-compose -f docker-compose.yaml up
-```
+docker container logs w3bstream -f
 
-You will see a log similar to the one below:
-
-```bash
 Creating network "conf_default" with the default driver
 Creating w3bstream ... done
 Creating conf_graphql-engine_1 ... done
