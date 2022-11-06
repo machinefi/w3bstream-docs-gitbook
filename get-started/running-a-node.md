@@ -30,11 +30,20 @@ docker run hello-world
 
 ```
 curl https://raw.githubusercontent.com/machinefi/w3bstream/main/docker-compose.yaml > w3bstream/docker-compose.yaml
-export WS_WORKING_DIR=$PWD/build_image
 docker-compose -p w3bstream -f ./docker-compose.yaml up -d
 ```
 
-You can see the log with:
+<details>
+
+<summary><img src="../.gitbook/assets/image (6).png" alt="" data-size="original"> Change W3bstream's working directory</summary>
+
+By default, W3bstream will store data in the current folder. If required, you can set the working directory by exporting the following before running the image:&#x20;
+
+`export WS_WORKING_DIR=path_to_the_w3bstream_folder`
+
+</details>
+
+Once you started W3bstream, you can see the log with:
 
 ```bash
 docker container logs w3bstream -f

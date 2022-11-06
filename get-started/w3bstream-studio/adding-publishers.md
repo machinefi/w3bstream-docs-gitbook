@@ -2,7 +2,7 @@
 
 To add a Publisher account make sure you have [created a Project](creating-projects.md) first, then click the **`Publishers`** section, and click the <mark style="color:blue;">**`Add Publisher`**</mark> button:
 
-<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (5).png" alt=""><figcaption></figcaption></figure>
 
 Select the Project you want to add the Publisher account to, give it a name to help you recognize it, and finally assign a unique ID to the account:
 
