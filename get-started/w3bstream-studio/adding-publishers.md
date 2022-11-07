@@ -1,6 +1,10 @@
 # Adding Publishers
 
-To add a Publisher account make sure you have [created a Project](creating-projects.md) first, then click the **`Publishers`** section, and click the <mark style="color:blue;">**`Add Publisher`**</mark> button:
+{% hint style="success" %}
+Before adding a Publisher account, make sure you have [created a Project](creating-projects.md) first.
+{% endhint %}
+
+To add a Publisher account, click the **`Publishers`** section, and click the <mark style="color:blue;">**`Add Publisher`**</mark> button:
 
 <figure><img src="../../.gitbook/assets/image (1) (5).png" alt=""><figcaption></figcaption></figure>
 

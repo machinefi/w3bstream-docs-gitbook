@@ -35,7 +35,7 @@ docker-compose -p w3bstream -f ./docker-compose.yaml up -d
 
 <details>
 
-<summary><img src="../.gitbook/assets/image (6).png" alt="" data-size="original"> Change W3bstream's working directory</summary>
+<summary><img src="../.gitbook/assets/image (6) (4).png" alt="" data-size="original"> Change W3bstream's working directory</summary>
 
 By default, W3bstream will store data in the current folder. If required, you can set the working directory by exporting the following before running the image:&#x20;
 

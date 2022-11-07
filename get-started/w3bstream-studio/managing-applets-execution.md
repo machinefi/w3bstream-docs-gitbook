@@ -1,6 +1,10 @@
 # Managing Applets Execution
 
-Make sure you have you want to manage. To manage an Applet in a Project, select the Project from the left navigation panel to access the list of Applets included in that Project. Identify the Applet you want to manage and make sure you have [deployed it.](deploying-applets.md)
+{% hint style="success" %}
+Make sure you have [deployed an Applet](deploying-applets.md) first.
+{% endhint %}
+
+To manage an Applet in a Project, select the Project from the left navigation panel to access the list of Applets included in that Project. Identify the Applet you want to manage and make sure you have [deployed it.](deploying-applets.md)
 
 Click the arrow button next to the Applet to expand the Applet details:
 

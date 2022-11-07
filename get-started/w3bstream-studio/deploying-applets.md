@@ -1,6 +1,10 @@
 # Deploying Applets
 
-Make sure you have already [created a Project](creating-projects.md). To deploy an Applet in W3bstream Studio, select the project you want to deploy the Applet to, then click the <mark style="color:blue;">**`Add Applet`**</mark> button:
+{% hint style="success" %}
+Before you can deploy an Applet, you should have already [created a Project](creating-projects.md) first.
+{% endhint %}
+
+To deploy an Applet in W3bstream Studio, select the project you want to deploy the Applet to, then click the <mark style="color:blue;">**`Add Applet`**</mark> button:
 
 <figure><img src="../../.gitbook/assets/image (21).png" alt=""><figcaption></figcaption></figure>
 
