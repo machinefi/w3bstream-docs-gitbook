@@ -23,7 +23,7 @@ Configure the **Publish Event** **dialog** as follows:&#x20;
 
 **`Payload`**: In the payload box, the header of the event is already filled in with the event type, publisher authorization data, and timestamp. Just edit the Payload of the event with the actual data object that should be sent to the handler.
 
-![](<../../.gitbook/assets/image (4).png>)h
+![](<../../.gitbook/assets/image (4) (1).png>)h
 
 <details>
 

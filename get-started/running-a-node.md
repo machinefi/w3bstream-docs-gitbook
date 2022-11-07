@@ -1,5 +1,9 @@
 # Running a Node
 
+{% hint style="success" %}
+<img src="../.gitbook/assets/image (4).png" alt="" data-size="line"> **** [**Checkout the W3bstrem repository on GitHub**](https://github.com/machinefi/w3bstream#w3bstream)****
+{% endhint %}
+
 ## Run using Docker
 
 The recommended way of running a W3bstream node is by using [Docker](https://www.docker.com/). With docker, you can easily fetch new releases and update the W3bstream runtime, you won't have to configure a development environment to build the runtime from the source code yourself.
@@ -73,7 +77,13 @@ https://localhost:3000
 
 <figure><img src="../.gitbook/assets/image (6) (1).png" alt=""><figcaption></figcaption></figure>
 
-### Run using the command line client
+## Build the Docker image from source
+
+If you want to build the source code and run the W3bstream binary, or build the W3bstream Docker image locally, you can clone the W3bstream repository and follow the instructions included in the README:
+
+{% embed url="https://github.com/machinefi/w3bstream#build-docker-image-from-code" %}
+
+## Run using the command line client
 
 {% hint style="info" %}
 ****<img src="../.gitbook/assets/image (7) (2).png" alt="" data-size="original">**The W3bstream command line client will be available soon.**
