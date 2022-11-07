@@ -41,3 +41,6 @@
 ## Client SDKs
 
 * [Get Started](sending-iot-data/get-started.md)
+* [iOS Client SDK](client-sdks/ios-client-sdk.md)
+* [Android Client SDK](client-sdks/android-client-sdk.md)
+* [Embedded SDKs](client-sdks/embedded-sdks.md)

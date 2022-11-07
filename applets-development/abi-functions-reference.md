@@ -1,6 +1,6 @@
-# Host Functions Reference
+# ABI Functions Reference
 
-### W3bstream host functions
+### Host functions
 
 Below is the list of functions exported by the W3bstream VM that you can import in your WASM module to interact with the W3bstream host.
 
@@ -99,7 +99,7 @@ fn ws_send_tx(ptr i32, size: i32) -> i32;
 fn ws_call_contract(ptr i32, size: i32, return_ptr i32, return_size i32 ) -> i32;
 </code></pre>
 
-### W3bstream applet functions
+### Applet functions
 
 Below is the list of functions that your WASM module is required to export to the W3bstream host:
 
