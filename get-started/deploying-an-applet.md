@@ -32,7 +32,7 @@ In this guide, we will deploy a simple wasm applet called "**Log**": it will sim
 
 Download the `log.wasm` file from the link below, and save it in a known location on your system:
 
-{% embed url="https://github.com/iotexproject/w3bstream/raw/main/examples/log/log.wasm" %}
+{% embed url="https://github.com/machinefi/w3bstream/blob/main/_examples/log/log.wasm" %}
 
 In W3bstream Studio, select the HelloW3bstream project, and click the <mark style="color:blue;">**`Add Applet`**</mark> button:
 
