@@ -20,21 +20,14 @@ extern "C" {
 
 #[no_mangle]
 pub extern "C" fn start(event_id: i32) -> i32 {
-  let tx = "{
-              "to": "%s",
-				"value": "0",
-				"data": "40c10f19000000000000000000000000%s0000000000000000000000000000000000000000000000000de0b6b3a7640000"
-			}`,
-			"0xb73eE6EB5b1984c78CCcC49eA7Ad773E71d74F51",//W3BERC20 contract address
-			Account.String(),//send to account 
-		))
-  let tx = Tx {
-        to: "0x4c123380CA640a146D803f844E0D9c90b52C5C97",
-        value: "100",
-        data: "",
-    };
-    let str = serde_json::to_string(&tx)?;
-    match unsafe { ws_send_tx(str.as_ptr(), str.len() as _) } {
+ 
+  let tx = #r"{
+              to: "0x46fF054D4275A4aB9d42179C3bcA59f938e658C8",
+              value: "110",
+              data: "",
+            }"#,
+    
+    match unsafe { ws_send_tx(tx.as_ptr(), tx.len() as _) } {
         0 => Ok(()),
         _ => bail!("Error while sending the transaction"),
     }
