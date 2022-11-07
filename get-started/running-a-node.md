@@ -29,7 +29,8 @@ docker run hello-world
 ### Start the W3bstream docker image
 
 ```
-curl https://raw.githubusercontent.com/machinefi/w3bstream/main/docker-compose.yaml > w3bstream/docker-compose.yaml
+mkdir w3bstream && cd w3bstream
+curl https://raw.githubusercontent.com/machinefi/w3bstream/main/docker-compose.yaml > docker-compose.yaml
 docker-compose -p w3bstream -f ./docker-compose.yaml up -d
 ```
 
