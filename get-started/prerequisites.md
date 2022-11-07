@@ -60,7 +60,7 @@ List of Ethereum's RPC endpoints
 
 #### Run your own blockchain gateway
 
-If you decide to run your own gateway, it's highly recommended that you run it on a separate server, to not affect W3bstream's performances. Below, you find links to the instructions on how to run your blockchain gateway for IoTeX and Ethereum:
+If you decide to run your own gateway, it's highly recommended that you run it on a separate server, to avoid affecting W3bstream's performances. Below, you can find links to the instructions on how to run your blockchain gateway for IoTeX and Ethereum:
 
 {% embed url="https://delegates.iotex.io/get-started/node-configuration" %}
 Run an IoTeX gateway node
