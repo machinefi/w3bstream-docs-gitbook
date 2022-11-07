@@ -47,3 +47,13 @@ The SSI wallet implements decentralized identifiers and verifiable credentials-r
 The W3bstream Network incentivizes communities to run nodes for supporting the growing ecosystem of MachineFi dApps. Depending on the requirements of a specific dApp, a certain number of W3bstream nodes might be employed to serve it: such subnet of W3bstream node will start operating when the sufficient number of community nodes will have joined.
 
 Any community member who is interested in operating a W3bstream node could provision a virtual machine on the cloud or set up a local server.
+
+
+
+{% hint style="success" %}
+### What's next?
+
+Checkout the [**Get Started**](sending-iot-data/get-started.md) section to learn how to run a W3bstream node.
+
+Learn about the fundamentals of **** [**programming** ](applets-development/basic-concepts/)a W3bstream node.
+{% endhint %}

@@ -1,7 +1,7 @@
 # Table of contents
 
 * [About W3bstream](README.md)
-  * [Roadmap](about-w3bstream/roadmap.md)
+* [Roadmap](roadmap.md)
 
 ## Get Started
 
