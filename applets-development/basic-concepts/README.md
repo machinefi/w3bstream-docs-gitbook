@@ -14,7 +14,7 @@ Whether it's a Web3-oriented smart device newly designed with dApps in mind, or 
 
 <summary><a href="https://emojipedia.org/gear/">⚙️  </a>IoT logic and trusted proofs </summary>
 
-From rewarding sleeping patterns and workout progress, over selling industrial machines as a service, to incentivizing weather data contributions to predict the global climate change, any MachineFi application has its own data processing requirements and requires trusted "proofs of real-world facts" to be generated for the Blockchain Logic.
+From rewarding sleeping patterns and workout progress, over selling industrial machines as a service, to incentivizing weather data contribution and predict the global climate change, any MachineFi application always requires some IoT data processing and storage. On top of this data, trusted "proofs of real-world facts" have to be generated for the Blockchain Logic of any MachineFi application.
 
 </details>
 
@@ -22,7 +22,7 @@ From rewarding sleeping patterns and workout progress, over selling industrial m
 
 <summary><a href="https://emojipedia.org/link/">🔗</a>Blockchain Logic</summary>
 
-Basic blockchain components of a MachineFi application typically include a set of Authorization-related smart contracts and an incentivizing token economy. More complex applications can include decentralized data marketplaces or DeFi functionalities.&#x20;
+Basic blockchain components of a MachineFi application typically include a set of Authorization-related smart contracts, as well as an incentivizing token economy. More complex applications could include decentralized data marketplaces or complex DeFi functionalities.&#x20;
 
 </details>
 
