@@ -20,4 +20,4 @@ Configure the _Create blockchain height_ _monitor_ dialog with the correct setti
 
 **`Height`**: input here the chain height that should trigger the event once it's reached.
 
-****![](<../../.gitbook/assets/image (5).png>)****
+****![](<../../.gitbook/assets/image (5) (3).png>)****
