@@ -35,7 +35,7 @@ docker-compose -p w3bstream -f ./docker-compose.yaml up -d
 
 <details>
 
-<summary><img src="../.gitbook/assets/image (6) (4).png" alt="" data-size="original"> Change W3bstream's working directory</summary>
+<summary><img src="../.gitbook/assets/image (6) (1).png" alt="" data-size="original"> Change W3bstream's working directory</summary>
 
 By default, W3bstream will store data in the current folder. If required, you can set the working directory by exporting the following before running the image:&#x20;
 
@@ -70,7 +70,7 @@ You can now access the [W3bstream Studio ](w3bstream-studio/)admin dashboard by 
 https://localhost:3000
 ```
 
-<figure><img src="../.gitbook/assets/image (6) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (6) (1) (3).png" alt=""><figcaption></figcaption></figure>
 
 ### Run using the command line client
 

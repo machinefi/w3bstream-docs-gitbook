@@ -6,7 +6,7 @@ To configure a Smart Contract Monitor in W3bstream, make sure you have [created 
 
 Monitoring a smart contract allows generating W3bstream events when a smart contract logs a certain event.&#x20;
 
-&#x20;Click the "**`Smart Contract Monitor`**", then click the <mark style="color:blue;">**`Add Smart Contract event monitor button`**</mark>:
+Click the "**`Smart Contract Monitor`**" in the left navigation panel, then click the <mark style="color:blue;">**`Add Smart Contract event monitor`**</mark> button:
 
 <figure><img src="../../.gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
 
@@ -26,4 +26,4 @@ Configure the Add Smart contract event monitor dialog with the correct settings 
 
 **`topic0`**: this is the first topic logged when the smart contract emits the event. For EVM platforms, it represents the hash of the signature of the event and can be found by exploring the logs of a transaction that triggered the event.
 
-<img src="../../.gitbook/assets/image (4).png" alt="" data-size="original">
+<img src="../../.gitbook/assets/image (1).png" alt="" data-size="original">

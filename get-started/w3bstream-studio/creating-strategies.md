@@ -10,4 +10,4 @@ To create an event strategy in W3bstream, click the Strategies section on the le
 
 Select the Applet where the target handler for the strategy is located, select the event type code you want to route to the event, and finally write the name of the handler in the Applet you want to call when that event\_type is emitted:
 
-<figure><img src="../../.gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1) (1).png" alt=""><figcaption></figcaption></figure>
