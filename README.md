@@ -40,7 +40,7 @@ The database component represents an abstract storage interface and its goal is 
 
 #### SSI Wallet
 
-The SSI wallet implements decentralized identifiers and verifiable credentials-related functionalities for managing the identity of a W3bStream node.
+The SSI wallet implements decentralized identifiers and verifiable credentials-related functionalities for managing the identity of a W3bstream node.
 
 ### Lifecycle
 
