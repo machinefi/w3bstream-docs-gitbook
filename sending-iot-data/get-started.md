@@ -5,7 +5,3 @@ W3bstream aims to accommodate a wide range of IoT devices with different hardwar
 W3bstream SDKs implement the messaging protocol required to send data to a W3bstream node,  as well as the API to interact with the W3bstream network.
 
 <table data-view="cards"><thead><tr><th></th><th></th><th></th><th data-hidden data-card-cover data-type="files"></th><th data-hidden data-card-target data-type="content-ref"></th></tr></thead><tbody><tr><td><strong>iOS Client SDK</strong></td><td>Send data to W3bstream from iOS devices.</td><td></td><td><a href="../.gitbook/assets/ios-header.jpg">ios-header.jpg</a></td><td><a href="../client-sdks/ios-client-sdk.md">ios-client-sdk.md</a></td></tr><tr><td><strong>Android Client SDK</strong></td><td>Send data to W3bstream from Android devices.</td><td></td><td><a href="../.gitbook/assets/android-header.jpg">android-header.jpg</a></td><td><a href="../client-sdks/android-client-sdk.md">android-client-sdk.md</a></td></tr><tr><td><strong>Embedded Client SDKs</strong></td><td>Send data to W3bstream from popular IoT boards.</td><td><img src="../.gitbook/assets/image (7) (2).png" alt="" data-size="line"><em>Coming soon.</em></td><td><a href="../.gitbook/assets/embedded-header.jpg">embedded-header.jpg</a></td><td><a href="../client-sdks/embedded-sdks.md">embedded-sdks.md</a></td></tr></tbody></table>
-
-
-
-c
