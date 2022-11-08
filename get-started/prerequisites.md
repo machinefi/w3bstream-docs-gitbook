@@ -1,16 +1,10 @@
 # Prerequisites
 
-{% hint style="info" %}
-**Notice:** W3bstream is under development.&#x20;
-
-The current documentation refers to _<mark style="color:blue;">W3bstream 1.0 Alpha</mark> release,_ and is subject to frequent changes.
-{% endhint %}
-
 This document contains the requirements and instructions to run a W3bstream node.
 
 ## Supported Blockchains
 
-Currently, W3bstream supports the IoTeX, Ethereum, and any EVM-compatible blockchain.
+Currently, W3bstream supports IoTeX, Ethereum, and any EVM-compatible blockchain.
 
 ## Requirements
 
@@ -20,7 +14,7 @@ Currently, there are no token balance or staking requirements to run a W3bstream
 
 ### Hardware requirements
 
-Because your W3bstream node will act as a network endpoint for devices to send their data, you should run it on a serve that has a fixed IP address, publicly accessible from the Internet.
+Because your W3bstream node will act as a network endpoint for devices to send their data, you should run it on a server that has a fixed IP address, publicly accessible from the Internet.
 
 The minimum hardware requirements to run a W3bstream node are:
 
@@ -28,19 +22,17 @@ The minimum hardware requirements to run a W3bstream node are:
 
 Recommended requirements to get started running a W3bstream node are:
 
-* 4 Cores, 4 GB RAM, 20 GB storage, 100 Mbps network
+* 4 Cores, 4 GB RAM, 100 GB storage, 100 Mbps network
 
 {% hint style="info" %}
 **Notice**
 
-The performances and storage requirements of your node are closely related to the number of client devices, the volumes of IoT data, the data retention policy, and the complexity of the application logic. It's recommended to  accurately evaluate the hardware configuration based on the application specific requirements.
+The performances and storage requirements of your node are closely related to the number of client devices, the volumes of IoT data, the data retention policy, and the complexity of the application logic. It's recommended to accurately evaluate the hardware configuration based on the application-specific requirements.
 {% endhint %}
 
-&#x20;
+## &#x20;Supported OS
 
-## Supported OS
-
-The W3bstream runtime supports Linux and MacOS systems.&#x20;
+The W3bstream runtime supports Linux, MacOS systems and Windows (WSL).&#x20;
 
 ## Blockchain client
 
@@ -60,7 +52,7 @@ List of Ethereum's RPC endpoints
 
 #### Run your own blockchain gateway
 
-If you decide to run your own gateway, it's highly recommended that you run it on a separate server, to avoid affecting W3bstream's performances. Below, you can find links to the instructions on how to run your blockchain gateway for IoTeX and Ethereum:
+If you decide to run your own gateway, it's highly recommended that you run it on a separate server, to avoid affecting W3bstream's performance. Below, you can find links to the instructions on how to run your blockchain gateway for IoTeX and Ethereum:
 
 {% embed url="https://delegates.iotex.io/get-started/node-configuration" %}
 Run an IoTeX gateway node

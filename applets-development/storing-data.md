@@ -30,6 +30,8 @@ extern "C" {
 
 The example below shows how you can store a string in the key-value storage:
 
+{% tabs %}
+{% tab title="Rust" %}
 <pre class="language-rust"><code class="lang-rust">#[link(wasm_import_module = "env")] 
 extern "C" { 
  fn ws_set_db(key_ptr: *const u8, key_size: i32, value_ptr: *const u8, value_size: i32) -> i32;
@@ -39,9 +41,9 @@ extern "C" {
 // This handler will be matched by the default Project event strategy in W3bstream
 pub extern "C" fn start(event_id: i32) -> i32 {
     // Storing some strings in the key-value storage
-    set_db("first_name","Vitalik");
+    set_db("first_name", "Vitalik");
     set_db("last_name","Buterin");
-    set_db("age","23");
+    set_db("age", "23");
     return 0;
 }
 <strong>
@@ -57,6 +59,8 @@ pub extern "C" fn start(event_id: i32) -> i32 {
         _ => bail!("Error while storing the value"), 
       } 
 }</code></pre>
+{% endtab %}
+{% endtabs %}
 
 <mark style="color:purple;">**💡 Learn more**</mark>
 

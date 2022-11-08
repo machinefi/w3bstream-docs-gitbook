@@ -28,7 +28,6 @@
   * [Publishers](applets-development/basic-concepts/publishers.md)
   * [Event strategies](applets-development/basic-concepts/event-strategies.md)
   * [Applets and Handlers](applets-development/basic-concepts/applets-and-handlers.md)
-* [Configuring W3bstream](applets-development/configuring-w3bstream.md)
 * [Hello World!](applets-development/hello-world.md)
 * [Sending data to W3bstream](applets-development/sending-messages-to-w3bstream.md)
 * [Getting Events Data](applets-development/getting-events-data.md)
@@ -36,6 +35,7 @@
 * [Querying Stored Data](applets-development/querying-stored-data.md)
 * [Reacting to blockchain events](applets-development/reacting-to-blockchain-events.md)
 * [Sending blockchain actions](applets-development/sending-blockchain-actions.md)
+* [Configuring W3bstream](applets-development/configuring-w3bstream.md)
 * [ABI Functions Reference](applets-development/abi-functions-reference.md)
 
 ## Client SDKs

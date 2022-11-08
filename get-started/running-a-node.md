@@ -77,9 +77,9 @@ https://localhost:3000
 
 <figure><img src="../.gitbook/assets/image (6) (1).png" alt=""><figcaption></figcaption></figure>
 
-## Build the Docker image from source
+## Build from source
 
-If you want to build the source code and run the W3bstream binary, or build the W3bstream Docker image locally, you can clone the W3bstream repository and follow the instructions included in the README:
+If you want to build the source code and run the W3bstream binary or build the W3bstream Docker image locally, you can clone the W3bstream repository and follow the instructions included in the README:
 
 {% embed url="https://github.com/machinefi/w3bstream#build-docker-image-from-code" %}
 
@@ -88,3 +88,9 @@ If you want to build the source code and run the W3bstream binary, or build the 
 {% hint style="info" %}
 ****<img src="../.gitbook/assets/image (7) (2).png" alt="" data-size="original">**The W3bstream command line client will be available soon.**
 {% endhint %}
+
+## W3bstream admin HTTP API
+
+The HTTP API allows performing admin operations on the node like creating projects, deploying applets, etc.
+
+&#x20;The admin HTTP API is currently [documented on GitHub](https://github.com/machinefi/w3bstream/blob/main/HOWTO.md).

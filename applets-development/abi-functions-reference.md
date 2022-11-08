@@ -2,7 +2,7 @@
 
 ### Host functions
 
-Below is the list of functions exported by the W3bstream VM that you can import in your WASM module to interact with the W3bstream host.
+Below is the list of functions exported by the W3bstream VM that you can import into your WASM module to access functionalities provided by the W3bstream host.
 
 <pre class="language-go"><code class="lang-go"><strong>/**
 </strong> * Get event data.

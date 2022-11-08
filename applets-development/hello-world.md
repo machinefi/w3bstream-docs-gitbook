@@ -12,11 +12,15 @@ When creating a W3bstream applet in the [language of your choice](basic-concepts
 
 #### Provide a malloc() implementation
 
-You need to provide an implementation of the `malloc()` function for the WebAssembly virtual machine to be able to allocate memory in the host. This depends on the programming language you are using:
+You need to provide an implementation of the `malloc()` function for the WebAssembly virtual machine to allocate memory in the host. This depends on the programming language you are using:
 
 {% tabs %}
 {% tab title="Golang" %}
-In Go you don't need to provide a malloc implementation as it's automatically added by the tiniGo compiler
+In Go you don't need to provide a malloc implementation as it's automatically added by the tinyGo compiler.
+{% endtab %}
+
+{% tab title="Rust" %}
+In Rust you don't need to provide a malloc implementation as it's automatically added by the  compiler
 {% endtab %}
 
 {% tab title="C/C++" %}
@@ -27,8 +31,10 @@ EMSCRIPTEN_KEEPALIVE uint32_t malloc(uint32_t size) { return malloc(size); }
 ```
 {% endtab %}
 
-{% tab title="Rust" %}
-In Rust you don't need to provide a malloc implementation as it's automatically added by the  compiler
+{% tab title="Typescript" %}
+```
+// Typescript support is coming soon
+```
 {% endtab %}
 {% endtabs %}
 
@@ -41,19 +47,26 @@ Notice that, by default, when [deploying an applet](../get-started/deploying-an-
 {% tabs %}
 {% tab title="Golang" %}
 ```go
-func _start(resource_id uint32) int32
-```
-{% endtab %}
-
-{% tab title="C/C++" %}
-```cpp
-EMSCRIPTEN_KEEPALIVE uint32_t _start(uint32_t resource_id = 0)
+func _start(event_id uint32) int32
 ```
 {% endtab %}
 
 {% tab title="Rust" %}
 ```rust
-func _start(resource_id uint32) int32uThe log function
+#[no_mangle]
+pub extern "C" fn start(event_id: i32) -> i32
+```
+{% endtab %}
+
+{% tab title="C/C++" %}
+```cpp
+EMSCRIPTEN_KEEPALIVE uint32_t _start(uint32_t event_id = 0)
+```
+{% endtab %}
+
+{% tab title="Typescript" %}
+```
+// Typescript support is coming soon
 ```
 {% endtab %}
 {% endtabs %}
@@ -71,6 +84,13 @@ func _ws_log(logLevel, ptr, size uint32) int32
 ```
 {% endtab %}
 
+{% tab title="Rust" %}
+```rust
+#[link(wasm_import_module = "env")]
+extern "C" fn ws_log(log_level: i32, ptr: *const u8, size: i32) -> i32;
+```
+{% endtab %}
+
 {% tab title="C/C++" %}
 ```cpp
 #include <emscripten.h>
@@ -79,10 +99,9 @@ extern EM_IMPORT(ws_log) int ws_log(int, int, int);
 ```
 {% endtab %}
 
-{% tab title="Rust" %}
-```rust
-#[link(wasm_import_module = "env")]
-extern "C" fn ws_log(log_level: i32, ptr: *const u8, size: i32) -> i32;
+{% tab title="Typescript" %}
+```
+// Typescript support is coming soon
 ```
 {% endtab %}
 {% endtabs %}
@@ -131,6 +150,31 @@ tinygo build -o log.wasm -scheduler=none --no-debug -target=wasi log.go
 ```
 {% endtab %}
 
+{% tab title="Rust" %}
+```rust
+#[link(wasm_import_module = "env")]
+extern "C" {
+    fn ws_log(log_level: i32, ptr: *const u8, size: i32) -> i32;
+}
+
+#[no_mangle]
+pub extern "C" fn start(resource_id: i32) -> i32 {
+    let log_level_info: i32 = 3;
+    let str = String::from("hello world");
+    unsafe { ws_log(log_level_info, str.as_bytes().as_ptr(), str.len() as _) };
+    return 0;
+}
+
+pub fn main() {}
+```
+
+Use cargo-wasi to build the WASM module:
+
+```
+cargo wasi build
+```
+{% endtab %}
+
 {% tab title="C/C++" %}
 ```cpp
 // helloworld.c
@@ -164,28 +208,9 @@ emcc -o helloworld.wasm -O2 --no-entry -s LLD_REPORT_UNDEFINED -s ERROR_ON_UNDEF
 ```
 {% endtab %}
 
-{% tab title="Rust" %}
-```rust
-#[link(wasm_import_module = "env")]
-extern "C" {
-    fn ws_log(log_level: i32, ptr: *const u8, size: i32) -> i32;
-}
-
-#[no_mangle]
-pub extern "C" fn start(resource_id: i32) -> i32 {
-    let log_level_info: i32 = 3;
-    let str = String::from("hello world");
-    unsafe { ws_log(log_level_info, str.as_bytes().as_ptr(), str.len() as _) };
-    return 0;
-}
-
-pub fn main() {}
+{% tab title="Typescript" %}
 ```
-
-Use cargo-wasi to build the WASM module:
-
-```
-cargo wasi build
+// Typescript support is coming soon
 ```
 {% endtab %}
 {% endtabs %}
@@ -223,6 +248,6 @@ finally, check the log of your W3bstream node: you should see the "Hello World!"
   "@prj": "srv-applet-mgr",
   "@src": "wasm",
   "@ts": "20221102-140006.340Z",
-  "msg": "hello world"
+  "msg": "Hello World!"
 }
 ```
