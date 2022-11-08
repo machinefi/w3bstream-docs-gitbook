@@ -3,9 +3,7 @@
 The Android Client SDK for W3bstream implements the message protocol to send data to a W3bstream node.&#x20;
 
 {% hint style="info" %}
-**The Android SDK is a Work in Progress.**\
-****\
-****<img src="../.gitbook/assets/image (2) (4).png" alt="" data-size="line"> <mark style="color:purple;"></mark> [Checkout the repository on GitHub](https://github.com/machinefi/w3bstream-android-sdk)
+<img src="../.gitbook/assets/image (2) (4).png" alt="" data-size="line"> <mark style="color:purple;"></mark> [**Checkout the Android SDK repository on GitHub**](https://github.com/machinefi/w3bstream-android-sdk)****
 {% endhint %}
 
 ## Installation
