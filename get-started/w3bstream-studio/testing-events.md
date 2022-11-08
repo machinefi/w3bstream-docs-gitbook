@@ -13,7 +13,7 @@ Before you can test this feature, make sure that
 
 To manually generate a W3bstream event, select the project in the left navigation panel, then click the <mark style="color:blue;">**`Send Event`**</mark> button:
 
-<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (4).png" alt=""><figcaption></figcaption></figure>
 
 Configure the **Publish Event** **dialog** as follows:&#x20;
 
