@@ -18,6 +18,8 @@ Inside an applet, you can access the event's payload using the `ws_get_data` W3b
 // go:wasm-module env
 // export ws_get_data
 func _ws_get_data(rid, ptr, size uint32) int32
+
+// You may refer to https://github.com/machinefi/w3bstream/blob/main/_examples/wasm_common_go/imports.go#L38, or use the `GetDataByRID` defined in wasm_common_go to fetch event's payload.
 ```
 {% endtab %}
 

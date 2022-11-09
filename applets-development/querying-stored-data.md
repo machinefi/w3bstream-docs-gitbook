@@ -15,6 +15,16 @@ description: >-
 A W3bstream applet can read an object from the key-value host storage using the `ws_get_db` W3bstream function. As any other W3bstream exported functions, it must be imported before it can be used in an applet:
 
 {% tabs %}
+{% tab title="Go" %}
+```go
+// go:wasm-module env
+// export ws_set_db
+func _ws_get_db(kaddr, ksize, ptr, size uint32) int32
+
+// You may refer to https://github.com/machinefi/w3bstream/blob/main/_examples/wasm_common_go/imports.go#L57 for the usage of `_ws_get_db`, or use function `GetDB` defined in wasm_common_go to get value by key.
+```
+{% endtab %}
+
 {% tab title="Rust" %}
 ```rust
 #[link(wasm_import_module = "env")] 

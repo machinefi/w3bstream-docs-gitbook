@@ -13,6 +13,16 @@ description: >-
 A W3bstream applet can store an object in the key-value host storage using the `ws_set_db` W3bstream function. As any other W3bstream exported functions, it must be imported before it can be used in an applet:
 
 {% tabs %}
+{% tab title="Go" %}
+```go
+// go:wasm-module env
+// export ws_set_db
+func _ws_set_db(kaddr, ksize, vaddr, vsize uint32) int32
+
+// You may refer to https://github.com/machinefi/w3bstream/blob/main/_examples/wasm_common_go/imports.go#L79 for the usage of `_ws_set_db`, or use function `SetDB` defined in wasm_common_go to set k-v.
+```
+{% endtab %}
+
 {% tab title="Rust" %}
 ```rust
 #[link(wasm_import_module = "env")] 
