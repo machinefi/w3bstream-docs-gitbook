@@ -8,7 +8,7 @@ Monitoring a smart contract allows generating W3bstream events when a smart cont
 
 Click the "**`Smart Contract Monitor`**" in the left navigation panel, then click the <mark style="color:blue;">**`Add Smart Contract event monitor`**</mark> button:
 
-<figure><img src="../../.gitbook/assets/image (34).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (32).png" alt=""><figcaption></figcaption></figure>
 
 Configure the Add Smart contract event monitor dialog with the correct settings for your smart contract event:
 

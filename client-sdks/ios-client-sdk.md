@@ -2,7 +2,7 @@
 
 The iOS Client SDK for W3bstream implements the message protocol to send data to a W3bstream node.&#x20;
 
-> ****<img src="../.gitbook/assets/image.png" alt="" data-size="line"> **The iOS SDK is a Work in Progress.**
+> ****<img src="../.gitbook/assets/image (6).png" alt="" data-size="line"> **The iOS SDK is a Work in Progress.**
 >
 > <img src="../.gitbook/assets/image (2) (4).png" alt="" data-size="line"> **** [Checkout the repository on GitHub](https://github.com/machinefi/w3bstream-ios-sdk)
 

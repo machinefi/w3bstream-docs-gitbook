@@ -14,7 +14,7 @@ Open W3bstream Studio at `https://localhost:3000`
 
 Use the default password to login in the Studio dashboard. For a newly installed node, you will see something like this:
 
-<figure><img src="../.gitbook/assets/image (14).png" alt=""><figcaption><p>W3bstream Studio Home</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (4) (2).png" alt=""><figcaption><p>W3bstream Studio Home</p></figcaption></figure>
 
 ### Create a new Project
 
@@ -55,4 +55,3 @@ Select the `log.wasm` file you just downloaded, select the _HelloWebstream_ proj
 Now that the logic module is uploaded to the project, we can deploy it to the Webstream VM by clicking the <mark style="color:blue;">**`Deploy`**</mark> button. If the module is correct, it will be successfully deployed, and you will be able to start/stop the module from the dashboard:
 
 <figure><img src="../.gitbook/assets/image (15).png" alt=""><figcaption></figcaption></figure>
-

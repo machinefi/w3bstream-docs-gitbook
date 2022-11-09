@@ -27,7 +27,7 @@ Configure the **Publish Event** **dialog** as follows:&#x20;
 
 <details>
 
-<summary><img src="../../.gitbook/assets/image (33).png" alt=""> Escaping double quotes</summary>
+<summary><img src="../../.gitbook/assets/image (3) (4).png" alt=""> Escaping double quotes</summary>
 
 Please notice that if the payload must be a JSON object. If it's something more complex than just a string, you will have to manually escape double quotes. If your payload is for example:
 
