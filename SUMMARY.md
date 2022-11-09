@@ -3,7 +3,7 @@
 * [About W3bstream](README.md)
 * [Roadmap](roadmap.md)
 
-## Get Started
+## 🚀 Get Started
 
 * [Prerequisites](get-started/prerequisites.md)
 * [Running a Node](get-started/running-a-node.md)
@@ -20,7 +20,7 @@
   * [Testing Events](get-started/w3bstream-studio/testing-events.md)
 * [Command-line Client](get-started/command-line-client.md)
 
-## Applets Development
+## 👨💻 Applets Development
 
 * [Basic concepts](applets-development/basic-concepts/README.md)
   * [Events](applets-development/basic-concepts/events.md)
@@ -38,9 +38,17 @@
 * [Configuring W3bstream](applets-development/configuring-w3bstream.md)
 * [ABI Functions Reference](applets-development/abi-functions-reference.md)
 
-## Client SDKs
+## ⚙ Client SDKs
 
 * [Introduction](client-sdks/introduction.md)
 * [iOS Client SDK](client-sdks/ios-client-sdk.md)
 * [Android Client SDK](client-sdks/android-client-sdk.md)
 * [Embedded SDKs](client-sdks/embedded-sdks.md)
+
+## 📚 Additional Resources
+
+* [Landing Page](https://w3bstream.com/)
+* [Developer Portal](https://developers.iotex.io/)
+* [Apply for a Grant](https://docs.google.com/forms/d/e/1FAIpQLSdSOL2UNfFvZEw8EsdEunnQcAVcy27acU7Rgsc-zaoBgAy7iw/viewform)
+* [White Paper](https://docsend.com/view/twtxhbzvisdye2xj)
+* [Join Our Discord](https://discord.com/invite/q5eYde2CU7)
