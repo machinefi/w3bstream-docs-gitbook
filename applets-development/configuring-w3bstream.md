@@ -2,8 +2,6 @@
 
 {% hint style="info" %}
 **🚧 Notice:** The settings below only apply when running w3bstream in Docker.
-
-(local.yaml for binary in Readme)
 {% endhint %}
 
 W3bstream's configuration is included inside the **`docker-compose.yaml`** file used to start the docker images. However, the most relevant settings can be exported as environment variables, or inside a `.env` file.
