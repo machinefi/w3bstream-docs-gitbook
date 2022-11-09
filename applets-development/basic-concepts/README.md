@@ -30,4 +30,4 @@ As anticipated in [#w3bstream-node-architecture](../../#w3bstream-node-architect
 
 In this section, we introduce the basic concepts of how W3bstream works.
 
-<figure><img src="../../.gitbook/assets/img_v2_b2d925e5-0b96-4b0e-829d-1528245615ah.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (35).png" alt=""><figcaption></figcaption></figure>
