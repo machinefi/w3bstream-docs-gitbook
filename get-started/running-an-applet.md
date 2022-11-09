@@ -18,7 +18,7 @@ Select the Project, give a name to the publisher and assign it a unique key like
 
 ## Default event strategy
 
-When deploying a logic module to a project, W3bstream configures a default event strategy that just routes any event to the module's start handler. To learn more about event strategies, check out the [#strategies](../applets-development/basic-concepts/#strategies "mention") section.&#x20;
+When deploying a logic module to a project, W3bstream configures a default event strategy that just routes any event to the module's start handler. To learn more about event strategies, check out the [event strategies](../applets-development/basic-concepts/event-strategies.md) section.&#x20;
 
 ## Test the Project logic
 
