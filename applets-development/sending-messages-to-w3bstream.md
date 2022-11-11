@@ -2,7 +2,10 @@
 
 W3bstream provides two different network service endpoints that allow sending messages to the various projects running in the node.&#x20;
 
-A W3bstream message is made of two objects: the W3bstream _**header**,_ that contains W3bstream related values, and the _**payload,**_ that contains the actual message to be used by the W3bstream project.&#x20;
+A W3bstream message is made of two objects:&#x20;
+
+* the W3bstream _**header**,_ which contains W3bstream-related values, and&#x20;
+* the application _**payload,**_ which contains the actual message to be processed by the W3bstream applet.&#x20;
 
 An example message is shown below:
 
@@ -30,9 +33,9 @@ An example message is shown below:
 
 ## Sending data using HTTP
 
-The W3bstream HTTP API default port is `8888`. Aside from being used to manage the node, it also exposes a "Project API" that can be called to send to data messages to a specific project.
+The W3bstream HTTP API default port is `8888`. Aside from being used to manage the node, it also exposes a "Project API" that can be called to send data messages to a specific project.
 
-{% swagger method="post" path="/srv-applet-mgr/v0/event/<ProjectName>" baseUrl="w3bstream_ip_address:8888" summary="Send a message to a specific W3bstream Project" %}
+{% swagger method="post" path="/srv-applet-mgr/v0/event/<PROJECT_NAME>" baseUrl="w3bstream_ip_address:8888" summary="Send a message to a specific W3bstream Project" %}
 {% swagger-description %}
 
 {% endswagger-description %}
@@ -91,7 +94,11 @@ The name of the Project as it appears in W3bstream Studio
 {% endswagger-response %}
 {% endswagger %}
 
-The example below uses curl to send a message over HTTP:
+{% hint style="info" %}
+**Notice:** project names are case-sensitive in W3bstream
+{% endhint %}
+
+The example below uses curl to send a message over HTTP where the recipient project is `PROJECT_NAME`:
 
 ```bash
 curl --location --request POST 'localhost:8888/srv-applet-mgr/v0/event/PROJECT_NAME' --header 'Content-Type: text/plain' --data-raw '{
@@ -111,9 +118,13 @@ curl --location --request POST 'localhost:8888/srv-applet-mgr/v0/event/PROJECT_N
 **Notice:** Client authentication with MQTT certificates is not supported yet.&#x20;
 {% endhint %}
 
-The W3bstream MQTT broker default port is 1883. To send a message to a specific W3bstream Project using MQTT, **the project name should be used as the topic** for the message.&#x20;
+The W3bstream MQTT broker default port is 1883. To send a message to a specific W3bstream Project using MQTT, **the recipient project name should be used as the topic** when publishing the MQTT message.&#x20;
 
-The example below uses [mosquitto](https://mosquitto.org/) as a test client:
+The example below uses [mosquitto](https://mosquitto.org/) as an MQTT client to send a message to a local W3bstream node where the recipient project is `PROJECT_NAME`:
+
+{% hint style="info" %}
+**Notice:** project names are case-sensitive in W3bstream
+{% endhint %}
 
 ```bash
 mosquitto_pub -h localhost -t PROJECT_NAME -m '{
