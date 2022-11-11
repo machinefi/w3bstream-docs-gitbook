@@ -2,9 +2,7 @@
 
 Before a W3bstream node can do anything, at least one _Project_ must be created and configured.
 
-## Create a project
-
-### Login to W3bstream
+## Login to W3bstream
 
 Make sure the [W3bstream node is running](running-a-node.md#start-the-w3bstream-node-with).&#x20;
 
@@ -12,19 +10,19 @@ Open W3bstream Studio at `https://localhost:3000`
 
 <figure><img src="../.gitbook/assets/image (9) (2) (1).png" alt=""><figcaption><p><code>W3bstream Studio Loging screen</code></p></figcaption></figure>
 
-Use the default password to login in the Studio dashboard. For a newly installed node, you will see something like this:
+Use the default password to login to the Studio dashboard. For a newly installed node, you will see something like this:
 
 <figure><img src="../.gitbook/assets/image (4) (2).png" alt=""><figcaption><p>W3bstream Studio Home</p></figcaption></figure>
 
-### Create a new Project
+## Create a new Project
 
 The first step is to **create** a new _W3bstream Project:_ click the <mark style="color:blue;background-color:blue;">**`Create a project now`**</mark> button to create a new W3bstream project.
 
 <figure><img src="../.gitbook/assets/image (10) (2).png" alt=""><figcaption></figcaption></figure>
 
-Assign a the "HelloW3bstream" name to the project and click the <mark style="color:blue;">**`Submit`**</mark> button to confirm. The new project will show up on the left side panel, under the **Project Management** section.
+Assign the "_HelloW3bstream_" name to the project and click the <mark style="color:blue;">**`Submit`**</mark> button to confirm. The new project will show up on the left side panel, under the **Project Management** section.
 
-### Upload the logic
+## Upload the logic
 
 Once we have a project ready to host our W3bstream logic, we are ready to deploy a logic module, also called [Applet](../applets-development/basic-concepts/#applets). Check out [create a W3bstream applet](../applets-development/basic-concepts/) to learn more about how to create an Applet.
 
@@ -50,7 +48,7 @@ Select the `log.wasm` file you just downloaded, select the _HelloWebstream_ proj
 
 </div>
 
-### Deploy the logic
+## Deploy the logic
 
 Now that the logic module is uploaded to the project, we can deploy it to the Webstream VM by clicking the <mark style="color:blue;">**`Deploy`**</mark> button. If the module is correct, it will be successfully deployed, and you will be able to start/stop the module from the dashboard:
 
