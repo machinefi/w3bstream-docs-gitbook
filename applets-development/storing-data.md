@@ -17,9 +17,8 @@ A W3bstream applet can store an object in the key-value host storage using the `
 ```go
 // go:wasm-module env
 // export ws_set_db
-func _ws_set_db(kaddr, ksize, vaddr, vsize uint32) int32
+func _ws_set_db(key_ptr, key_size, value_ptr, value_size uint32) int32
 
-// You may refer to https://github.com/machinefi/w3bstream/blob/main/_examples/wasm_common_go/imports.go#L79 for the usage of `_ws_set_db`, or use function `SetDB` defined in wasm_common_go to set k-v.
 ```
 {% endtab %}
 
@@ -57,8 +56,8 @@ pub extern "C" fn start(event_id: i32) -> i32 {
     return 0;
 }
 <strong>
-</strong><strong>pub fn set_db(key: &#x26;String, value: String) -> Result&#x3C;()> { 
-</strong>  match unsafe { 
+</strong>pub fn set_db(key: &#x26;String, value: String) -> Result&#x3C;()> { 
+  match unsafe { 
     ws_set_db( 
       key.as_ptr(), 
       key.len() as _, 

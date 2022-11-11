@@ -6,8 +6,6 @@ description: >-
 
 # Querying Stored Data
 
-
-
 {% hint style="info" %}
 **Notice:** W3bstream Alpha release only includes a storage interface implementation in the form of a simple _key-value_ database. Later releases of W3bstream will provide further storage options, both centralized and decentralized.
 {% endhint %}
@@ -19,9 +17,8 @@ A W3bstream applet can read an object from the key-value host storage using the 
 ```go
 // go:wasm-module env
 // export ws_set_db
-func _ws_get_db(kaddr, ksize, ptr, size uint32) int32
+func _ws_get_db(key_ptr, key_size, value_ptr, value_size uint32) int32
 
-// You may refer to https://github.com/machinefi/w3bstream/blob/main/_examples/wasm_common_go/imports.go#L57 for the usage of `_ws_get_db`, or use function `GetDB` defined in wasm_common_go to get value by key.
 ```
 {% endtab %}
 
@@ -42,6 +39,8 @@ fn ws_get_db(
 
 The example below shows how you can read a string from the key/value storage:
 
+{% tabs %}
+{% tab title="Rust" %}
 ```rust
 #[link(wasm_import_module = "env")] 
 extern "C" { 
@@ -68,6 +67,8 @@ pub fn get_db(key: &String) -> Option<String> {
     }
 }
 ```
+{% endtab %}
+{% endtabs %}
 
 <mark style="color:purple;">**💡 Learn more**</mark>
 
