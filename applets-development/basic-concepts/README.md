@@ -20,7 +20,7 @@ From rewarding sleeping patterns and workout progress, over selling industrial m
 
 <details>
 
-<summary><a href="https://emojipedia.org/link/">🔗</a>Blockchain Logic</summary>
+<summary><a href="https://emojipedia.org/link/">🔗 </a>Blockchain Logic</summary>
 
 Basic blockchain components of a MachineFi application typically include a set of Authorization-related smart contracts, as well as an incentivizing token economy. More complex applications could include decentralized data marketplaces or complex DeFi functionalities.&#x20;
 
