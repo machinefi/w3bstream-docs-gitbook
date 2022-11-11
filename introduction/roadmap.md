@@ -2,7 +2,7 @@
 
 The development of W3bstream will span until Q2 2024. During this time, the “_Devnet Seed_”  release will morph into a modular, scalable, and decentralized architecture that will accommodate multiple applications across different verticals.
 
-<figure><img src="../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (2) (5).png" alt=""><figcaption></figcaption></figure>
 
 <details>
 
