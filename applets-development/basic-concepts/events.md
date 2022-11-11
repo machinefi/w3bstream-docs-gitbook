@@ -4,9 +4,9 @@
 
 While running, a W3bstream node emits internal **Event Messages** when something relevant happens. A W3bstream event can be currently generated  for one of the following reasons:
 
-* A message is received on an HTTP API [_project_ _endpoint_](../sending-messages-to-w3bstream.md#http-project-endpoints)__
-* A message is published on an MQTT [_project topic_](../sending-messages-to-w3bstream.md#mqtt-project-topics)__
-* A smart contract event is detected by a [_blockchain monitor_](events.md#blockchain-monitor)__
+* A message is received on an HTTP API [_project_ _endpoint_](../sending-messages-to-w3bstream.md#sending-data-using-http)__
+* A message is published on an MQTT [_project topic_](../sending-messages-to-w3bstream.md#sending-data-using-mqtt)__
+* A smart contract event is detected by a [_blockchain monitor_](../reacting-to-blockchain-events.md)__
 * _A certain blockchain height is detected by a chain height monitor_
 
 A W3bstream event message looks like the following:
