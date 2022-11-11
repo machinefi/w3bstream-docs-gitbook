@@ -111,7 +111,7 @@ curl --location --request POST 'localhost:8888/srv-applet-mgr/v0/event/PROJECT_N
 **Notice:** Client authentication with MQTT certificates is not supported yet.&#x20;
 {% endhint %}
 
-The W3bstream MQTT broker default port is 1883. To send a message to a specific W3bstream Project using MQTT, the project name should be used as the topic for the message.&#x20;
+The W3bstream MQTT broker default port is 1883. To send a message to a specific W3bstream Project using MQTT, **the project name should be used as the topic** for the message.&#x20;
 
 The example below uses [mosquitto](https://mosquitto.org/) as a test client:
 
