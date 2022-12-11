@@ -113,7 +113,7 @@ Creating a “_Hello World!_” example for W3bstream is now very simple:
 {% tabs %}
 {% tab title="Golang" %}
 ```go
-// log.go
+// helloworld.go
 package main
 
 import (
@@ -146,7 +146,7 @@ func stringToPtr(s string) (uint32, uint32) {
 Use the TinyGo to build the WASM module
 
 ```bash
-tinygo build -o log.wasm -scheduler=none --no-debug -target=wasi log.go
+tinygo build -o helloworld.wasm -scheduler=none --no-debug -target=wasi helloworld.go
 ```
 {% endtab %}
 
@@ -168,7 +168,7 @@ pub extern "C" fn start(resource_id: i32) -> i32 {
 pub fn main() {}
 ```
 
-Use cargo-wasi to build the WASM module:
+Use [cargo-wasi](https://github.com/bytecodealliance/cargo-wasi) to build the WASM module:
 
 ```
 cargo wasi build
@@ -184,16 +184,16 @@ cargo wasi build
 
 extern EM_IMPORT(ws_log) int ws_log(int logLevel, int strPtr, int strSize);
 
-const LOG_LEVEL_INFO = 3;
+const int LOG_LEVEL_INFO = 3;
 
-EMSCRIPTEN_KEEPALIVE int start(int)
+EMSCRIPTEN_KEEPALIVE int start(int event_id)
 {
     char str[] = "Hello World!";
     ws_log(LOG_LEVEL_INFO, (int)str, strlen(str));
     return 0;
 }
 
-EMSCRIPTEN_KEEPALIVE int malloc(int size)
+EMSCRIPTEN_KEEPALIVE void* malloc(unsigned long size)
 {
     return malloc(size);
 }
@@ -201,7 +201,7 @@ EMSCRIPTEN_KEEPALIVE int malloc(int size)
 
 
 
-Use the emscripten compiler to build the WASM module:
+Use the `emscripten` compiler to build the WASM module:
 
 ```bash
 emcc -o helloworld.wasm -O2 --no-entry -s LLD_REPORT_UNDEFINED -s ERROR_ON_UNDEFINED_SYMBOLS=0 helloworld.c
