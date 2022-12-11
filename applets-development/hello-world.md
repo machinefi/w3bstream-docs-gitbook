@@ -60,7 +60,7 @@ pub extern "C" fn start(event_id: i32) -> i32
 
 {% tab title="C/C++" %}
 ```cpp
-EMSCRIPTEN_KEEPALIVE uint32_t _start(uint32_t event_id = 0)
+EMSCRIPTEN_KEEPALIVE uint32_t _start(uint32_t event_id)
 ```
 {% endtab %}
 
