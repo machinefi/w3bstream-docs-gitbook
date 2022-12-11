@@ -125,10 +125,10 @@ import (
 // main is required for TinyGo to compile to Wasm.
 func main() {}
 
-func _log(uint32 logLevel, strPtr uint32, strSize uint32)
+func _log(logLevel uint32, strPtr uint32, strSize uint32)
 
 func _start(rid uint32) int32 {
-  	ptr, size := stringToPtr("Hello World!)
+  	ptr, size := stringToPtr("Hello World!")
   	const LOG_LEVEL_INFO = 3
   	_log(LOG_LEVEL_INFO, ptr, size)
   	return 0
