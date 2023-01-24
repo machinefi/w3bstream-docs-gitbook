@@ -81,37 +81,63 @@ func Log(message string) {
 {% endtab %}
 
 {% tab title="Rust" %}
-<pre class="language-rust"><code class="lang-rust">#[link(wasm_import_module = "env")]
+<pre class="language-rust"><code class="lang-rust">// main.rs
 <strong>extern "C" {
 </strong>  fn ws_log(log_level: i32, ptr: *const u8, size: i32) -> i32;
-  fn ws_get_data(event_id i32, payload_ptr i32, payload_size i32) -> i32
+  fn ws_get_data(event_id: i32, payload_ptr: *const *mut u8, payload_size: *const i32) -> i32;
+}
+
+#[no_mangle]
+pub extern "C" fn alloc(size: i32) -> *mut u8 {
+    let mut buf: Vec<u8> = Vec::with_capacity(size as _);
+    let ptr = buf.as_mut_ptr();
+    std::mem::forget(buf);
+    return ptr;
 }
 
 #[no_mangle]
 // This handler will be matched by the default Project event strategy in W3bstream
 pub extern "C" fn start(event_id: i32) -> i32 {
     log_info(
-        &#x26;format!("Start handler called with event_id: {}", event_id));
+        &format!("Start handler called with event_id: {}", event_id));
 
-    let payload = get_data_as_str(event_id).unwrap();
-    log_info(&#x26;format!("event data as string: {}", payload));
+    let data_u8 = match get_data(event_id) {
+        Some(data) => data,
+        _ => {
+            log_info("failed to get data from event");
+            return -1;
+        }
+    };
+    
+    let data_str = match String::from_utf8(data_u8) {
+        Ok(data) => data,
+        _ => {
+            log_info("failed to convert data to string");
+            return -1;
+        }
+    };
+
+    log_info(&format!("event data as string: {}", data_str));
     return 0;
 }
 
-// Returns the event payload as a string
-fn get_data_as_str(event_id: i32) -> Option&#x3C;String> {
-    let data_ptr = &#x26;mut (0 as i32) as *const _ as *const *mut u8;
-    let data_size = &#x26;(0 as i32);
-    match unsafe { ws_get_data(event_id, data_ptr, data_size) } {
-        0 => Some(unsafe { String::from_raw_parts(*data_ptr, *data_size as _, *data_size as _) }),
+// Returns the event payload
+pub fn get_data(resource_id: i32) -> Option<Vec<u8>> {
+    let data_ptr = &mut (0 as i32) as *const _ as *const *mut u8;
+    let data_size = &(0 as i32);
+    match unsafe { ws_get_data(resource_id, data_ptr, data_size) } {
+        0 => Some(unsafe { Vec::from_raw_parts(*data_ptr, *data_size as _, *data_size as _) }),
         _ => None,
     }
 }
 
 // Logs an info message string to the W3bstream console
-fn log_info(str: &#x26;str) {
+pub fn log_info(str: &str) {
     unsafe { ws_log(3, str.as_bytes().as_ptr(), str.len() as _) };
-}</code></pre>
+}
+
+pub fn main() {}
+</code></pre>
 {% endtab %}
 
 {% tab title="C++" %}
