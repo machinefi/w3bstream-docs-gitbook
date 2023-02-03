@@ -1,8 +1,10 @@
 # Applets and Handlers
 
-A W3bstream Applet is a container for the actual logic of a W3bstrem node. Since W3bstream's execution engine is based on a WebAssembly virtual machine, Applets must be compiled as WASM modules.
+A W3bstream Applet is a container for the actual logic of a W3bstrem node. Since W3bstream's execution engine is based on a WebAssembly virtual machine, Applets must be compiled as WASM modules:
 
-> _**W3bstream Applets must be compiled as WASM modules**_
+{% hint style="success" %}
+**W3bstream Applets must be compiled as WASM modules**
+{% endhint %}
 
 ## Exporting event handlers
 
@@ -11,37 +13,40 @@ An Applet must export at least one public function to be called by the W3bstream
 Event Handlers in an applet must have the following signature:
 
 {% tabs %}
+{% tab title="Typescript" %}
+```typescript
+// A W3bstream Event handler defined in an Applet written in AssemblyScript
+export function start(rid: i32): i32
+```
+{% endtab %}
+
 {% tab title="Go" %}
 ```go
-// A W3bstream Event handler defined in an Applet
+// A W3bstream Event handler defined in an Applet written in Go
 func do_something(event_id uint32) int32 
 ```
 {% endtab %}
 
 {% tab title="Rust" %}
 ```rust
-// A W3bstream Event handler defined in an Applet
+// A W3bstream Event handler defined in an Appletwritten in Rust
 pub extern "C" fn do_something(event_id: i32) -> i32 { ... }
 ```
 {% endtab %}
 
 {% tab title="C++" %}
 ```cpp
-// A W3bstream Event handler defined in an Applet
+// A W3bstream Event handler defined in an Applet written in C++
 EMSCRIPTEN_KEEPALIVE uint32_t do_something(uint32_t event_id)
-```
-{% endtab %}
-
-{% tab title="Typescript" %}
-```
-// Typescript support is coming soon
 ```
 {% endtab %}
 {% endtabs %}
 
 ## **Calling W3bstream host functions**
 
-Inside an applet, it's possible to call different W3bstream functions that provide functionality on the host side. Typical host functions that you'll want to use are `ws_log` to log debug info to the w3bstream console and `ws_get_data` to access the event payload.
+Using available SDKs, W3bstream applets can call several _host functions_, that give access to W3bstream's functionalities.&#x20;
+
+Typical host functions that you'll want to call from an applet range from logging functions to, data storage to blockchain transactions.&#x20;
 
 <mark style="color:purple;">**💡 Learn more**</mark>
 
