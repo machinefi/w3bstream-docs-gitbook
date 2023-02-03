@@ -1,8 +1,8 @@
 # Projects
 
-W3bstream Projects represent containers for the node logic. Each project also includes one or more [event strategy](projects.md#event-strategies) configurations, as well as [publisher](projects.md#publishers) authorizations.&#x20;
+W3bstream Projects represent containers for the node logic. This logic is implemented in the form of function (called _event handlers_) exported inside WASM modules (called _applets_) that are deployed to W3bstream projects.
 
-Every time a W3bstream event is emitted with a specific project as its recipient, the project's event strategy is evaluated. If a strategy is matched for the `event_type` field of the event, then the respective [Applet](projects.md#applets) handler is called with the event<mark style="color:purple;">'s</mark> `resource id` as the argument of the call.
+&#x20;Multiple applets can be deployed to a Project, and multiple handlers can be exported in the same applet. For each W3bstream project, one or more [event strategies](projects.md#event-strategies) can be configured, as well as several [publishers](projects.md#publishers) can be authorized to send data messages to the project.&#x20;
 
 &#x20; **  **<mark style="color:purple;">**💡 Learn more**</mark>
 
