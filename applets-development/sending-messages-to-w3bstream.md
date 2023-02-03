@@ -33,7 +33,9 @@ An example message is shown below:
 
 ## Sending data using HTTP
 
-The W3bstream HTTP API default port is `8888`. Aside from exposing W3bstream's admin API, the HTTP service also exposes a "Project API" that can be called to send data messages to a specific project.
+The W3bstream HTTP API default port is `8888`.&#x20;
+
+the `event/project_name` endpoint of the HTTP API can be called to send data messages to a specific project:
 
 {% swagger method="post" path="/srv-applet-mgr/v0/event/<PROJECT_NAME>" baseUrl="w3bstream_ip_address:8888" summary="Send a message to a specific W3bstream Project" %}
 {% swagger-description %}
@@ -98,12 +100,12 @@ The name of the Project as it appears in W3bstream Studio
 **Notice:** project names are case-sensitive in W3bstream
 {% endhint %}
 
-The example below uses curl to send a message over HTTP where the recipient project is `PROJECT_NAME`:
+The example below uses curl to send a message over HTTP where the recipient project is called `NftMinter` and it's intended to raise an event called "MINT" inside W3bstream:
 
 ```bash
-curl --location --request POST 'localhost:8888/srv-applet-mgr/v0/event/PROJECT_NAME' --header 'Content-Type: text/plain' --data-raw '{
+curl --location --request POST 'localhost:8888/srv-applet-mgr/v0/event/NftMinter' --header 'Content-Type: text/plain' --data-raw '{
     "header": {
-        "event_type": "DEVICE_EVENT_0001",
+        "event_type": "MINT",
         "pub_id": "my_publisher_id",
         "pub_time": 1666211451,
         "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.e"                                
@@ -118,9 +120,11 @@ curl --location --request POST 'localhost:8888/srv-applet-mgr/v0/event/PROJECT_N
 **Notice:** Client authentication with MQTT certificates is not supported yet.&#x20;
 {% endhint %}
 
-The W3bstream MQTT broker default port is 1883. To send a message to a specific W3bstream Project using MQTT, **the recipient project name should be used as the topic** when publishing the MQTT message.&#x20;
+The W3bstream MQTT broker default port is 1883.&#x20;
 
-The example below uses [mosquitto](https://mosquitto.org/) as an MQTT client to send a message to a local W3bstream node where the recipient project is `PROJECT_NAME`:
+To send a message to a specific W3bstream Project using MQTT, **the recipient project name should be used as the topic** when publishing the MQTT message.&#x20;
+
+The example below uses [mosquitto](https://mosquitto.org/) as an MQTT client to send a message to a local W3bstream node where the recipient project is called `NftMinter` in W3bstream:
 
 {% hint style="info" %}
 **Notice:** project names are case-sensitive in W3bstream

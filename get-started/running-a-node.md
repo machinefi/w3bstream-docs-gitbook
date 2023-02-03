@@ -46,8 +46,6 @@ By default, W3bstream will store its data in the current folder. If required, yo
 
 `export WS_WORKING_DIR=path_to_the_w3bstream_folder`
 
-or by changing the corresponding setting in the .env file: see [configuring W3bstream ](../applets-development/configuring-w3bstream.md)for more.
-
 </details>
 
 Once you started W3bstream, you can see the log with:
