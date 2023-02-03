@@ -4,11 +4,12 @@
 
 * [About W3bstream](README.md)
 * [Roadmap](introduction/roadmap.md)
+* [GitHub](https://github.com/machinefi/w3bstream#w3bstream)
 
 ## 🚀 Get Started
 
 * [Prerequisites](get-started/prerequisites.md)
-* [Running a Node](get-started/running-a-node.md)
+* [Running W3bstream](get-started/running-a-node.md)
 * [Creating a Project](get-started/deploying-an-applet.md)
 * [Running a Project](get-started/running-an-applet.md)
 * [W3bstream Studio](get-started/w3bstream-studio/README.md)

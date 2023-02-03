@@ -1,7 +1,7 @@
-# Running a Node
+# Running W3bstream
 
 {% hint style="success" %}
-<img src="../.gitbook/assets/image (4).png" alt="" data-size="line"> **** [**Checkout the W3bstrem repository on GitHub**](https://github.com/machinefi/w3bstream#w3bstream)****
+****<img src="../.gitbook/assets/image.png" alt="" data-size="line"> **** [**Checkout the W3bstrem repository on GitHub**](https://github.com/machinefi/w3bstream#w3bstream)****
 {% endhint %}
 
 ## Run using Docker
@@ -42,7 +42,7 @@ docker-compose -p w3bstream -f ./docker-compose.yaml up -d
 
 <summary><img src="../.gitbook/assets/image (6) (4).png" alt="" data-size="original"> Change W3bstream's working directory</summary>
 
-By default, W3bstream will store data in the current folder. If required, you can set the working directory by exporting the following before running the image:&#x20;
+By default, W3bstream will store its data in the current folder. If required, you can set the working directory by exporting the following before running the image:&#x20;
 
 `export WS_WORKING_DIR=path_to_the_w3bstream_folder`
 
@@ -91,6 +91,6 @@ If you want to build the source code and run the W3bstream binary or build the W
 
 ## W3bstream admin HTTP API
 
-The HTTP API allows performing admin operations on the node like creating projects, deploying applets, etc.
+The HTTP API provides full access to the node operations allowing to automate project creation, applet deployments, etc.
 
-&#x20;The admin HTTP API is currently [documented on GitHub](https://github.com/machinefi/w3bstream/blob/main/HOWTO.md).
+The admin HTTP API is currently [documented on GitHub](https://github.com/machinefi/w3bstream/blob/main/HOWTO.md).

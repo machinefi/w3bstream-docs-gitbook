@@ -3,215 +3,191 @@
 {% hint style="info" %}
 **Notice:** W3bstream is under development.&#x20;
 
-The current documentation refers to _<mark style="color:blue;">W3bstream 1.0 Alpha</mark> release,_ and is subject to frequent changes.
+The current documentation refers to _<mark style="color:blue;">W3bstream 1.0.0-rc2</mark>_
 {% endhint %}
 
-## Prerequisites
+## Supported languages
 
-When creating a W3bstream applet in the [language of your choice](basic-concepts/#applets), you will have to follow a few simple rules:
+SDKs to build W3bstream applets are available for the following languages:
 
-#### Provide a malloc() implementation
+* [AssemblyScript](https://github.com/machinefi/w3bstream-wasm-ts-sdk)
+* [Go](https://github.com/machinefi/w3bstream-wasm-golang-sdk)
 
-You need to provide an implementation of the `malloc()` function for the WebAssembly virtual machine to allocate memory in the host. This depends on the programming language you are using:
+## Event handlers
 
-{% tabs %}
-{% tab title="Golang" %}
-In Go you don't need to provide a malloc implementation as it's automatically added by the tinyGo compiler.
-{% endtab %}
+When creating an applet for W3bstream, you must export at least one function inside the resulting WASM module, to serve as an _**event handler**_ in W3bstream.&#x20;
 
-{% tab title="Rust" %}
-In Rust you don't need to provide a malloc implementation as it's automatically added by the  compiler
-{% endtab %}
+This handler can then be linked to a W3bstream event by configuring a _**strategy**_ in the project's [event strategies](basic-concepts/#event-strategies) configuration.&#x20;
 
-{% tab title="C/C++" %}
-In C you are supposed to provide an implementation of `malloc` and make sure it's exported:
+<mark style="color:purple;">**💡 Learn more**</mark>
 
-```cpp
-EMSCRIPTEN_KEEPALIVE uint32_t malloc(uint32_t size) { return malloc(size); } 
+<details>
+
+<summary>Default event handler</summary>
+
+When [deploying an applet](../get-started/deploying-an-applet.md#deploy-the-logic) to a W3bstream project, W3bstream creates a default event strategy that connects **any** W3bstream event to a default `_start()` handler function with the following signature:
+
+**AssemblyScript**
+
+```typescript
+export function start(rid: i32): i32
 ```
-{% endtab %}
 
-{% tab title="Typescript" %}
-```
-// Typescript support is coming soon
-```
-{% endtab %}
-{% endtabs %}
+**Go**
 
-#### Event handlers
-
-It's assumed that you have at least one function publicly exported in your applet to serve as an _event handler_ in W3bstream. This handler should be linked to a W3bstream _event type_ in the project's [event strategies](basic-concepts/#event-strategies) configuration.&#x20;
-
-Notice that, by default, when [deploying an applet](../get-started/deploying-an-applet.md#deploy-the-logic) to a project, W3bstream creates a default event strategy that connects **any** node event to a default `_start()` handler function with the following signature:
-
-{% tabs %}
-{% tab title="Golang" %}
 ```go
+//export start
 func _start(event_id uint32) int32
 ```
-{% endtab %}
 
-{% tab title="Rust" %}
+**Rust**
+
 ```rust
 #[no_mangle]
 pub extern "C" fn start(event_id: i32) -> i32
 ```
-{% endtab %}
 
-{% tab title="C/C++" %}
+**C++**
+
 ```cpp
-EMSCRIPTEN_KEEPALIVE uint32_t _start(uint32_t event_id)
+#EMSCRIPTEN_KEEPALIVE uint32_t _start(uint32_t event_id)
 ```
-{% endtab %}
 
-{% tab title="Typescript" %}
-```
-// Typescript support is coming soon
-```
-{% endtab %}
-{% endtabs %}
+</details>
 
-**Accessing the W3bstream console**
+## The W3bstream Console
 
-W3bstream provides a text console for applets to output text to. In order to be able to send output to the W3bstream console, you'll have to declare an external `_log()` function that is exported by the W3bstream node, giving you access to the console:
+W3bstream provides a text console for applets to output text to, which can be accessed through the Log function of the SDK:
 
 {% tabs %}
+{% tab title="AssemblyScript" %}
+```typescript
+import { Log } from "../../assembly/index";
+...
+Log("Some text");
+
+```
+{% endtab %}
+
 {% tab title="Golang" %}
 ```go
-//go:wasm-module env 
-//export ws_log 
-func _ws_log(logLevel, ptr, size uint32) int32
-```
-{% endtab %}
+import 	"github.com/machinefi/w3bstream-wasm-golang-sdk/log"
+...
+log.Log("Some text");
 
-{% tab title="Rust" %}
-```rust
-#[link(wasm_import_module = "env")]
-extern "C" fn ws_log(log_level: i32, ptr: *const u8, size: i32) -> i32;
-```
-{% endtab %}
-
-{% tab title="C/C++" %}
-```cpp
-#include <emscripten.h>
-
-extern EM_IMPORT(ws_log) int ws_log(int, int, int);
-```
-{% endtab %}
-
-{% tab title="Typescript" %}
-```
-// Typescript support is coming soon
 ```
 {% endtab %}
 {% endtabs %}
 
-## Create Hello World!
+## Your first W3bstream "Hello World!"
 
 Creating a “_Hello World!_” example for W3bstream is now very simple:
 
 {% tabs %}
-{% tab title="Golang" %}
+{% tab title="AssemblyScript" %}
+Let's start with creating a new folder for the project
+
+```bash
+mkdir helloworld && cd helloworld
+```
+
+Initialize the project with `npm`
+
+```bash
+npm init -y
+```
+
+Install the AssemblyScript compiler
+
+```bash
+npm install --save-dev assemblyscript
+```
+
+Scaffold a new AssemblyScript project:
+
+```bash
+npx asinit .
+```
+
+Add the W3bstream AssemblyScript SDK package:
+
+```bash
+npm install @w3bstream/wasm-sdk
+```
+
+edit the `scripts` field in `package.json` and replace it with the following:
+
+```json
+"scripts": {
+    "asbuild:release": "asc assembly/index.ts --use abort=assembly/index/abort --target release",
+  },
+```
+
+Create the file with the following code and save it:
+
+```rust
+// The alloc function is required by W3bstream's VM
+export { alloc } from "../../assembly/index"
+import { Log } from "../../assembly/index";
+
+export function start(rid: i32): i32 {
+    Log("Hello World!");
+    return 0;
+}
+```
+
+Finally, build the wasm module with:
+
+```bash
+npm run asbuildbas
+```
+
+At the and of the building process, the W3bstream module can be found in `build/helloworld.wasm`
+{% endtab %}
+
+{% tab title="Go" %}
+Let's start with creating a new folder for the project
+
+```bash
+mkdir helloworld && cd helloworld
+```
+
+Initialize the project with `go mod`
+
+```
+go mod init helloworld
+```
+
+create helloworld.go with the current code and save it:o
+
 ```go
-// helloworld.go
 package main
 
-import (
-	"fmt"
-	"reflect"
-	"unsafe"
-)
+import "github.com/machinefi/w3bstream-wasm-golang-sdk/log"
 
-// main is required for TinyGo to compile to Wasm.
+// main is required for TinyGo to compile to WASM
 func main() {}
 
-func _log(logLevel uint32, strPtr uint32, strSize uint32)
-
+//export start
 func _start(rid uint32) int32 {
-  	ptr, size := stringToPtr("Hello World!")
-  	const LOG_LEVEL_INFO = 3
-  	_log(LOG_LEVEL_INFO, ptr, size)
-  	return 0
+	log.Log("Hello World!")
+	return 0
 }
-
-func stringToPtr(s string) (uint32, uint32) {
-	buf := []byte(s)
-	ptr := &buf[0]
-	unsafePtr := uintptr(unsafe.Pointer(ptr))
-	return uint32(unsafePtr), uint32(len(buf))
-}
-
 ```
 
-Use the TinyGo to build the WASM module
+install required imports (in this case, the W3bstream Go SDK):
 
-```bash
+```
+go mod tidy
+```
+
+make sure [you have TinyGo installed](https://tinygo.org/getting-started/install/) in your system, then buuild the module with:
+
+```
 tinygo build -o helloworld.wasm -scheduler=none --no-debug -target=wasi helloworld.go
 ```
-{% endtab %}
 
-{% tab title="Rust" %}
-```rust
-#[link(wasm_import_module = "env")]
-extern "C" {
-    fn ws_log(log_level: i32, ptr: *const u8, size: i32) -> i32;
-}
-
-#[no_mangle]
-pub extern "C" fn start(resource_id: i32) -> i32 {
-    let log_level_info: i32 = 3;
-    let str = String::from("hello world");
-    unsafe { ws_log(log_level_info, str.as_bytes().as_ptr(), str.len() as _) };
-    return 0;
-}
-
-pub fn main() {}
-```
-
-Use [cargo-wasi](https://github.com/bytecodealliance/cargo-wasi) to build the WASM module:
-
-```
-cargo wasi build
-```
-{% endtab %}
-
-{% tab title="C/C++" %}
-```cpp
-// helloworld.c
-#include <emscripten.h>
-#include <string.h>
-#include <stdio.h>
-
-extern EM_IMPORT(ws_log) int ws_log(int logLevel, int strPtr, int strSize);
-
-const int LOG_LEVEL_INFO = 3;
-
-EMSCRIPTEN_KEEPALIVE int start(int event_id)
-{
-    char str[] = "Hello World!";
-    ws_log(LOG_LEVEL_INFO, (int)str, strlen(str));
-    return 0;
-}
-
-EMSCRIPTEN_KEEPALIVE void* malloc(unsigned long size)
-{
-    return malloc(size);
-}
-```
-
-
-
-Use the `emscripten` compiler to build the WASM module:
-
-```bash
-emcc -o helloworld.wasm -O2 --no-entry -s LLD_REPORT_UNDEFINED -s ERROR_ON_UNDEFINED_SYMBOLS=0 helloworld.c
-```
-{% endtab %}
-
-{% tab title="Typescript" %}
-```
-// Typescript support is coming soon
-```
+At the end of the building process, the file `helloworld.wasm` can be found in the current folder.
 {% endtab %}
 {% endtabs %}
 
