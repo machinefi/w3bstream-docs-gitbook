@@ -1,11 +1,11 @@
 # Sending data to W3bstream
 
-W3bstream provides two different network service endpoints that allow sending messages to the various projects running in the node.&#x20;
+W3bstream provides two different network service endpoints that allow sending data messages to the various running projects.&#x20;
 
-A W3bstream message is made of two objects:&#x20;
+A W3bstream data message is a JSON object composed of two properties:&#x20;
 
-* the W3bstream _**header**,_ which contains W3bstream-related values, and&#x20;
-* the application _**payload,**_ which contains the actual message to be processed by the W3bstream applet.&#x20;
+* the W3bstream _**header**,_ is a nested object containing W3bstream-related values, and&#x20;
+* the message _**payload,**_ is a string or a nested object which contains the actual message to be processed by the target event handler in W3bstream.&#x20;
 
 An example message is shown below:
 
@@ -33,7 +33,7 @@ An example message is shown below:
 
 ## Sending data using HTTP
 
-The W3bstream HTTP API default port is `8888`. Aside from being used to manage the node, it also exposes a "Project API" that can be called to send data messages to a specific project.
+The W3bstream HTTP API default port is `8888`. Aside from exposing W3bstream's admin API, the HTTP service also exposes a "Project API" that can be called to send data messages to a specific project.
 
 {% swagger method="post" path="/srv-applet-mgr/v0/event/<PROJECT_NAME>" baseUrl="w3bstream_ip_address:8888" summary="Send a message to a specific W3bstream Project" %}
 {% swagger-description %}
