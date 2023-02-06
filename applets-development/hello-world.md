@@ -125,7 +125,7 @@ edit the `scripts` field in `package.json` and replace it with the following:
 
 Create the file with the following code and save it:
 
-```rust
+```typescript
 import { Log } from "@w3bstream/wasm-sdk";
 // Export alloc() is needed for w3bstream vm
 export { alloc } from "@w3bstream/wasm-sdk";
