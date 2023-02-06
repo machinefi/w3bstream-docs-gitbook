@@ -46,7 +46,7 @@
 * [Introduction](client-sdks/introduction.md)
 * [iOS Client SDK](client-sdks/ios-client-sdk.md)
 * [Android Client SDK](client-sdks/android-client-sdk.md)
-* [Embedded SDK](client-sdks/embedded-sdks/README.md)
+* [Embedded SDK](client-sdks/embedded-sdks.md)
   * [Technical goals](client-sdks/embedded-sdks/technical-goals.md)
   * [Business Goals](client-sdks/embedded-sdks/business-goals.md)
   * [Technical Framework](client-sdks/embedded-sdks/technical-framework.md)
