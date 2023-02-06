@@ -126,13 +126,29 @@ edit the `scripts` field in `package.json` and replace it with the following:
 Create the file with the following code and save it:
 
 ```rust
-// The alloc function is required by W3bstream's VM
-export { alloc } from "../../assembly/index"
-import { Log } from "../../assembly/index";
+import { Log } from "@w3bstream/wasm-sdk";
+// Export alloc() is needed for w3bstream vm
+export { alloc } from "@w3bstream/wasm-sdk";
 
 export function start(rid: i32): i32 {
     Log("Hello World!");
     return 0;
+}
+
+// The abort method will be exposed inside w3bstream
+// in a later release. For now, you can use it to log errors:
+export function abort(
+  message: string | null,
+  fileName: string | null,
+  lineNumber: u32,
+  columnNumber: u32
+): void { 
+  if (message == null) message = "unknown error";
+  if (fileName == null) fileName = "unknown file";
+  Log("ABORT: " + message
+    + " at " + fileName
+    + ":" + lineNumber.toString() 
+    + ":" + columnNumber.toString());
 }
 ```
 
