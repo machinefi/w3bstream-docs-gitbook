@@ -1,7 +1,7 @@
 # Running W3bstream
 
 {% hint style="success" %}
-****<img src="../.gitbook/assets/image.png" alt="" data-size="line"> **** [**Checkout the W3bstrem repository on GitHub**](https://github.com/machinefi/w3bstream#w3bstream)****
+****<img src="../.gitbook/assets/image (14).png" alt="" data-size="line"> **** [**Checkout the W3bstrem repository on GitHub**](https://github.com/machinefi/w3bstream#w3bstream)****
 {% endhint %}
 
 ## Run using Docker
@@ -45,6 +45,8 @@ docker-compose -p w3bstream -f ./docker-compose.yaml up -d
 By default, W3bstream will store its data in the current folder. If required, you can set the working directory by exporting the following before running the image:&#x20;
 
 `export WS_WORKING_DIR=path_to_the_w3bstream_folder`
+
+or by changing the corresponding setting in the .env file: see [configuring W3bstream ](../applets-development/configuring-w3bstream.md)for more.
 
 </details>
 
