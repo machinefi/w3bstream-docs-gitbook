@@ -85,6 +85,8 @@ Creating a “_Hello World!_” example for W3bstream is now very simple:
 
 {% tabs %}
 {% tab title="AssemblyScript" %}
+### Get the project ready
+
 Let's start with creating a new folder for the project
 
 ```bash
@@ -123,7 +125,11 @@ edit the `scripts` field in `package.json` and replace it with the following:
   },
 ```
 
-Create the file with the following code and save it:
+
+
+### Create helloworld.ts
+
+Edit `assembly/index.ts`, paste the following code and save it:
 
 ```typescript
 import { Log } from "@w3bstream/wasm-sdk";
@@ -152,16 +158,22 @@ export function abort(
 }
 ```
 
+###
+
+### Build the WASM module
+
 Finally, build the wasm module with:
 
 ```bash
-npm run asbuildbas
+npm run asbuild
 ```
 
-At the and of the building process, the W3bstream module can be found in `build/helloworld.wasm`
+At the end of the building process, the W3bstream module can be found in `build/release.wasm`
 {% endtab %}
 
 {% tab title="Go" %}
+### Get the project ready
+
 Let's start with creating a new folder for the project
 
 ```bash
@@ -174,7 +186,11 @@ Initialize the project with `go mod`
 go mod init helloworld
 ```
 
-create helloworld.go with the current code and save it:o
+
+
+### Create helloworld.go
+
+create `helloworld.go` with the current code and save it:o
 
 ```go
 package main
@@ -190,6 +206,10 @@ func _start(rid uint32) int32 {
 	return 0
 }
 ```
+
+
+
+### Build the WASM module for W3bstream
 
 install required imports (in this case, the W3bstream Go SDK):
 
@@ -207,7 +227,7 @@ At the end of the building process, the file `helloworld.wasm` can be found in t
 {% endtab %}
 {% endtabs %}
 
-## Test Hello World!
+## Test Hello World in W3bstream!
 
 Once you built the Hello World! example as a WASM module, you can upload and deploy it to the W3bstream node as explained in the Get Started section of this documentation:
 
