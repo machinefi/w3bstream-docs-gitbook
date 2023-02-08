@@ -26,8 +26,9 @@ func _ws_get_data(rid, ptr, size uint32) int32
 {% tab title="Rust" %}
 <pre class="language-rust"><code class="lang-rust">#[link(wasm_import_module = "env")]
 <strong>extern "C" {
-</strong>  fn ws_get_data(event_id i32, payload_ptr i32, payload_size i32) -> i32
-}</code></pre>
+</strong>  fn ws_get_data(event_id: i32, payload_ptr: i32, payload_size: i32) -> i32
+}
+</code></pre>
 {% endtab %}
 
 {% tab title="C++" %}
@@ -84,7 +85,7 @@ func Log(message string) {
 <pre class="language-rust"><code class="lang-rust">#[link(wasm_import_module = "env")]
 <strong>extern "C" {
 </strong>  fn ws_log(log_level: i32, ptr: *const u8, size: i32) -> i32;
-  fn ws_get_data(event_id i32, payload_ptr i32, payload_size i32) -> i32
+  fn ws_get_data(event_id: i32, payload_ptr: i32, payload_size: i32) -> i32
 }
 
 #[no_mangle]
@@ -111,7 +112,8 @@ fn get_data_as_str(event_id: i32) -> Option&#x3C;String> {
 // Logs an info message string to the W3bstream console
 fn log_info(str: &#x26;str) {
     unsafe { ws_log(3, str.as_bytes().as_ptr(), str.len() as _) };
-}</code></pre>
+}
+</code></pre>
 {% endtab %}
 
 {% tab title="C++" %}
@@ -127,7 +129,7 @@ fn log_info(str: &#x26;str) {
 {% endtab %}
 {% endtabs %}
 
-&#x20;** **<mark style="color:purple;">**💡 Learn more**</mark>
+<mark style="color:purple;">**💡 Learn more**</mark>
 
 {% content-ref url="abi-functions-reference.md" %}
 [abi-functions-reference.md](abi-functions-reference.md)
