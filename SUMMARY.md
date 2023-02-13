@@ -54,7 +54,7 @@
   * [Quick Start](client-sdks/embedded-sdks/quick-start.md)
   * [Examples](client-sdks/embedded-sdks/examples.md)
 
-## Ecosystem
+## 📦 Ecosystem
 
 * [Trusted GPS Location](https://iotex.gitbook.io/trustedlocation)
 
