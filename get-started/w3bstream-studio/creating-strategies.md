@@ -1,7 +1,7 @@
 # Creating Strategies
 
 {% hint style="success" %}
-Before creating an event strategy, make sure you [deployed an Applet](https://app.gitbook.com/o/-MQ9LhchTp7\_QJr-AYG0/s/5whGkGlpM5BFduENPztv/) first.
+Before creating an event strategy, make sure you [deployed an Applet](http://localhost:5000/o/-MQ9LhchTp7\_QJr-AYG0/s/5whGkGlpM5BFduENPztv/) first.
 {% endhint %}
 
 To create an event strategy in W3bstream, click the Strategies section on the left navigation panel:

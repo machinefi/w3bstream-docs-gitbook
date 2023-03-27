@@ -3,6 +3,7 @@
 ## 👨🏫 Introduction
 
 * [About W3bstream](README.md)
+* [Why W3bstream](introduction/why-w3bstream.md)
 * [Roadmap](introduction/roadmap.md)
 * [GitHub](https://github.com/machinefi/w3bstream#w3bstream)
 
