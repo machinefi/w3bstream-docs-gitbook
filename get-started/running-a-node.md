@@ -1,7 +1,7 @@
 # Running W3bstream
 
 {% hint style="success" %}
-****<img src="../.gitbook/assets/image (2).png" alt="" data-size="line"> **** [**Checkout the W3bstrem repository on GitHub**](https://github.com/machinefi/w3bstream#w3bstream)****
+****<img src="../.gitbook/assets/image (13).png" alt="" data-size="line"> **** [**Checkout the W3bstrem repository on GitHub**](https://github.com/machinefi/w3bstream#w3bstream)****
 {% endhint %}
 
 ## Run using Docker

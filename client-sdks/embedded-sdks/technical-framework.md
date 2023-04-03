@@ -4,13 +4,19 @@
 
 The design of _WSIoTSDK_ follows a layered approach, comprising **five layers**, from top to bottom:&#x20;
 
-<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption><p>The five layers of W3bstream IoT SDK</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
-Each layer consists of multiple components in the _WSIoTSDK_, that can be combined enabling developers to customize the SDK flexibly to meet hardware constraints and application requirements.
+Each _WSIoTSDK_ layer consists of multiple **sub-components**, that can be combined together enabling developers to customize the SDK flexibly to meet hardware constraints and application requirements.
 
-## Cryptographic Service & Primitives&#x20;
+## The Support Layer
 
-In particular, the _Cryptographic Service_ and _Cryptographic Primitive_ layers can be split into five different components, shown in the image. Each component contains a number of sub-components.
+<figure><img src="../../.gitbook/assets/image (10).png" alt=""><figcaption><p>The Support Layer</p></figcaption></figure>
+
+The Support Layer, highlighted in the purple rectangle on the left side, includes sub-components that provide functionalities for configuration, compilation, and testing of the entire SDK.
+
+## Cryptographic Service & Primitives Layers&#x20;
+
+The _Cryptographic Service_ and _Cryptographic Primitive_ layers can be split into five different components, shown in the image. Each component contains a number of sub-components.
 
 #### Cryptographic Services Layer
 
@@ -28,9 +34,7 @@ This sub-layer provides the PSA abstraction and API-level support.
 
 This sub-layer provides hardware abstraction for various embedded platforms.
 
-#### Support
 
-These sub-components, highlighted in the pink rectangle below) provide functionalities for configuration, compilation and testing of the entire SDK.
 
 <figure><img src="../../.gitbook/assets/SDK.png" alt=""><figcaption><p>Cryptographic service &#x26; Criptographic primitive layers</p></figcaption></figure>
 
