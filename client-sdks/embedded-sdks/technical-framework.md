@@ -4,13 +4,9 @@
 
 The design of _WSIoTSDK_ follows a layered approach, comprising **five layers**, from top to bottom:&#x20;
 
-* _DID Communication_ _messaging_
-* _Identity_ _and_ _credential_
-* _Cryptographic service_
-* _Cryptographic primitive_
-* _Root of trust_
+<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption><p>The five layers of W3bstream IoT SDK</p></figcaption></figure>
 
-Each layer consists of multiple components in the _WSIoTSDK_, enabling developers to customize the SDK flexibly to meet hardware constraints and application requirements.
+Each layer consists of multiple components in the _WSIoTSDK_, that can be combined enabling developers to customize the SDK flexibly to meet hardware constraints and application requirements.
 
 ## Cryptographic Service & Primitives&#x20;
 
