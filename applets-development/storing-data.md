@@ -67,12 +67,13 @@ pub extern "C" fn start(event_id: i32) -> i32 {
         0 => Ok(()), 
         _ => bail!("Error while storing the value"), 
       } 
-}</code></pre>
+}
+</code></pre>
 {% endtab %}
 {% endtabs %}
 
 <mark style="color:purple;">**💡 Learn more**</mark>
 
-{% content-ref url="abi-functions-reference.md" %}
-[abi-functions-reference.md](abi-functions-reference.md)
+{% content-ref url="../reference/abi-functions-reference.md" %}
+[abi-functions-reference.md](../reference/abi-functions-reference.md)
 {% endcontent-ref %}

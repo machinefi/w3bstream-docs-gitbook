@@ -72,6 +72,6 @@ pub fn get_db(key: &String) -> Option<String> {
 
 <mark style="color:purple;">**💡 Learn more**</mark>
 
-{% content-ref url="abi-functions-reference.md" %}
-[abi-functions-reference.md](abi-functions-reference.md)
+{% content-ref url="../reference/abi-functions-reference.md" %}
+[abi-functions-reference.md](../reference/abi-functions-reference.md)
 {% endcontent-ref %}

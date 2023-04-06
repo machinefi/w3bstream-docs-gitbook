@@ -8,7 +8,7 @@ Multiple event strategies can be defined for each W3bstream project, and it must
 Messages that do not include in their header an _event\_type_ _that is_ matched by an event strategy of their recipient project, will not trigger any logic execution. Instead, they will just be logged in the console, before being dropped by W3bstream.
 {% endhint %}
 
-&#x20; **  **<mark style="color:purple;">**💡 Learn more**</mark>
+&#x20; <mark style="color:purple;">**💡 Learn more**</mark>
 
 {% content-ref url="../../get-started/w3bstream-studio/creating-strategies.md" %}
 [creating-strategies.md](../../get-started/w3bstream-studio/creating-strategies.md)

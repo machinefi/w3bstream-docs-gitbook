@@ -72,6 +72,6 @@ W3bstream is based on the WASI interface. To learn more about WASI, check out [h
 
 </details>
 
-{% content-ref url="../abi-functions-reference.md" %}
-[abi-functions-reference.md](../abi-functions-reference.md)
+{% content-ref url="../../reference/abi-functions-reference.md" %}
+[abi-functions-reference.md](../../reference/abi-functions-reference.md)
 {% endcontent-ref %}

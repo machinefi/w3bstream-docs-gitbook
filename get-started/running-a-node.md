@@ -1,12 +1,22 @@
-# Running W3bstream
+# Accessing W3bstream
+
+Although W3bstream is still under development, you can already start building and testing DePIN projects using the W3bstream DevNet release.&#x20;
+
+## Access the public DevNet
+
+The easiest way to access the W3bstream DevNet is to open a Metamask-enabled browser and navigate to the public W3bstream service officially deployed and maintained by the IoTeX team, accessible at:
 
 {% hint style="success" %}
-****<img src="../.gitbook/assets/image (13).png" alt="" data-size="line"> **** [**Checkout the W3bstrem repository on GitHub**](https://github.com/machinefi/w3bstream#w3bstream)****
+[**https://dev.w3bstream.com**](https://dev.w3bstream.com)
 {% endhint %}
 
-## Run using Docker
+Just log in with a Metamask account to access your projects page:
 
-The recommended way of running a W3bstream node is by using [Docker](https://www.docker.com/). With docker, you can easily fetch new releases and update the W3bstream runtime, you won't have to configure a development environment to build the runtime from the source code yourself.
+<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+
+## &#x20;Run your W3bstream node
+
+The recommended way to run W3bstream DevNet on your machine is by using Docker. Docker enables you to effortlessly fetch new releases and update W3bstream's runtime without having to configure a development environment and build the runtime from source code manually.
 
 <details>
 
@@ -30,7 +40,7 @@ docker run hello-world
 
 </details>
 
-### Start the W3bstream docker image
+### Start W3bstream docker images
 
 ```
 mkdir w3bstream && cd w3bstream
@@ -40,61 +50,54 @@ curl https://raw.githubusercontent.com/machinefi/w3bstream-studio/main/docker-co
 docker-compose -p w3bstream -f ./docker-compose.yaml up -d
 ```
 
-<details>
-
-<summary><img src="../.gitbook/assets/image (6) (4).png" alt="" data-size="original"> Change W3bstream's working directory</summary>
-
-By default, W3bstream will store its data in the current folder. If required, you can set the working directory by exporting the following before running the image:&#x20;
-
-`export WS_WORKING_DIR=path_to_the_w3bstream_folder`
-
-or by changing the corresponding setting in the .env file: see [configuring W3bstream ](../applets-development/configuring-w3bstream.md)for more.
-
-</details>
-
-Once you started W3bstream, you can see the log with:
+If needed, you can see the logs in a terminal with the following command:
 
 ```bash
 docker container logs w3bstream -f
-
-Creating network "conf_default" with the default driver
-Creating w3bstream ... done
-Creating conf_graphql-engine_1 ... done
-Attaching to w3bstream, conf_graphql-engine_1
-w3bstream         | PG data does not exsit!
-graphql-engine_1  | {"type":"startup","timestamp":"2022-11-01T14:27:57.754+0000","level":"info","detail":{"kind":"server_configuration","info":{"live_query_options":{"batch_size":100,"refetch_delay":1},
-...
-
-w3bstream         | [Kit] PUT /srv-applet-mgr/v0/strategy/{projectName}/{strategyID}
-w3bstream         | [Kit] 	jwt.Auth middleware.ContextAccountAuth strategy.UpdateStrategy
-w3bstream         | [Kit] srv-applet-mgr@0.0.1 listen on :8888
-w3bstream         | {"@lv":"info","@prj":"srv-applet-mgr","@ts":"20221101-142810.513Z","msg":"admin created"}
-w3bstream         | Listening on port 3000 url: http://localhost:3000
-Notice at the end of the log, you will find the admin credentials to log in and interact with the W3bstream runtime:
 ```
 
-You can now access the [W3bstream Studio ](w3bstream-studio/)admin dashboard by pointing a browser to port `3000` for the W3bstream node server:
+which will give you something like:
+
+```
+{"@lv":"debug","@prj":"srv-applet-mgr","@ts":"20230406-172018.514Z","cost":"6.610291ms","msg":"SELECT table_schema,table_name,column_name,data_type,is_nullable,column_default,character_maximum_length,numeric_precision,numeric_scale FROM information_schema.columns WHERE (table_schema = 'applet_management') AND (table_name IN ('t_account','t_account_identity','t_account_password','t_applet','t_config','t_event_log','t_instance','t_project','t_publisher','t_resource','t_strategy','t_wasm_log'))"}
+{"@lv":"debug","@prj":"srv-applet-mgr","@ts":"20230406-172018.520Z","cost":"1.227583ms","msg":"SELECT schemaname,tablename,indexname,indexdef FROM pg_indexes WHERE (schemaname = 'applet_management') AND (tablename IN ('t_account','t_account_identity','t_account_password','t_applet','t_config','t_event_log','t_instance','t_project','t_publisher','t_resource','t_strategy','t_wasm_log'))"}
+{"@lv":"debug","@prj":"srv-applet-mgr","@ts":"20230406-172018.522Z","cost":"1.552334ms","msg":"CREATE SCHEMA IF NOT EXISTS applet_management;"}
+{"@lv":"debug","@prj":"srv-applet-mgr","@ts":"20230406-172018.531Z","cost":"7.552458ms","msg":"CREATE TABLE IF NOT EXISTS applet_management.t_account ( \tf_account_id bigint NOT NULL, \tf_role integer NOT NULL DEFAULT '2'::integer, \tf_state integer NOT NULL DEFAULT '1'::integer, \tf_avatar character varying(255) NOT NULL DEFAULT ''::character varying, \tf_meta text NOT NULL DEFAULT '{}'::text, \tf_prvkey character varying(255) NOT NULL DEFAULT ''::character varying, \tf_created_at bigint NOT NULL DEFAULT '0'::bigint, \tf_updated_at bigint NOT NULL DEFAULT '0'::bigint, \tf_deleted_at bigint NOT NULL DEFAULT '0'::bigint, \tPRIMARY KEY (f_account_id,f_deleted_at) );"}
+{"@lv":"debug","@prj":"srv-applet-mgr","@ts":"20230406-172018.536Z","cost":"4.184ms","msg":"CREATE TABLE IF NOT EXISTS applet_management.t_account_identity ( \tf_id bigserial NOT NULL, \tf_account_id bigint NOT NULL, \tf_type integer NOT NULL, \tf_identity_id character varying(255) NOT NULL, \tf_source integer NOT NULL, \tf_meta text NOT NULL DEFAULT ''::text, \tf_created_at bigint NOT NULL DEFAULT '0'::bigint, \tf_updated_at bigint NOT NULL DEFAULT '0'::bigint, \tf_deleted_at bigint NOT NULL DEFAULT '0'::bigint, \tPRIMARY KEY (f_id) );"}
+{"@lv":"debug","@prj":"srv-applet-mgr","@ts":"20230406-172018.539Z","cost":"1.853292ms","msg":"CREATE UNIQUE INDEX t_account_identity_ui_account_identity ON applet_management.t_account_identity (f_account_id,f_type,f_deleted_at);"}
+{"@lv":"debug","@prj":"srv-applet-mgr","@ts":"20230406-172018.541Z","cost":"2.094416ms","msg":"CREATE UNIQUE INDEX t_account_identity_ui_identity_id ON applet_management.t_account_identity (f_type,f_identity_id,f_deleted_at);"}
+
+...
+
+[Kit] POS /srv-applet-mgr/v0/register/admin
+[Kit] 	account.CreateAccountByUsernameAndPassword
+[Kit] GET /srv-applet-mgr/v0/resource
+[Kit] 	jwt.Auth middleware.ContextAccountAuth resource.ListResources
+[Kit] DEL /srv-applet-mgr/v0/resource/{resourceID}
+[Kit] 	jwt.Auth middleware.ContextAccountAuth resource.RemoveResource
+[Kit] POS /srv-applet-mgr/v0/strategy/{projectName}
+[Kit] 	jwt.Auth middleware.ContextAccountAuth strategy.CreateStrategy
+[Kit] GET /srv-applet-mgr/v0/strategy/{projectName}
+[Kit] 	jwt.Auth middleware.ContextAccountAuth strategy.ListStrategy
+[Kit] DEL /srv-applet-mgr/v0/strategy/{projectName}
+[Kit] 	jwt.Auth middleware.ContextAccountAuth strategy.RemoveStrategy
+[Kit] GET /srv-applet-mgr/v0/strategy/{projectName}/{strategyID}
+[Kit] 	jwt.Auth middleware.ContextAccountAuth strategy.GetStrategy
+[Kit] PUT /srv-applet-mgr/v0/strategy/{projectName}/{strategyID}
+[Kit] 	jwt.Auth middleware.ContextAccountAuth strategy.UpdateStrategy
+[Kit] srv-applet-mgr listen on :8888
+```
+
+To access your local W3bstream DevNet, open a Metamask-enabled browser and navigate to port 3000 of the W3bstream node server. If W3bstream is running on your local machine, use 'localhost' instead of the server's IP address:
 
 ```
 https://localhost:3000
 ```
 
-<figure><img src="../.gitbook/assets/image (4) (3) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
 
-## Build from source
+## Build W3bstream from the source
 
-If you want to build the source code and run the W3bstream binary or build the W3bstream Docker image locally, you can clone the W3bstream repository and follow the instructions included in the README:
+If you wish to build the W3bstream binary or Docker image from the source code on your local machine, you can clone the W3bstream repository and follow the instructions provided in the README file.
 
 {% embed url="https://github.com/machinefi/w3bstream#build-docker-image-from-code" %}
-
-## Run using the command line client
-
-{% hint style="info" %}
-****<img src="../.gitbook/assets/image (7) (2).png" alt="" data-size="original">**The W3bstream command line client will be available soon.**
-{% endhint %}
-
-## W3bstream admin HTTP API
-
-The HTTP API provides full access to the node operations allowing to automate project creation, applet deployments, etc.
-
-The admin HTTP API is currently [documented on GitHub](https://github.com/machinefi/w3bstream/blob/main/HOWTO.md).

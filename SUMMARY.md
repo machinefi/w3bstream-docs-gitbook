@@ -10,7 +10,7 @@
 ## 🚀 Get Started
 
 * [Prerequisites](get-started/prerequisites.md)
-* [Running W3bstream](get-started/running-a-node.md)
+* [Accessing W3bstream](get-started/running-a-node.md)
 * [Creating a Project](get-started/deploying-an-applet.md)
 * [Running a Project](get-started/running-an-applet.md)
 * [W3bstream Studio](get-started/w3bstream-studio/README.md)
@@ -40,7 +40,6 @@
 * [Reacting to blockchain events](applets-development/reacting-to-blockchain-events.md)
 * [Sending blockchain actions](applets-development/sending-blockchain-actions.md)
 * [Configuring W3bstream](applets-development/configuring-w3bstream.md)
-* [ABI Functions Reference](applets-development/abi-functions-reference.md)
 
 ## ⚙ Client SDKs
 
@@ -66,3 +65,8 @@
 * [Apply for a Grant](https://docs.google.com/forms/d/e/1FAIpQLSdSOL2UNfFvZEw8EsdEunnQcAVcy27acU7Rgsc-zaoBgAy7iw/viewform)
 * [White Paper](https://docsend.com/view/twtxhbzvisdye2xj)
 * [Join Our Discord](https://discord.com/invite/q5eYde2CU7)
+
+## Reference
+
+* [Host Functions](reference/abi-functions-reference.md)
+* [HTTP API](reference/http-api.md)

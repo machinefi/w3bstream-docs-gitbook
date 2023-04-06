@@ -8,7 +8,7 @@
 
 {% embed url="https://youtu.be/X4Zj-mc7dpU" %}
 
-W3bstream **** is a general framework for connecting data generated in the physical world to the blockchain world.&#x20;
+W3bstream is a general framework for connecting data generated in the physical world to the blockchain world.&#x20;
 
 In a nutshell, W3bstream uses the [IoTeX blockchain](https://docs.iotex.io) to orchestrate a decentralized network of gateways (i.e., _"W3bstream nodes"_) that streams \[optionally encrypted] data from IoT devices and machines. On top of machine data, _proofs of real-world facts_ are generated, **to be used by dApps** **on different blockchains**.&#x20;
 
@@ -83,5 +83,5 @@ Any community member who is interested in operating a W3bstream node could provi
 
 Checkout the [**Get Started**](client-sdks/introduction.md) section to learn how to run a W3bstream node.
 
-Learn about the fundamentals of **** [**programming** ](applets-development/basic-concepts/)a W3bstream node.
+Learn about the fundamentals of [**programming** ](applets-development/basic-concepts/)a W3bstream node.
 {% endhint %}

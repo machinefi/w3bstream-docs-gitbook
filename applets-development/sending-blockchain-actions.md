@@ -1,7 +1,7 @@
 # Sending blockchain actions
 
 {% hint style="info" %}
-**This functionality needs a host private key to be set in the** [**W3bstream configuration**](configuring-w3bstream.md)****
+**This functionality needs a host private key to be set in the** [**W3bstream configuration**](configuring-w3bstream.md)
 {% endhint %}
 
 An applet can send any blockchain action using the `ws_send_tx` function provided by W3nstream.

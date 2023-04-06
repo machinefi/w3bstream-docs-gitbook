@@ -131,6 +131,6 @@ fn log_info(str: &#x26;str) {
 
 <mark style="color:purple;">**💡 Learn more**</mark>
 
-{% content-ref url="abi-functions-reference.md" %}
-[abi-functions-reference.md](abi-functions-reference.md)
+{% content-ref url="../reference/abi-functions-reference.md" %}
+[abi-functions-reference.md](../reference/abi-functions-reference.md)
 {% endcontent-ref %}

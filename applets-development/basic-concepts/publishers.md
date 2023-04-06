@@ -10,7 +10,7 @@ Each publisher belongs to one and only one project_._ The publisher _id_ and _au
 Messages that do not include in their header a recipient project, or a valid _publisher_ _id_ and _token_ for their recipient project, will be discarded by W3bstream.
 {% endhint %}
 
-&#x20; **  **<mark style="color:purple;">**💡 Learn more**</mark>
+&#x20; <mark style="color:purple;">**💡 Learn more**</mark>
 
 {% content-ref url="../../get-started/w3bstream-studio/adding-publishers.md" %}
 [adding-publishers.md](../../get-started/w3bstream-studio/adding-publishers.md)
