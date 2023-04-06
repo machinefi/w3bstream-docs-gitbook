@@ -9,7 +9,6 @@
 
 ## 🚀 Get Started
 
-* [Prerequisites](get-started/prerequisites.md)
 * [Accessing W3bstream](get-started/running-a-node.md)
 * [Creating a Project](get-started/deploying-an-applet.md)
 * [Running a Project](get-started/running-an-applet.md)

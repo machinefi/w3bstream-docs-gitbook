@@ -20,7 +20,7 @@ The recommended way to run W3bstream DevNet on your machine is by using Docker. 
 
 <details>
 
-<summary>Make sure you have Docker and Docker-Compose installed in your system</summary>
+<summary>Install Docker-Compose </summary>
 
 Install Docker from the official website:
 
@@ -37,6 +37,63 @@ Log out and log back in so that your group membership is re-evaluated, then veri
 ```bash
 docker run hello-world
 ```
+
+</details>
+
+<details>
+
+<summary>Prerequisites</summary>
+
+#### Supported Blockchains
+
+Currently, W3bstream supports IoTeX, Ethereum, and any EVM-compatible blockchain.
+
+#### Tokens and Staking Requirements
+
+Currently, there are no token balance or staking requirements to run a W3bstream node.
+
+#### Hardware requirements
+
+Because your W3bstream node will act as a network endpoint for devices to send their data, you should run it on a server that has a fixed IP address, publicly accessible from the Internet.
+
+The minimum hardware requirements to run a W3bstream node are:
+
+* 2 Cores, 2 GB RAM, 10 GB storage, 100 Mbps network
+
+Recommended requirements to get started running a W3bstream node are:
+
+* 4 Cores, 4 GB RAM, 100 GB storage, 100 Mbps network
+
+**Notice**
+
+<mark style="color:purple;">The performances and storage requirements of your node are closely related to the number of client devices, the volumes of IoT data, the data retention policy, and the complexity of the application logic. It's recommended to accurately evaluate the hardware configuration based on the application-specific requirements.</mark>
+
+#### &#x20;Supported OS
+
+The W3bstream runtime supports Linux, MacOS systems, and Windows (WSL).&#x20;
+
+#### Blockchain client
+
+For your W3bstream node to be able to interact with a blockchain application (e.g., react to smart contract events, send proofs to smart contracts), you will also need access to a blockchain gateway.&#x20;
+
+You can use official gateways or third-party's gateways to access the blockchain of your choice.\
+\
+<mark style="color:purple;">IoTeX public gateways</mark>\
+You can find a list of public IoTeX RPC endpoints at:\
+[https://docs.iotex.io/dapp-development/web3-development/rpc-endpoints](https://docs.iotex.io/dapp-development/web3-development/rpc-endpoints)
+
+<mark style="color:purple;">Ethereum public gateways</mark>\
+You can find a list of public Ethereum RPC endpoints at:\
+[https://ethereumnodes.com](https://ethereumnodes.com)
+
+<mark style="color:purple;">Run your own blockchain gateway</mark>\
+If you decide to run your own gateway, it's highly recommended that you run it on a separate server, to avoid affecting W3bstream's performance. Below, you can find links to the instructions on how to run your blockchain gateway for IoTeX and Ethereum:
+
+Run an IoTeX full node\
+[https://delegates.iotex.io/get-started/node-configuration](https://delegates.iotex.io/get-started/node-configuration)\
+\
+Run an Ethereum full node\
+[https://ethereum.org/en/run-a-node/](https://ethereum.org/en/run-a-node/)
 
 </details>
 
@@ -88,6 +145,8 @@ which will give you something like:
 [Kit] srv-applet-mgr listen on :8888
 ```
 
+### Access the DevNet dashboard
+
 To access your local W3bstream DevNet, open a Metamask-enabled browser and navigate to port 3000 of the W3bstream node server. If W3bstream is running on your local machine, use 'localhost' instead of the server's IP address:
 
 ```
@@ -95,6 +154,8 @@ https://localhost:3000
 ```
 
 <figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+
+
 
 ## Build W3bstream from the source
 
