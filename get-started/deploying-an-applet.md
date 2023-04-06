@@ -1,6 +1,6 @@
-# Creating a Project
+# Create a Project
 
-Before a W3bstream node can do anything, at least one _Project_ must be created and configured.
+W3bstream's logic is organized in _Projects_, _Applets_, and _Handlers_.&#x20;
 
 ## Login to W3bstream
 

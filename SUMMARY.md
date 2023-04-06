@@ -9,8 +9,8 @@
 
 ## 🚀 Get Started
 
-* [Accessing W3bstream](get-started/running-a-node.md)
-* [Creating a Project](get-started/deploying-an-applet.md)
+* [Access W3bstream](get-started/running-a-node.md)
+* [Create a Project](get-started/deploying-an-applet.md)
 * [Running a Project](get-started/running-an-applet.md)
 * [W3bstream Studio](get-started/w3bstream-studio/README.md)
   * [Creating Projects](get-started/w3bstream-studio/creating-projects.md)
@@ -21,7 +21,6 @@
   * [Monitoring smart contracts](get-started/w3bstream-studio/monitoring-smart-contracts.md)
   * [Monitoring Blockchain Height](get-started/w3bstream-studio/monitoring-blockchain-height.md)
   * [Testing Events](get-started/w3bstream-studio/testing-events.md)
-* [Command-line Client](get-started/command-line-client.md)
 
 ## 👨💻 Applets Development
 
@@ -59,6 +58,7 @@
 
 ## 📚 Additional Resources
 
+* [Run your W3bstream DevNet](additional-resources/run-your-w3bstream-devnet.md)
 * [Landing Page](https://w3bstream.com/)
 * [Developer Portal](https://developers.iotex.io/)
 * [Apply for a Grant](https://docs.google.com/forms/d/e/1FAIpQLSdSOL2UNfFvZEw8EsdEunnQcAVcy27acU7Rgsc-zaoBgAy7iw/viewform)
