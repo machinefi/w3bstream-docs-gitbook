@@ -11,7 +11,8 @@
 
 * [Access W3bstream](get-started/running-a-node.md)
 * [Create a Project](get-started/deploying-an-applet.md)
-* [Running a Project](get-started/running-an-applet.md)
+* [Test the logic](get-started/test-the-logic.md)
+* [Send IoT data](get-started/running-an-applet.md)
 * [W3bstream Studio](get-started/w3bstream-studio/README.md)
   * [Creating Projects](get-started/w3bstream-studio/creating-projects.md)
   * [Deploying Applets](get-started/w3bstream-studio/deploying-applets.md)
