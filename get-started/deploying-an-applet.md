@@ -1,24 +1,8 @@
 # Create a Project
 
-W3bstream's logic is organized in _Projects_, _Applets_, and _Handlers_.&#x20;
-
-## Login to W3bstream
-
-Make sure the [W3bstream node is running](running-a-node.md#start-the-w3bstream-node-with).&#x20;
-
-Open W3bstream Studio at `https://localhost:3000`
-
-<figure><img src="../.gitbook/assets/image (9) (2) (1).png" alt=""><figcaption><p><code>W3bstream Studio Loging screen</code></p></figcaption></figure>
-
-Use the default password to log in to the Studio dashboard. For a newly installed node, you will see something like this:
-
-<figure><img src="../.gitbook/assets/image (4) (2).png" alt=""><figcaption><p>W3bstream Studio Home</p></figcaption></figure>
-
-## Create a new Project
+W3bstream's logic is organized into _Projects_ and _Handlers._
 
 The first step is to **create** a new _W3bstream Project:_ click the <mark style="color:blue;background-color:blue;">**`Create a project now`**</mark> button to create a new W3bstream project.
-
-<figure><img src="../.gitbook/assets/image (10) (2).png" alt=""><figcaption></figcaption></figure>
 
 Assign the "_HelloW3bstream_" name to the project and click the <mark style="color:blue;">**`Submit`**</mark> button to confirm. The new project will show up on the left side panel, under the **Project Management** section.
 
