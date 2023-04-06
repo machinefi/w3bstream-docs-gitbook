@@ -8,8 +8,8 @@ W3bstream's logic is organized into "_projects"_. To create a W3bstream project,
 4. Choose the 'HelloWorld' template.
 5. Click the 'Submit' button to create your new project."
 
-<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (7).png" alt=""><figcaption></figcaption></figure>
 
 Once the project is created, it will be listed in the "Projects" tab:
 
-<figure><img src="../.gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>

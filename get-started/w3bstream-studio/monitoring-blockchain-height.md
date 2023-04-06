@@ -8,7 +8,7 @@ Monitoring the blockchain height allows generating a W3bstream event when a spec
 
 Click the "**`Chain Height Monitor`**" in the left navigation panel, then click the <mark style="color:blue;">**`Create blockchain height monitor`**</mark> button**:**
 
-<figure><img src="../../.gitbook/assets/image (7) (4) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (7) (4).png" alt=""><figcaption></figcaption></figure>
 
 Configure the _Create blockchain height_ _monitor_ dialog with the correct settings for the blockchain height you want to use as the trigger:
 

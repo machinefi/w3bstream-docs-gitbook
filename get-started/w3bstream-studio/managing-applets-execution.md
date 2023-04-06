@@ -12,4 +12,4 @@ Click the arrow button next to the Applet to expand the Applet details:
 
 In the applet details ,you have the Instance, representing the actual deployed Applet, where you can observe the status (if it's running or not) and you can use the action buttons to change the status of the instance (Start/Restart/Stop):
 
-<figure><img src="../../.gitbook/assets/image (2) (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (2) (2).png" alt=""><figcaption></figcaption></figure>

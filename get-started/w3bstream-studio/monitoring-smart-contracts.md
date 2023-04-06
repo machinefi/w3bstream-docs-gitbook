@@ -26,4 +26,4 @@ Configure the Add Smart contract event monitor dialog with the correct settings 
 
 **`topic0`**: this is the first topic logged when the smart contract emits the event. For EVM platforms, it represents the hash of the signature of the event and can be found by exploring the logs of a transaction that triggered the event.
 
-<img src="../../.gitbook/assets/image (11).png" alt="" data-size="original">
+<img src="../../.gitbook/assets/image (11) (4).png" alt="" data-size="original">

@@ -8,4 +8,4 @@ W3bstream studio is available as a W3bserver integrated in the W3bstream service
 
 [https://localhost:3000](http://localhost:5000/o/-MQ9LhchTp7\_QJr-AYG0/s/f2s3zCHPO4kfjqwDZ9Gw/)
 
-<figure><img src="../../.gitbook/assets/image (1) (2) (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (2).png" alt=""><figcaption></figcaption></figure>
