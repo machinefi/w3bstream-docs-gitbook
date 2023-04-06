@@ -13,7 +13,10 @@ For functions that require it, please note that the allowed values for `chain_id
 | `137`     | Polygon Mainnet           |
 | `80001`   | Polygon Testnet (Mumbai)  |
 
-<pre class="language-go"><code class="lang-go">/**
+### ws\_log
+
+```go
+/**
  Log a message
  Logs a string to the W3bstream console
  
@@ -23,9 +26,13 @@ For functions that require it, please note that the allowed values for `chain_id
  @return 0 if no errors.
 */
 pub fn ws_log(log_level: i32, ptr: *const u8, size: i32) -> i32;
+```
 
-<strong>/**
-</strong> Get event data.
+### ws\_get\_data
+
+```rust
+/**
+ Get event message payload.
  Provides access to the buffer of data attached to the W3bstream event 
 
  @param resource_id the event id, provided by W3bstream as an argument of the handler function.
@@ -35,6 +42,14 @@ pub fn ws_log(log_level: i32, ptr: *const u8, size: i32) -> i32;
  */
 pub fn ws_get_data(resource_id: i32, return_ptr: *const *mut u8, return_size: *const i32, ) -> i32;
 
+
+
+
+```
+
+### ws\_set\_data
+
+```rust
 /**
   Set Event Data.
   Injects modified event data back into the source event for further processing inside W3bstream.
@@ -47,7 +62,11 @@ pub fn ws_get_data(resource_id: i32, return_ptr: *const *mut u8, return_size: *c
   @return Returns 0 if the function executes successfully.
 */
 pub fn ws_set_data(resource_id: i32, ptr: *const u8, size: i32) -> i32;
+```
 
+### ws\_get\_env
+
+```rust
 /**
  Get environment
  Gets the value of a W3bstream environment variable
@@ -59,7 +78,11 @@ pub fn ws_set_data(resource_id: i32, ptr: *const u8, size: i32) -> i32;
  @return 0 if there are no errors.
 */
 pub fn ws_get_env(ptr: *const u8, size: i32, return_ptr: *const *mut u8, return_size: *const i32, ) -> i32;
+```
 
+### ws\_get\_db
+
+```rust
 /**
  Read entry from key/value DB
  Gets a serialized object from W3bstream's key/value store.
@@ -71,7 +94,11 @@ pub fn ws_get_env(ptr: *const u8, size: i32, return_ptr: *const *mut u8, return_
  @return 0 if there are no errors.
 */
 pub fn ws_get_db(key_ptr: *const u8, key_size: i32, return_ptr: *const *mut u8, return_size: *const i32, ) -> i32;
+```
 
+### ws\_set\_db
+
+```rust
 /**
  Store entry to the key/value DB
  Stores a serialized object into W3bstream's key/value DB.
@@ -83,10 +110,14 @@ pub fn ws_get_db(key_ptr: *const u8, key_size: i32, return_ptr: *const *mut u8, 
  @return 0 if there are no errors.
 */
 pub fn ws_set_db(key_ptr: *const u8, key_size: i32, value_ptr: *const u8, value_size: i32, ) -> i32;
+```
 
+### ws\_get\_sql\_db
+
+```rust
 /**
-<strong> Query data from the SQL database
-</strong> Executes a query that returns data from W3bstream's SQL database
+ Query data from the SQL database
+ Executes a query that returns data from W3bstream's SQL database
 
  @param ptr Pointer to the query string. 
  @param size Length of the query string.
@@ -95,7 +126,12 @@ pub fn ws_set_db(key_ptr: *const u8, key_size: i32, value_ptr: *const u8, value_
  @return Returns 0 if the function executes successfully.
 */
 pub fn ws_get_sql_db(ptr: *const u8, size: i32, return_ptr: *const *mut u8, return_size: *const i32, ) -> i32;
-    
+   
+```
+
+### ws\_set\_sql\_db
+
+```rust
 /**
  Modify data into the SQL DB
  Executes a query that modifies data inside W3bstream's SQL database
@@ -105,7 +141,11 @@ pub fn ws_get_sql_db(ptr: *const u8, size: i32, return_ptr: *const *mut u8, retu
  @return Returns 0 if the function executes successfully.
 */    
 pub fn ws_set_sql_db(ptr: *const u8, size: i32) -> i32;
+```
 
+### ws\_send\_tx
+
+```rust
 /**
   Send a blockchain transaction
   Sends a transaction to the specified blockchain network
@@ -116,7 +156,11 @@ pub fn ws_set_sql_db(ptr: *const u8, size: i32) -> i32;
   @return 0 if no errors.
 */
 pub fn ws_send_tx(chain_id: i32, payload_ptr: *const u8, payload_size: i32, return_hash_ptr: *const *mut u8, return_hash_size: *const i32, ) -> i32;
+```
 
+### ws\_call\_contract
+
+```rust
 /**
   Call a contract function
   Calls a ("view" or "pure") contract function on the specified blockchain network  
@@ -129,4 +173,4 @@ pub fn ws_send_tx(chain_id: i32, payload_ptr: *const u8, payload_size: i32, retu
   @return 0 if no errors.
 */
 pub fn ws_call_contract(chain_id: i32, ptr: *const u8, size: i32, return_ptr: *const *mut u8, return_size: *const i32, ) -> i32;
-</code></pre>
+```
