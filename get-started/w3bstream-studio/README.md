@@ -1,6 +1,8 @@
 # W3bstream Studio
 
-
+{% hint style="warning" %}
+This section is a Work in Progress
+{% endhint %}
 
 W3bstream Studio is a web tool that allows W3bstream node operators to administrate their node, deploy and run applets, and explore data.
 

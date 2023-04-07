@@ -1,8 +1,15 @@
 # Projects
 
-W3bstream Projects represent containers for the node logic. This logic is implemented in the form of functions (called _event handlers_) exported inside WASM modules (called _applets_) that are deployed to W3bstream projects.
+W3bstream Projects serve as containers for your DePIN logic. A W3bstream Project includes the following:
 
-Multiple applets can be deployed to a project, and multiple handlers can be exported in the same applet. For each W3bstream project, one or more [event strategies](projects.md#event-strategies) can be configured, as well as several [publishers](projects.md#publishers) can be authorized to send data messages to the project.&#x20;
+* Event Triggers
+* Event Routing Strategies
+* Device Accounts
+* rs. The project's logic is implemented through functions, known as _Handlers_, which are exported inside a WebAssembly (WASM) module, also known as an _Applet_. A Project is created by deploying its applet to W3bstream.
+
+Although only a single applet can be attached to a project upon creation, multiple handlers can be defined within an applet.
+
+W3bstream Projects provide a flexible and scalable solution for handling events and data in a decentralized environment. With the ability to customize event routing and data publishing strategies, W3bstream Projects can be tailored to fit a wide range of use cases.
 
 &#x20; <mark style="color:purple;">**💡 Learn more**</mark>
 

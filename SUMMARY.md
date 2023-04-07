@@ -26,8 +26,8 @@
 ## 👨💻 Applets Development
 
 * [Basic concepts](applets-development/basic-concepts/README.md)
-  * [Events](applets-development/basic-concepts/events.md)
   * [Projects](applets-development/basic-concepts/projects.md)
+  * [Events](applets-development/basic-concepts/events.md)
   * [Applets and Handlers](applets-development/basic-concepts/applets-and-handlers.md)
   * [Publishers](applets-development/basic-concepts/publishers.md)
   * [Event strategies](applets-development/basic-concepts/event-strategies.md)
