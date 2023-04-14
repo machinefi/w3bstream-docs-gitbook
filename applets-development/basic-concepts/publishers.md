@@ -1,13 +1,11 @@
-# Publishers
+# Device Accounts
 
-Publishers can be used as a basic way of authorizing external sources to send data messages to W3bstream projects through one of the network service endpoints (HTTP or MQTT).&#x20;
+Device accounts can be used as a basic way to authorize external sources to send data messages to W3bstream projects via one of the network service endpoints (HTTP or MQTT). As a result, a Device Account can be considered an "authorized entity" with its unique ID and authorization token that is permitted to send data messages to a particular project.
 
-Therefore, a publisher can be considered an "authorized entity", with its unique _id_ and _authorization_ _token_, that is allowed to send data messages to a specific project.&#x20;
-
-Each publisher belongs to one and only one project_._ The publisher _id_ and _authorization token_ must be included in the message header when [sending a message to a W3bstream project](../sending-messages-to-w3bstream.md), respectively in the `pub_id` and `token` fields.
+Each publisher is associated with one and only one project. The publisher ID and authorization token must be included in the message header when sending a message to a W3bstream project, specifically in the pub\_id and token fields.
 
 {% hint style="success" %}
-Messages that do not include in their header a recipient project, or a valid _publisher_ _id_ and _token_ for their recipient project, will be discarded by W3bstream.
+Messages that do not include in their header a valid _publisher_ _id_ and _token_ for their recipient project, will be discarded by W3bstream.
 {% endhint %}
 
 &#x20; <mark style="color:purple;">**💡 Learn more**</mark>

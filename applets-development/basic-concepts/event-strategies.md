@@ -1,11 +1,9 @@
-# Event strategies
+# Event Routing Strategies
 
-An event strategy is a _rule_ that assigns an _event handler_ to a certain _event,_ and are used to define "_what to do"_ when a certain event is emitted in W3bstream.&#x20;
-
-Multiple event strategies can be defined for each W3bstream project, and it must include the name of the event to be handled, the name of the event handler function, and the project's applet that exports the handler.
+An event routing strategy is a rule that assigns a handler to a specific event, and it is used to determine the appropriate action to take when a particular event is emitted in W3bstream. Multiple event strategies can be defined for each W3bstream project, and they must include the name of the event to be handled, and the name of the event handler function defined in the Project's applet.
 
 {% hint style="success" %}
-Messages that do not include in their header an _event\_type_ _that is_ matched by an event strategy of their recipient project, will not trigger any logic execution. Instead, they will just be logged in the console, before being dropped by W3bstream.
+If a message's header does not include an event\_type that matches an event strategy of its recipient project, the message will not trigger any logic execution. Instead, it will be logged in the console and then dropped by W3bstream.
 {% endhint %}
 
 &#x20; <mark style="color:purple;">**💡 Learn more**</mark>

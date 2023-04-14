@@ -1,16 +1,29 @@
 # Applets and Handlers
 
-A W3bstream Applet is a container for the actual logic of a W3bstrem node. Since W3bstream's execution engine is based on a WebAssembly virtual machine, Applets must be compiled as WASM modules:
+A W3bstream Applet is essentially a WebAssembly Module (WASM) that exports one or more functions, known as "Handlers". These Handlers are executed by W3bstream's Virtual Machine in response to specific events triggered within W3bstream, which are linked to a particular handler.
 
-{% hint style="success" %}
-**W3bstream Applets must be compiled as WASM modules**
-{% endhint %}
+W3bstream Applets can access various functionalities of W3bstream, such as storing data in its database or executing smart contracts on supported blockchains.
 
-## Exporting event handlers
+<details>
 
-An Applet must export at least one public function to be called by the W3bstream Virtual Machine. Exported functions in an Applet are also called _Event Handlers_ and they can be used as the target _Handler_ in a Project's [event strategy.](applets-and-handlers.md#event-strategies)
+<summary>About WebAssembly</summary>
 
-Event Handlers in an applet must have the following signature:
+WebAssembly is a binary instruction format that provides a safe and portable way to execute code written in multiple languages at near-native speeds. For more detailed information on WebAssembly, you can refer to the official documentation available at [https://developer.mozilla.org/en-US/docs/WebAssembly](https://developer.mozilla.org/en-US/docs/WebAssembly).
+
+W3bstream is built on the WebAssembly System Interface (WASI), which provides a standard interface between WebAssembly modules and their host environments. If you want to learn more about WASI, you can visit [https://github.com/bytecodealliance/wasmtime/blob/main/docs/WASI-intro.md](https://github.com/bytecodealliance/wasmtime/blob/main/docs/WASI-intro.md).
+
+W3bstream supports multiple toolchains, including AssemblyScript, Rust and C/C++, which are natively supported, and Golang, which is supported through Tiny Go. Additionally, WebAssembly Text Format is also natively supported. Emscripten is used to support C/C++ toolchains.
+
+**More resources**
+
+* [WebAssembly Developer Guide](https://webassembly.org/getting-started/developers-guide/)
+* [WebAssembly Tutorial](https://marcoselvatici.github.io/WASM\_tutorial/)
+
+</details>
+
+## Creating applets
+
+To create a W3bstream Applet, you can build a WebAssembly module using one of the programming languages supported by the W3bstream SDKs. At a minimum, the Applet must export one function that can be executed by W3bstream's Virtual Machine. Additionally, Event Handlers in an Applet must have the following signature:
 
 {% tabs %}
 {% tab title="Typescript" %}
@@ -41,37 +54,3 @@ EMSCRIPTEN_KEEPALIVE uint32_t do_something(uint32_t event_id)
 ```
 {% endtab %}
 {% endtabs %}
-
-## **Calling W3bstream host functions**
-
-Using available SDKs, W3bstream applets can call several _host functions_, that give access to W3bstream's functionalities.&#x20;
-
-Typical host functions that you'll want to call from an applet range from logging functions to, data storage to blockchain transactions.&#x20;
-
-<mark style="color:purple;">**💡 Learn more**</mark>
-
-<details>
-
-<summary>About WebAssembly</summary>
-
-WebAssembly provides a way to create safe and portable code written in multiple languages that can run at near native speed. The full WebAssembly documentation is available at [https://developer.mozilla.org/en-US/docs/WebAssembly](https://developer.mozilla.org/en-US/docs/WebAssembly)&#x20;
-
-W3bstream is based on the WASI interface. To learn more about WASI, check out [https://github.com/bytecodealliance/wasmtime/blob/main/docs/WASI-intro.md](https://github.com/bytecodealliance/wasmtime/blob/main/docs/WASI-intro.md)
-
-**Supported toolchains**
-
-* WebAssembly Text Format ([natively supported](https://developer.mozilla.org/en-US/docs/WebAssembly/Understanding\_the\_text\_format))
-* Rust ([natively supported)](https://rustwasm.github.io/docs/book/introduction.html)
-* C/C++ (supported through [emscripten](https://emscripten.org/index.html))
-* Golang (supported through [tiny go](https://tinygo.org/docs/))
-
-**More resources**
-
-* [WebAssembly Developer Guide](https://webassembly.org/getting-started/developers-guide/)
-* [WebAssembly Tutorial](https://marcoselvatici.github.io/WASM\_tutorial/)
-
-</details>
-
-{% content-ref url="../../reference/abi-functions-reference.md" %}
-[abi-functions-reference.md](../../reference/abi-functions-reference.md)
-{% endcontent-ref %}
