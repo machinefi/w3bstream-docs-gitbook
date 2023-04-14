@@ -57,9 +57,11 @@ go mod tidy
 2. Build the applet as a WASM module with:
 
 ```
-tinygo build \
-    -o my-w3bstream-applet.wasm -scheduler=none \ 
-    --no-debug -target=wasi 
-    my-w3bstream-applet.go
+tinygo build -o my-w3bstream-applet.wasm -scheduler=none --no-debug -target=wasi my-w3bstream-applet.go
 ```
 
+## Contribute
+
+The source code of the W3bstream WASM SDK for Go, including examples, can be found on GitHub at:
+
+{% embed url="https://github.com/machinefi/w3bstream-wasm-golang-sdk" %}
