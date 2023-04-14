@@ -8,7 +8,7 @@ The 'HelloWorld' template simply echoes the payload of any message sent to the p
 4. Edit the payload to say 'Hello World!'.
 5. Click 'Submit' to send the message and view the results in the console."
 
-<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (16).png" alt=""><figcaption></figcaption></figure>
 
 6. Check the log panel to verify that the project's logic has been executed and the message 'Hello World!' has been outputted:
 

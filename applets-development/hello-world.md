@@ -1,25 +1,10 @@
 # Hello World!
 
-{% hint style="info" %}
-**Notice:** W3bstream is under development.&#x20;
+This guide will quickly take you through how to create a W3bstream applet that receives a data message and outputs the payload of the message to the W3bstream Project's console.
 
-The current documentation refers to _<mark style="color:blue;">W3bstream 1.0.0-rc2</mark>_
-{% endhint %}
+## Create the applet
 
-## Supported languages
-
-SDKs to build W3bstream applets are available for the following languages:
-
-* [AssemblyScript](https://github.com/machinefi/w3bstream-wasm-ts-sdk)
-* [Go](https://github.com/machinefi/w3bstream-wasm-golang-sdk)
-
-## Event handlers
-
-When creating an applet for W3bstream, you must export at least one function inside the resulting WASM module, to serve as an _**event handler**_ in W3bstream.&#x20;
-
-This handler can then be linked to a W3bstream event by configuring a _**strategy**_ in the project's [event strategies](basic-concepts/#event-strategies) configuration.&#x20;
-
-<mark style="color:purple;">**💡 Learn more**</mark>
+First createa
 
 <details>
 
