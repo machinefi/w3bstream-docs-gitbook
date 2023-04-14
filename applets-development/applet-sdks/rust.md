@@ -46,6 +46,16 @@ You can install the W3bastream WASM SDK for Rust using cargo inside your project
 cargo add ws-sdk 
 ```
 
+## Build
+
+When it's time to build your applet, run the following:
+
+```
+cargo build --target=wasm32-wasi --release
+```
+
+The applet, in the form of a WASM file, is saved to `target/wasm32-wasi/release`
+
 ## Contribute
 
 The source code of the W3bstream WASM SDK for Rust, including examples, can be found on GitHub at:

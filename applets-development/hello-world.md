@@ -4,7 +4,25 @@ This guide will quickly take you through how to create a W3bstream applet that r
 
 ## Create the applet
 
-First createa
+First create a project for your applet:
+
+{% tabs %}
+{% tab title="AssemblyScript" %}
+Follow the instructions about how to create a AssemBliscript project and install the applet SDK for AssemblyScript:
+
+[AssembliScript requirements](applet-sdks/assemblyscript.md#requirements)
+{% endtab %}
+
+{% tab title="Rust" %}
+Follow the instructions about how to create a Rust project and install the applet SDK for Rust:
+
+[Rust requirements](applet-sdks/rust.md#requirements)
+{% endtab %}
+
+{% tab title="Go" %}
+
+{% endtab %}
+{% endtabs %}
 
 <details>
 

@@ -50,6 +50,16 @@ Once you have created your AssemblyScript project, you can install the W3bstream
 npm install @w3bstream/wasm-sdk
 ```
 
+## Build
+
+When it's time to build your applet, run the following:
+
+```
+npm run asbuild:release
+```
+
+The applet, in the form of a WASM file, is saved to the `build` folder.
+
 ## Contribute
 
 The source code of the W3bstream WASM AssemblyScript SDK, including examples, can be found on GitHub at:
