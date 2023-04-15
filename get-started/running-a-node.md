@@ -1,10 +1,10 @@
 # Access W3bstream
 
-Although W3bstream is still under development, you can already start building and testing DePIN projects using the W3bstream DevNet release.&#x20;
+Although W3bstream is still under development, you can already start building and testing your DePIN projects using the W3bstream DevNet release.&#x20;
 
 ## Access the public DevNet
 
-The easiest way to access the W3bstream DevNet is to open a Metamask-enabled browser and navigate to the public W3bstream service officially deployed and maintained by the IoTeX team, accessible at:
+The easiest way to access the W3bstream DevNet is to open a MetaMask-enabled browser and navigate to the public W3bstream service deployed and maintained by the IoTeX team, accessible at:
 
 {% hint style="success" %}
 [**https://dev.w3bstream.com**](https://dev.w3bstream.com)
@@ -12,10 +12,10 @@ The easiest way to access the W3bstream DevNet is to open a Metamask-enabled bro
 
 <figure><img src="../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
 
-To access your projects page, please log in with your Metamask account. It is important to note that using the same account each time will ensure continued access to your projects. For added security, you may want to consider creating a dedicated Metamask account specifically for W3bstream.
+To access your projects page, please log in with your MetaMask account. It is important to note that using the same account each time will ensure continued access to your projects. You may want to consider creating a dedicated MetaMask account specifically for W3bstream.
 
 <figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
-Interested in running the W3bstream DevNet locally? Check out [Run your W3bstream DevNet](../additional-resources/run-your-w3bstream-devnet.md).
+If you are interested in running the W3bstream DevNet on your own computer, you can follow the instructions in our [Run your W3bstream DevNet](../additional-resources/run-your-w3bstream-devnet.md) guide.
 {% endhint %}
