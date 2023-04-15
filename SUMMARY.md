@@ -9,6 +9,12 @@
 
 ## 🚀 Get Started
 
+* [Basic concepts](get-started/basic-concepts/README.md)
+  * [Projects](get-started/basic-concepts/projects.md)
+  * [Applets and Handlers](get-started/basic-concepts/applets-and-handlers.md)
+  * [Event Triggers](get-started/basic-concepts/events.md)
+  * [Event Routing Strategies](get-started/basic-concepts/event-strategies.md)
+  * [Device Accounts](get-started/basic-concepts/publishers.md)
 * [Access W3bstream](get-started/running-a-node.md)
 * [Deploy "Hello World"](get-started/deploying-an-applet.md)
 * [Build your first Applet](get-started/hello-world/README.md)
@@ -30,12 +36,6 @@
 
 ## 👨💻 Applets Development
 
-* [Basic concepts](applets-development/basic-concepts/README.md)
-  * [Projects](applets-development/basic-concepts/projects.md)
-  * [Applets and Handlers](applets-development/basic-concepts/applets-and-handlers.md)
-  * [Event Triggers](applets-development/basic-concepts/events.md)
-  * [Event Routing Strategies](applets-development/basic-concepts/event-strategies.md)
-  * [Device Accounts](applets-development/basic-concepts/publishers.md)
 * [Sending data to W3bstream](applets-development/sending-messages-to-w3bstream.md)
 * [Getting Events Data](applets-development/getting-events-data.md)
 * [Storing Data](applets-development/storing-data.md)

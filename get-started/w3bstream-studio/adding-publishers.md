@@ -12,6 +12,6 @@ Select the Project you want to add the Publisher account to, give it a name to h
 
 <figure><img src="../../.gitbook/assets/image (10) (3).png" alt=""><figcaption></figcaption></figure>
 
-Once the Publisher account is created, it will be listed in the Publishers section of W3bstream Studio, along with the authorization token associated to it, ready to be used in the device [message header](../../applets-development/basic-concepts/events.md):
+Once the Publisher account is created, it will be listed in the Publishers section of W3bstream Studio, along with the authorization token associated to it, ready to be used in the device [message header](../basic-concepts/events.md):
 
 <figure><img src="../../.gitbook/assets/image (16) (2).png" alt=""><figcaption></figcaption></figure>

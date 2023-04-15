@@ -57,6 +57,6 @@ The development of W3bstream will span until Q2 2024. During this time, the “_
 
 Checkout the [**Get Started**](../client-sdks/introduction.md) section to learn how to run a W3bstream node.
 
-Learn about the fundamentals of [**programming** ](../applets-development/basic-concepts/)a W3bstream node.
+Learn about the fundamentals of [**programming** ](../get-started/basic-concepts/)a W3bstream node.
 {% endhint %}
 

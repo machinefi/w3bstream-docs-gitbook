@@ -83,5 +83,5 @@ Any community member who is interested in operating a W3bstream node could provi
 
 Checkout the [**Get Started**](client-sdks/introduction.md) section to learn how to run a W3bstream node.
 
-Learn about the fundamentals of [**programming** ](applets-development/basic-concepts/)a W3bstream node.
+Learn about the fundamentals of [**programming** ](get-started/basic-concepts/)a W3bstream node.
 {% endhint %}

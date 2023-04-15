@@ -10,7 +10,7 @@ Pick a unique name for your project, then click the <mark style="color:blue;">**
 
 #### <mark style="color:purple;">**💡**</mark> <mark style="color:purple;"></mark><mark style="color:purple;">Learn more</mark>
 
-{% content-ref url="../../applets-development/basic-concepts/projects.md" %}
-[projects.md](../../applets-development/basic-concepts/projects.md)
+{% content-ref url="../basic-concepts/projects.md" %}
+[projects.md](../basic-concepts/projects.md)
 {% endcontent-ref %}
 

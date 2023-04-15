@@ -10,10 +10,10 @@ Messages that do not include in their header a valid _publisher_ _id_ and _token
 
 &#x20; <mark style="color:purple;">**💡 Learn more**</mark>
 
-{% content-ref url="../../get-started/w3bstream-studio/adding-publishers.md" %}
-[adding-publishers.md](../../get-started/w3bstream-studio/adding-publishers.md)
+{% content-ref url="../w3bstream-studio/adding-publishers.md" %}
+[adding-publishers.md](../w3bstream-studio/adding-publishers.md)
 {% endcontent-ref %}
 
-{% content-ref url="../sending-messages-to-w3bstream.md" %}
-[sending-messages-to-w3bstream.md](../sending-messages-to-w3bstream.md)
+{% content-ref url="../../applets-development/sending-messages-to-w3bstream.md" %}
+[sending-messages-to-w3bstream.md](../../applets-development/sending-messages-to-w3bstream.md)
 {% endcontent-ref %}
