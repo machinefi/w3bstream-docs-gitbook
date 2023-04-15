@@ -1,7 +1,3 @@
----
-layout: landing
----
-
 # Access W3bstream
 
 Although W3bstream is still under development, you can already start building and testing DePIN projects using the W3bstream DevNet release.&#x20;
