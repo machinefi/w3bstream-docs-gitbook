@@ -5,7 +5,7 @@ description: fn ws_get_data(event_id i32, payload_ptr i32, payload_size i32) -> 
 # Getting Events Data
 
 {% hint style="success" %}
-Please check out the [hello-world.md](hello-world.md "mention") section to learn how to create a basic WASM module that can be executed in W3bstream
+Please check out the [hello-world](../get-started/hello-world/ "mention") section to learn how to create a basic WASM module that can be executed in W3bstream
 {% endhint %}
 
 When a W3bstream event matches a Project [_event strategy_](../get-started/w3bstream-studio/creating-strategies.md), the respective applet's handler is called and the event ID is passed as an argument.

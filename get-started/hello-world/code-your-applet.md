@@ -1,4 +1,4 @@
-# Hello World!
+# Code your Applet
 
 This guide will quickly take you through how to create a W3bstream applet that outputs the "Hello, World!" string to the W3bstream Project's console each time a new data message is received.
 
@@ -118,7 +118,7 @@ pub extern "C" fn start(event_id: i32) -> i32
 
 </details>
 
-3. Build the applet
+## Build the applet
 
 To build the w3bstream applet, you must generate the WASM module:
 
@@ -148,7 +148,7 @@ tinygo build  -o helloworld.wasm -scheduler=none --no-debug -target=wasi hellowo
 {% endtab %}
 {% endtabs %}
 
-## Test Hello World in W3bstream!
+## Deploy to W3bstream
 
 {% hint style="info" %}
 Work in progress
