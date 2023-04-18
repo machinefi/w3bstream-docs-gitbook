@@ -14,8 +14,8 @@ This is an internal W3bstream module that can emit W3bstream events when a certa
 
 Learn how to create a Smart Contract Monitor:
 
-{% content-ref url="../get-started/w3bstream-studio/monitoring-smart-contracts.md" %}
-[monitoring-smart-contracts.md](../get-started/w3bstream-studio/monitoring-smart-contracts.md)
+{% content-ref url="../get-started/w3bstream-studio/triggering-events/monitoring-smart-contracts.md" %}
+[monitoring-smart-contracts.md](../get-started/w3bstream-studio/triggering-events/monitoring-smart-contracts.md)
 {% endcontent-ref %}
 
 ## Blockchain Height Monitor
@@ -24,8 +24,8 @@ This is an internal W3bstream module that can emit a W3bstream event when a cert
 
 Learn how to create a Blockchain Height Monitor:
 
-{% content-ref url="../get-started/w3bstream-studio/monitoring-blockchain-height.md" %}
-[monitoring-blockchain-height.md](../get-started/w3bstream-studio/monitoring-blockchain-height.md)
+{% content-ref url="../get-started/w3bstream-studio/triggering-events/monitoring-blockchain-height.md" %}
+[monitoring-blockchain-height.md](../get-started/w3bstream-studio/triggering-events/monitoring-blockchain-height.md)
 {% endcontent-ref %}
 
 &#x20;
