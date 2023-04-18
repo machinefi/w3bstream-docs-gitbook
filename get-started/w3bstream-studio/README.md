@@ -1,13 +1,12 @@
-# W3bstream Studio
+# How To
 
 {% hint style="warning" %}
 This section is a Work in Progress
 {% endhint %}
 
-W3bstream Studio is a web tool that allows W3bstream node operators to administrate their node, deploy and run applets, and explore data.
+W3bstream Studio is a powerful and intuitive user interface that serves as the control center for developers working with the W3bstream framework. Designed to streamline the creation and management of decentralized applications (dApps), W3bstream Studio allows developers to easily set up and visualize metrics, events, and blockchain transactions for their projects.
 
-W3bstream studio is available as a W3bserver integrated in the W3bstream service, you can access it from any browser by pointing it to your W3bstream node IP address. By default, the server is available on port `3000`.
+By providing a seamless integration with MetaMask wallets, W3bstream Studio offers a personalized development environment for each user. With features such as database creation, applet logic management, and trigger orchestration, developers can efficiently handle data streams, application logic, and blockchain interactions for their dApps, all in one place. W3bstream Studio simplifies the development process, making it easier than ever for developers to build innovative solutions that harness the power of real-world data.&#x20;
 
-[https://localhost:3000](http://localhost:5000/o/-MQ9LhchTp7\_QJr-AYG0/s/f2s3zCHPO4kfjqwDZ9Gw/)
+<figure><img src="../../.gitbook/assets/Screen Shot 2023-04-18 at 4.39.13 PM.png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/image (1) (2).png" alt=""><figcaption></figcaption></figure>
