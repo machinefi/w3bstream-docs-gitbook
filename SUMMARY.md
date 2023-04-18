@@ -24,13 +24,13 @@
     * [Go](get-started/hello-world/w3bstream-applet-sdks/go.md)
   * [Code your Applet](get-started/hello-world/code-your-applet.md)
   * [Send IoT data](get-started/hello-world/running-an-applet.md)
-* [W3bstream Studio](get-started/w3bstream-studio/README.md)
+* [How To](get-started/w3bstream-studio/README.md)
   * [Creating Projects](get-started/w3bstream-studio/creating-projects.md)
   * [Adding Devices](get-started/w3bstream-studio/adding-publishers.md)
   * [Triggering Events](get-started/w3bstream-studio/triggering-events/README.md)
-    * [Monitoring Smart Contracts](get-started/w3bstream-studio/triggering-events/monitoring-smart-contracts.md)
-    * [Monitoring Blockchain Height](get-started/w3bstream-studio/triggering-events/monitoring-blockchain-height.md)
-    * [Sending Test Data](get-started/w3bstream-studio/triggering-events/testing-events.md)
+    * [Monitoring Smart Contracts](get-started/w3bstream-studio/monitoring-smart-contracts.md)
+    * [Monitoring Blockchain Height](get-started/w3bstream-studio/monitoring-blockchain-height.md)
+    * [Sending Test Data](get-started/w3bstream-studio/testing-events.md)
   * [Routing Events](get-started/w3bstream-studio/creating-strategies.md)
 
 ## 👨💻 Applets Development
