@@ -1,8 +1,8 @@
 # Why W3bstream
 
-### The current tech architecture
+### The current "real-world to web3" architecture
 
-Developers often face several challenges when building decentralized applications (dApps) using traditional centralized oracles. W3bstream addresses these concerns by offering a decentralized, secure, and composable infrastructure for developers.
+Developers often face several challenges when building decentralized applications (dApps) using traditional centralized oracles. W3bstream addresses these concerns by offering a decentralized, secure, and composable infrastructure for developers to build Dapps based on real-world data.
 
 <figure><img src="../.gitbook/assets/Screen Shot 2023-03-27 at 2.47.29 PM.png" alt=""><figcaption></figcaption></figure>
 
