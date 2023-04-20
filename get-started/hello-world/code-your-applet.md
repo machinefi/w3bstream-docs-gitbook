@@ -8,21 +8,21 @@ This guide will quickly take you through how to create a W3bstream applet that o
 
 {% tabs %}
 {% tab title="AssemblyScript" %}
-Follow the instructions about how to create a AssemBliscript project and install the applet SDK for AssemblyScript:
+Follow the instructions about how to create an AssemblyScript project and install the applet KIT for AssemblyScript:
 
-[AssemblyScript requirements](w3bstream-applet-kits/assemblyscript.md#requirements)
+[AssemblyScript requirements](w3bstream-applet-sdks/assemblyscript.md#requirements)
 {% endtab %}
 
 {% tab title="Rust" %}
-Follow the instructions about how to create a Rust project and install the applet SDK for Rust:
+Follow the instructions about how to create a Rust project and install the applet KIT for Rust:
 
-[Rust requirements](w3bstream-applet-kits/rust.md#requirements)
+[Rust requirements](w3bstream-applet-sdks/rust.md#requirements)
 {% endtab %}
 
 {% tab title="Go" %}
-Follow the instructions about how to create a Go project and install the applet SDK for Go:
+Follow the instructions about how to create a Go project and install the applet KIT for Go:
 
-[Go requirements](w3bstream-applet-kits/go.md#requirements)
+[Go requirements](w3bstream-applet-sdks/go.md#requirements)
 {% endtab %}
 {% endtabs %}
 
