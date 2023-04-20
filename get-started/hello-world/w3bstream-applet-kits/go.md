@@ -1,14 +1,10 @@
 # Go
 
-The W3bstream Applet SDK for Go is a set of tools and libraries that enable developers to create W3bstream applets using the Go programming language. The SDK provides wrappers for W3bstream's host functions, allowing Go developers to interact with the W3bstream network and build decentralized applications that leverage the power and flexibility of the IoTeX blockchain.
-
-{% hint style="info" %}
-This document is work in progress.
-{% endhint %}
+The W3bstream Applet KIT for Go is a set of tools and libraries that enable developers to create W3bstream applets using the Go programming language. The KIT provides wrappers for W3bstream's host functions, allowing Go developers to interact with the W3bstream network and build decentralized applications that leverage the power and flexibility of the IoTeX blockchain.
 
 ## Requirements
 
-Before you can use the W3bstream applet SDK for Go, you need to have the following tools installed on your system:
+Before you can use the W3bstream Applet KIT for Go, you need to have the following tools installed on your system:
 
 * Go (version 1.18 or later)
 * TinyGo (0.25.0 or later)
@@ -35,7 +31,7 @@ go mod init my-w3bstream-applet
 
 ## Installation
 
-To use the W3bstream applet SDK in your Go projects, just import the module with:
+To use the W3bstream Applet KIT in your Go projects, just import the module with:
 
 ```go
 package main
@@ -48,7 +44,7 @@ import "github.com/machinefi/w3bstream-wasm-golang-sdk/log"
 
 When it's time to build your applet, follow these steps:
 
-1. Run the following to download all required packages, including the W3bstream SDK:
+1. Run the following to download all required packages, including the W3bstream KIT:
 
 ```
 go mod tidy
@@ -62,6 +58,6 @@ tinygo build -o my-w3bstream-applet.wasm -scheduler=none --no-debug -target=wasi
 
 ## Contribute
 
-The source code of the W3bstream WASM SDK for Go, including examples, can be found on GitHub at:
+The source code of the W3bstream Applet KIT for Go, including examples, can be found on GitHub at:
 
 {% embed url="https://github.com/machinefi/w3bstream-wasm-golang-sdk" %}
