@@ -43,18 +43,18 @@
 * [Sending blockchain actions](applets-development/sending-blockchain-actions.md)
 * [Configuring W3bstream](applets-development/configuring-w3bstream.md)
 
-## ⚙ Client SDKs
+## ⚙ Sending Data to W3bstream
 
-* [Introduction](client-sdks/introduction.md)
-* [iOS Client SDK](client-sdks/ios-client-sdk.md)
-* [Android Client SDK](client-sdks/android-client-sdk.md)
-* [IoT Client SDK](client-sdks/embedded-sdks.md)
-  * [Technical goals](client-sdks/embedded-sdks/technical-goals.md)
-  * [Business Goals](client-sdks/embedded-sdks/business-goals.md)
-  * [Technical Framework](client-sdks/embedded-sdks/technical-framework.md)
-  * [Key Product Features](client-sdks/embedded-sdks/key-product-features.md)
-  * [Quick Start](client-sdks/embedded-sdks/quick-start.md)
-  * [Examples](client-sdks/embedded-sdks/examples.md)
+* [Introduction](sending-data-to-w3bstream/introduction.md)
+* [iOS Client SDK](sending-data-to-w3bstream/ios-client-sdk.md)
+* [Android Client SDK](sending-data-to-w3bstream/android-client-sdk.md)
+* [IoT Client SDK](sending-data-to-w3bstream/embedded-sdks/README.md)
+  * [Technical goals](sending-data-to-w3bstream/embedded-sdks/technical-goals.md)
+  * [Business Goals](sending-data-to-w3bstream/embedded-sdks/business-goals.md)
+  * [Technical Framework](sending-data-to-w3bstream/embedded-sdks/technical-framework.md)
+  * [Key Product Features](sending-data-to-w3bstream/embedded-sdks/key-product-features.md)
+  * [Quick Start](sending-data-to-w3bstream/embedded-sdks/quick-start.md)
+  * [Examples](sending-data-to-w3bstream/embedded-sdks/examples.md)
 
 ## 📦 Ecosystem
 

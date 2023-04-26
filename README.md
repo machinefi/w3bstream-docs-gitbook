@@ -81,7 +81,7 @@ Any community member who is interested in operating a W3bstream node could provi
 {% hint style="success" %}
 ### What's next?
 
-Checkout the [**Get Started**](client-sdks/introduction.md) section to learn how to run a W3bstream node.
+Checkout the [**Get Started**](sending-data-to-w3bstream/introduction.md) section to learn how to run a W3bstream node.
 
 Learn about the fundamentals of [**programming** ](get-started/basic-concepts/)a W3bstream node.
 {% endhint %}

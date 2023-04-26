@@ -34,6 +34,8 @@ Edit the file `index.ts` inside the `assembly` folder and copy paste the code be
 
 ```typescript
 import { Log } from "@w3bstream/wasm-sdk";
+// the alloc export is required while it's not implemented in the W3bstream host
+export { alloc } from "@w3bstream/wasm-sdk";
 
 export function start(rid: i32): i32 {
     Log("Hello World!");
