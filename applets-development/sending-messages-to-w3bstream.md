@@ -29,6 +29,6 @@ To simplify the process of sending data to your W3bstream project, we recommend 
 
 If you're not sure which W3bstream Client SDK to use for your device, check out our documentation for more information:
 
-{% content-ref url="../device-sdks/introduction.md" %}
-[introduction.md](../device-sdks/introduction.md)
+{% content-ref url="../sending-data-to-w3bstream/introduction.md" %}
+[introduction.md](../sending-data-to-w3bstream/introduction.md)
 {% endcontent-ref %}

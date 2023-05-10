@@ -17,5 +17,5 @@ To access your projects page, please log in with your MetaMask account. It is im
 <figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
-If you are interested in running the W3bstream DevNet on your own computer, you can follow the instructions in our [Run your W3bstream DevNet](../additional-resources/run-your-w3bstream-devnet.md) guide.
+If you are interested in running the W3bstream DevNet on your own computer, you can follow the instructions in our [Run your W3bstream DevNet](../additional-resources/run-w3bstream-locally.md) guide.
 {% endhint %}
