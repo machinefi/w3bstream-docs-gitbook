@@ -11,7 +11,7 @@ The applet's handler function is responsible for processing the event's payload,
 The example below shows how to obtain the event payload, parse it as a JSON object, and log it to the console:
 
 {% tabs %}
-{% tab title="Typescript" %}
+{% tab title="AssemblyScript" %}
 ```typescript
 // W3bstream functions and types
 import { GetDataByRID, JSON, Log } from "@w3bstream/wasm-sdk";

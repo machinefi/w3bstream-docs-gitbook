@@ -36,26 +36,26 @@
 
 ## 👨💻 Applets Development
 
-* [Sending data to W3bstream](applets-development/sending-messages-to-w3bstream.md)
+* [Defining device messaging](applets-development/sending-messages-to-w3bstream.md)
 * [Getting Events Data](applets-development/getting-events-data.md)
-* [Storing Data](applets-development/storing-data.md)
+* [Storing Data and Settings](applets-development/storing-data.md)
 * [Querying Stored Data](applets-development/querying-stored-data.md)
 * [Reacting to blockchain events](applets-development/reacting-to-blockchain-events.md)
 * [Sending blockchain actions](applets-development/sending-blockchain-actions.md)
 * [Configuring W3bstream](applets-development/configuring-w3bstream.md)
 
-## ⚙ Sending Data to W3bstream
+## ⚙ Device SDKs
 
-* [Introduction](sending-data-to-w3bstream/introduction.md)
-* [iOS Client SDK](sending-data-to-w3bstream/ios-client-sdk.md)
-* [Android Client SDK](sending-data-to-w3bstream/android-client-sdk.md)
-* [IoT Client SDK](sending-data-to-w3bstream/embedded-sdks/README.md)
-  * [Technical goals](sending-data-to-w3bstream/embedded-sdks/technical-goals.md)
-  * [Business Goals](sending-data-to-w3bstream/embedded-sdks/business-goals.md)
-  * [Technical Framework](sending-data-to-w3bstream/embedded-sdks/technical-framework.md)
-  * [Key Product Features](sending-data-to-w3bstream/embedded-sdks/key-product-features.md)
-  * [Quick Start](sending-data-to-w3bstream/embedded-sdks/quick-start.md)
-  * [Examples](sending-data-to-w3bstream/embedded-sdks/examples.md)
+* [Supported Devices](device-sdks/introduction.md)
+* [iOS Client SDK](device-sdks/ios-client-sdk.md)
+* [Android Client SDK](device-sdks/android-client-sdk.md)
+* [IoT Client SDK](device-sdks/embedded-sdks/README.md)
+  * [Technical goals](device-sdks/embedded-sdks/technical-goals.md)
+  * [Business Goals](device-sdks/embedded-sdks/business-goals.md)
+  * [Technical Framework](device-sdks/embedded-sdks/technical-framework.md)
+  * [Key Product Features](device-sdks/embedded-sdks/key-product-features.md)
+  * [Quick Start](device-sdks/embedded-sdks/quick-start.md)
+  * [Examples](device-sdks/embedded-sdks/examples.md)
 
 ## 📦 Ecosystem
 
@@ -64,6 +64,7 @@
 ## 📚 Additional Resources
 
 * [Run your W3bstream DevNet](additional-resources/run-your-w3bstream-devnet.md)
+* [Node API](additional-resources/node-api.md)
 * [Landing Page](https://w3bstream.com/)
 * [Developer Portal](https://developers.iotex.io/)
 * [Apply for a Grant](https://docs.google.com/forms/d/e/1FAIpQLSdSOL2UNfFvZEw8EsdEunnQcAVcy27acU7Rgsc-zaoBgAy7iw/viewform)
