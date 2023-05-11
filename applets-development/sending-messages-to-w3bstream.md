@@ -32,3 +32,16 @@ If you're not sure which W3bstream Client SDK to use for your device, check out 
 {% content-ref url="../sending-data-to-w3bstream/introduction.md" %}
 [introduction.md](../sending-data-to-w3bstream/introduction.md)
 {% endcontent-ref %}
+
+## Example message
+
+So assuming that our device is a weather station, and that it contributes some climate data periodically, the payload may look like the following:
+
+```javascript
+`"{ 
+     "temperature": 16.5, 
+     "humidity": 45.1, 
+     "pressure": 1012, 
+     "timestamp": 1683744240 
+}"`  
+```

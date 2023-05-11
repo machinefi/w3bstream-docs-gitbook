@@ -1,14 +1,8 @@
-# Getting Events Data
+# Receiving data
 
-{% hint style="success" %}
-Please check out the [hello-world](../get-started/hello-world/ "mention") section to learn how to create a basic WASM module that can be executed in W3bstream
-{% endhint %}
+When a data message is sent to a W3bstream project, W3bstream checks if there's an event route that matches the `event_type` specified in the message. If there's a match, W3bstream executes the corresponding applet's handler function and passes the event's resource ID as an argument. The applet's handler function is responsible for processing the event's payload.
 
-When a data message is sent to a W3bstream project and an event route within the project matches the event specified in the message, the corresponding applet's handler function is executed by W3bstream, with the event's resource ID passed as an argument.&#x20;
-
-The applet's handler function is responsible for processing the event's payload, which can be accessed using the `GetData` function provided by the W3bstream Applet Kit in your preferred programming language.\
-\
-The example below shows how to obtain the event payload, parse it as a JSON object, and log it to the console:
+To access the payload, you can use the `GetData` function provided by the W3bstream Applet Kit in your preferred programming language. The following example demonstrates how to obtain the event payload, parse it as a JSON object, and log it to the console:
 
 {% tabs %}
 {% tab title="AssemblyScript" %}

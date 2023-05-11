@@ -37,7 +37,7 @@
 ## 👨💻 Applets Development
 
 * [Defining device messaging](applets-development/sending-messages-to-w3bstream.md)
-* [Getting Events Data](applets-development/getting-events-data.md)
+* [Receiving data](applets-development/getting-events-data.md)
 * [Storing Data and Settings](applets-development/storing-data.md)
 * [Querying Stored Data](applets-development/querying-stored-data.md)
 * [Reacting to blockchain events](applets-development/reacting-to-blockchain-events.md)
