@@ -33,6 +33,7 @@
     * [Monitoring Blockchain Height](get-started/w3bstream-studio/monitoring-blockchain-height.md)
     * [Sending Test Data](get-started/w3bstream-studio/testing-events.md)
   * [Routing Events](get-started/w3bstream-studio/creating-strategies.md)
+  * [Create Database Tables](get-started/w3bstream-studio/create-database-tables.md)
 
 ## 👨💻 Applets Development
 
