@@ -50,9 +50,10 @@
 ## ⚙ Device SDKs
 
 * [Supported Devices](sending-data-to-w3bstream/introduction.md)
+* [Mobile Devices](device-sdks/mobile-devices.md)
 * [iOS Client SDK](sending-data-to-w3bstream/ios-client-sdk.md)
 * [Android Client SDK](sending-data-to-w3bstream/android-client-sdk.md)
-* [IoT Client SDK](sending-data-to-w3bstream/embedded-sdks/README.md)
+* [Linux Embedded](sending-data-to-w3bstream/embedded-sdks/README.md)
   * [Technical goals](sending-data-to-w3bstream/embedded-sdks/technical-goals.md)
   * [Business Goals](sending-data-to-w3bstream/embedded-sdks/business-goals.md)
   * [Technical Framework](sending-data-to-w3bstream/embedded-sdks/technical-framework.md)

@@ -1,6 +1,6 @@
 # Defining device messaging
 
-When creating a W3bstream project, it's important to define the messaging protocol between the devices that send data and your W3bstream project. Currently, there are two ways to send data messages to a W3bstream project: over HTTP or MQTT. During the development phase, you can also simulate data messages from the W3bstream Studio "Log" section.
+When creating a W3bstream project, it's important to define the messaging protocol between the devices that send the data, and your W3bstream project. Currently, there are two ways to send data messages to a W3bstream project: over HTTP or MQTT. During the development phase of your project, you can also simulate data messages from the "Log" section in W3bstream Studio.
 
 Here's an overview of how it works.
 
