@@ -4,7 +4,7 @@
 
 The design of _WSIoTSDK_ follows a layered approach, comprising **five layers**, from top to bottom:&#x20;
 
-<figure><img src="../../.gitbook/assets/image (11).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (11) (5).png" alt=""><figcaption></figcaption></figure>
 
 Each _WSIoTSDK_ layer consists of multiple **sub-components**, that can be combined together enabling developers to customize the SDK flexibly to meet hardware constraints and application requirements.
 
