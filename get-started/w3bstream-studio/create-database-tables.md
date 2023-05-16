@@ -4,4 +4,4 @@ Each W3bstream project has a dedicated database which can be accessed from the _
 
 Follow this quick video to learn how to create database tables in W3bstream:&#x20;
 
-{% embed url="https://youtu.be/ojUssgzKoFo" %}
+{% embed url="https://youtu.be/e7_kOB2mN8A" %}
