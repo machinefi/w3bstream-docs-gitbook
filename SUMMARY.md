@@ -38,6 +38,7 @@
 ## 👨💻 Applets Development
 
 * [Introduction](applets-development/introduction.md)
+* [Configuring Devices](applets-development/configuring-devices.md)
 * [Defining device messaging](applets-development/sending-messages-to-w3bstream.md)
 * [Receiving data](applets-development/getting-events-data.md)
 * [Storing Data](applets-development/storing-data.md)

@@ -1,4 +1,4 @@
-# Run your W3bstream DevNet
+# Run W3bstream locally
 
 The recommended way to run W3bstream DevNet on your server is by using Docker. Docker enables you to effortlessly fetch new releases and update W3bstream's runtime without having to configure a development environment and build the runtime from source code manually.
 
@@ -137,7 +137,7 @@ To access your local W3bstream DevNet, open a Metamask-enabled browser and navig
 https://localhost:3000
 ```
 
-<figure><img src="../.gitbook/assets/image (1) (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (3) (3).png" alt=""><figcaption></figcaption></figure>
 
 ## Build W3bstream from the source
 
