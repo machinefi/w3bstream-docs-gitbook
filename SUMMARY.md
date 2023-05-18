@@ -49,7 +49,7 @@
 
 ## ⚙ Device SDKs
 
-* [Supported Devices](sending-data-to-w3bstream/introduction.md)
+* [Introduction](sending-data-to-w3bstream/introduction.md)
 * [Mobile Devices](device-sdks/mobile-devices.md)
 * [Linux Embedded](sending-data-to-w3bstream/embedded-sdks/README.md)
   * [Technical goals](client-sdks/embedded-sdks/technical-goals.md)
@@ -58,6 +58,8 @@
   * [Key Product Features](client-sdks/embedded-sdks/key-product-features.md)
   * [Quick Start](client-sdks/embedded-sdks/quick-start.md)
   * [Examples](sending-data-to-w3bstream/embedded-sdks/examples.md)
+* [Pebble Tracker](device-sdks/pebble-tracker.md)
+* [ESP32](device-sdks/esp32.md)
 
 ## 📦 Ecosystem
 
