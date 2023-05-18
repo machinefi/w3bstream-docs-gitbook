@@ -18,13 +18,6 @@
   * [Message API](get-started/basic-concepts/message-api.md)
 * [Access W3bstream](get-started/running-a-node.md)
 * [Deploy "Hello World"](get-started/deploying-an-applet.md)
-* [Build your first Applet](get-started/hello-world/README.md)
-  * [W3bstream Applet KITs](get-started/hello-world/w3bstream-applet-sdks/README.md)
-    * [AssemblyScript](get-started/hello-world/w3bstream-applet-sdks/assemblyscript.md)
-    * [Rust](get-started/hello-world/w3bstream-applet-sdks/rust.md)
-    * [Go](get-started/hello-world/w3bstream-applet-sdks/go.md)
-  * [Code your Applet](get-started/hello-world/code-your-applet.md)
-  * [Send IoT data](get-started/hello-world/running-an-applet.md)
 * [How-to Videos](get-started/w3bstream-studio/README.md)
   * [Creating Projects](get-started/w3bstream-studio/creating-projects.md)
   * [Adding Devices](get-started/w3bstream-studio/adding-publishers.md)
@@ -37,7 +30,11 @@
 
 ## 👨💻 Applets Development
 
-* [Introduction](applets-development/introduction.md)
+* [W3bstream Applet KITs](applets-development/w3bstream-applet-kits/README.md)
+  * [AssemblyScript](applets-development/w3bstream-applet-kits/assemblyscript.md)
+  * [Rust](applets-development/w3bstream-applet-kits/rust.md)
+  * [Go](applets-development/w3bstream-applet-kits/go.md)
+* [Creating the Project](applets-development/creating-the-project.md)
 * [Configuring Devices](applets-development/configuring-devices.md)
 * [Defining device messaging](applets-development/sending-messages-to-w3bstream.md)
 * [Receiving data](applets-development/getting-events-data.md)

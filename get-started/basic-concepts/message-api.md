@@ -6,13 +6,16 @@ An example message is shown below:
 
 ```javascript
 {
-  "header": {
-    "pub_id": "my_publisher_id",
-    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJQYXlsb2FkIjoiNDUwNTI4NzAxMjc2NTcwMyIsImlzcyI6InNydi1hcHBsZXQtbWdyIiwiZXhwIjoxNjY4Mzk4MDYxfQ._Q5ZaBP5FSa09s0FCn7CBcMCty9hkM5TDu5q1wTvwB8",
-    "event_type": "BINDING",
-    "pub_time": 1667343986249
-  },
-    "payload": "VGhpcyBpcyB0aGUgbWVzc2FnZSBwYXlsb2FkCg=="
+  "events": [
+    {
+      "header": {
+        "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJQYXlsb2FkIjoiNDUwNTI4NzAxMjc2NTcwMyIsImlzcyI6InNydi1hcHBsZXQtbWdyIiwiZXhwIjoxNjY4Mzk4MDYxfQ._Q5ZaBP5FSa09s0FCn7CBcMCty9hkM5TDu5q1wTvwB8",
+        "event_type": "BINDING",
+        "pub_time": 1667343986249
+      },
+      "payload": "Your DePIN application data"
+    }
+  ]
 }
 ```
 
