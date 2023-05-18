@@ -51,14 +51,12 @@
 
 * [Supported Devices](sending-data-to-w3bstream/introduction.md)
 * [Mobile Devices](device-sdks/mobile-devices.md)
-* [iOS Client SDK](sending-data-to-w3bstream/ios-client-sdk.md)
-* [Android Client SDK](sending-data-to-w3bstream/android-client-sdk.md)
 * [Linux Embedded](sending-data-to-w3bstream/embedded-sdks/README.md)
-  * [Technical goals](sending-data-to-w3bstream/embedded-sdks/technical-goals.md)
-  * [Business Goals](sending-data-to-w3bstream/embedded-sdks/business-goals.md)
-  * [Technical Framework](sending-data-to-w3bstream/embedded-sdks/technical-framework.md)
-  * [Key Product Features](sending-data-to-w3bstream/embedded-sdks/key-product-features.md)
-  * [Quick Start](sending-data-to-w3bstream/embedded-sdks/quick-start.md)
+  * [Technical goals](client-sdks/embedded-sdks/technical-goals.md)
+  * [Business Goals](client-sdks/embedded-sdks/business-goals.md)
+  * [Technical Framework](client-sdks/embedded-sdks/technical-framework.md)
+  * [Key Product Features](client-sdks/embedded-sdks/key-product-features.md)
+  * [Quick Start](client-sdks/embedded-sdks/quick-start.md)
   * [Examples](sending-data-to-w3bstream/embedded-sdks/examples.md)
 
 ## 📦 Ecosystem
@@ -71,7 +69,7 @@
 * [Node API](https://github.com/machinefi/w3bstream/blob/main/HOWTO.md)
 * [Landing Page](https://w3bstream.com/)
 * [Developer Portal](https://developers.iotex.io/)
-* [Apply for a Grant](https://docs.google.com/forms/d/e/1FAIpQLSdSOL2UNfFvZEw8EsdEunnQcAVcy27acU7Rgsc-zaoBgAy7iw/viewform)
+* [Apply for a Grant](https://developers.iotex.io/grants)
 * [White Paper](https://docsend.com/view/twtxhbzvisdye2xj)
 * [Join Our Discord](https://discord.com/invite/q5eYde2CU7)
 
