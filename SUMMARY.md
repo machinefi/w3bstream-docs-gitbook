@@ -4,6 +4,7 @@
 
 * [About W3bstream](README.md)
 * [Why W3bstream](introduction/why-w3bstream.md)
+* [Supported Blockchains](introduction/supported-blockchains.md)
 * [Roadmap](introduction/roadmap.md)
 * [Contribute on GitHub](https://github.com/machinefi/w3bstream#w3bstream)
 
@@ -42,7 +43,6 @@
 * [Using the Key-Value DB](applets-development/using-the-key-value-db.md)
 * [Reacting to blockchain events](applets-development/reacting-to-blockchain-events.md)
 * [Sending blockchain actions](applets-development/sending-blockchain-actions.md)
-* [Configuring W3bstream](applets-development/configuring-w3bstream.md)
 
 ## ⚙ Client Device SDKs
 
@@ -65,7 +65,6 @@
 ## 📚 Additional Resources
 
 * [Run W3bstream locally](additional-resources/run-w3bstream-locally.md)
-* [Node API](https://github.com/machinefi/w3bstream/blob/main/HOWTO.md)
 * [Landing Page](https://w3bstream.com/)
 * [Developer Portal](https://developers.iotex.io/)
 * [Apply for a Grant](https://developers.iotex.io/grants)
@@ -75,4 +74,4 @@
 ## Reference
 
 * [Host Functions](reference/abi-functions-reference.md)
-* [HTTP API](reference/http-api.md)
+* [Node API](https://github.com/machinefi/w3bstream/blob/main/HOWTO.md)

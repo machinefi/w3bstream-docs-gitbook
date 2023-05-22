@@ -1,10 +1,14 @@
 # Sending blockchain actions
 
-{% hint style="info" %}
-**This functionality needs a host private key to be set in the** [**W3bstream configuration**](configuring-w3bstream.md)
-{% endhint %}
+In W3bstream, Applets have the powerful ability to interact with blockchains using the `SendTx` function provided by the Applet Kit of your language of choice. This functionality enables developers to send raw transactions to any supported blockchain.
 
-An applet can send any blockchain action using the `ws_send_tx` function provided by W3nstream.
+By utilizing the `SendTx` function, developers can specify essential details such as the chain ID, destination address, value, and encoded transaction data. This comprehensive set of parameters allows for various types of interactions with blockchains, including native token transfers, ERC20 transfers, and general smart contract interactions.
+
+With this feature, Applets in W3bstream gain the capability to seamlessly integrate with different blockchains and perform a wide range of blockchain operations. Whether you need to send tokens, interact with specific smart contracts, or execute custom transactions, W3bstream's SendTx function provides the necessary tools to facilitate these interactions efficiently.
+
+In the following sections, we will explore in detail how to utilize the SendTx function and demonstrate its usage with various blockchain examples.
+
+
 
 ## Send a transfer
 

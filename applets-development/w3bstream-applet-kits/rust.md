@@ -2,6 +2,10 @@
 
 The W3bstream Applet KIT for Rust is a set of tools and libraries that enable developers to create W3bstream applets using the Rust programming language. The KIT provides wrappers for W3bstream's host functions, allowing Rust developers to interact with the W3bstream network and build decentralized applications that leverage the power and flexibility of the IoTeX blockchain.
 
+## Reference Docs
+
+{% embed url="https://docs.rs/ws-sdk/latest/ws_sdk/" %}
+
 ## Requirements
 
 Before you can use the W3bstream Applet KIT for Rust, you need to have the following tools installed on your system:
