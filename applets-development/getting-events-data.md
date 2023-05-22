@@ -1,6 +1,6 @@
 # Receiving data
 
-When a data message is sent to a W3bstream project, W3bstream checks if there's an event route that matches the `event_type` specified in the message. If there's a match, W3bstream executes the corresponding applet's handler function and passes the event's resource ID as an argument. The applet's handler function is responsible for processing the event's payload.
+When a data message is sent to a W3bstream Project, W3bstream checks if there's an event route that matches the `event_type` specified in the message. If there's a match, W3bstream executes the corresponding applet's handler function and passes the event's resource ID as an argument. The applet's handler function is responsible for processing the event's payload.
 
 To access the payload, you can use the `GetData` function provided by the W3bstream Applet Kit in your preferred programming language. The following example demonstrates how to obtain the event payload, parse it as a JSON object, and log it to the console:
 

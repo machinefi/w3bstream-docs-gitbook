@@ -36,27 +36,27 @@
   * [Go](applets-development/w3bstream-applet-kits/go.md)
 * [Creating the Project](applets-development/creating-the-project.md)
 * [Configuring Devices](applets-development/configuring-devices.md)
-* [Defining device messaging](applets-development/sending-messages-to-w3bstream.md)
+* [Defining the message protocol](applets-development/sending-messages-to-w3bstream.md)
 * [Receiving data](applets-development/getting-events-data.md)
-* [Storing Data](applets-development/storing-data.md)
+* [Storing Device Data](applets-development/storing-data.md)
 * [Querying Stored Data](applets-development/querying-stored-data.md)
 * [Reacting to blockchain events](applets-development/reacting-to-blockchain-events.md)
 * [Sending blockchain actions](applets-development/sending-blockchain-actions.md)
 * [Configuring W3bstream](applets-development/configuring-w3bstream.md)
 
-## ⚙ Device SDKs
+## ⚙ Client Device SDKs
 
-* [Introduction](sending-data-to-w3bstream/introduction.md)
-* [Mobile Devices](device-sdks/mobile-devices.md)
-* [Linux Embedded](sending-data-to-w3bstream/embedded-sdks/README.md)
-  * [Technical goals](client-sdks/embedded-sdks/technical-goals.md)
-  * [Business Goals](client-sdks/embedded-sdks/business-goals.md)
-  * [Technical Framework](client-sdks/embedded-sdks/technical-framework.md)
-  * [Key Product Features](client-sdks/embedded-sdks/key-product-features.md)
-  * [Quick Start](client-sdks/embedded-sdks/quick-start.md)
-  * [Examples](sending-data-to-w3bstream/embedded-sdks/examples.md)
-* [Pebble Tracker](device-sdks/pebble-tracker.md)
-* [ESP32](device-sdks/esp32.md)
+* [Introduction to Client SDKs](client-device-sdks/introduction.md)
+* [Mobile Devices](client-device-sdks/mobile-devices.md)
+* [Linux Embedded](client-device-sdks/embedded-sdks/README.md)
+  * [Technical goals](client-device-sdks/embedded-sdks/technical-goals.md)
+  * [Business Goals](client-device-sdks/embedded-sdks/business-goals.md)
+  * [Technical Framework](client-device-sdks/embedded-sdks/technical-framework.md)
+  * [Key Product Features](client-device-sdks/embedded-sdks/key-product-features.md)
+  * [Quick Start](client-device-sdks/embedded-sdks/quick-start.md)
+  * [Examples](client-device-sdks/embedded-sdks/examples.md)
+* [Pebble Tracker](client-device-sdks/pebble-tracker.md)
+* [ESP32](client-device-sdks/esp32.md)
 
 ## 📦 Ecosystem
 

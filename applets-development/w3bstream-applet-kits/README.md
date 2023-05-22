@@ -3,7 +3,7 @@
 In this guide, we will go through the process of building a simple W3bstream Applet and deploying it to the W3bstream DevNet.
 
 {% hint style="info" %}
-If you are interested in learning how to build a complete project, including hardware and blockchain components, you can check out the [IoTeX Developer Portal](https://developers.iotex.io) for more content.
+If you are interested in learning how to build a complete DePIN project, including hardware and blockchain components, you can check out the [IoTeX Developer Portal](https://developers.iotex.io) for more content.
 {% endhint %}
 
 W3bstream supports several programming languages, allowing developers to create W3bstream applets in the language of their choice. Currently, W3bstream supports the following programming languages:
