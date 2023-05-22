@@ -15,7 +15,7 @@
   * [Event Triggers](get-started/basic-concepts/events.md)
   * [Event Routing Strategies](get-started/basic-concepts/event-strategies.md)
   * [Device Accounts](get-started/basic-concepts/publishers.md)
-  * [Message Protocol](get-started/basic-concepts/message-protocol.md)
+  * [Message Protocol](get-started/basic-concepts/message-api.md)
 * [Access W3bstream](get-started/running-a-node.md)
 * [Deploy "Hello World"](get-started/deploying-an-applet.md)
 * [How-to Videos](get-started/w3bstream-studio/README.md)
