@@ -67,7 +67,60 @@ export function my_handler(rid: i32): i32 {
 {% endtab %}
 
 {% tab title="Rust" %}
+```rust
+use ws_sdk::log::log_info;
+use ws_sdk::stream::get_data;
+use ws_sdk::database::sql::*;
 
+use anyhow::Result;
+use serde::Serialize;
+use serde_json::Value;
+
+pub fn my_handler(rid: i32) -> i32 {
+    // Fetch the message payload
+    let payload_str = get_data(rid).unwrap();
+    let payload_obj: JSONValue = serde_json::from_str(&payload_str).unwrap().into();
+
+    // Read the device_id from the payload object
+    let device_id = payload_obj["device_id"].as_str().unwrap();
+    if device_id.is_empty() {
+        return 1;
+    }
+
+    // Get the data nested object from the payload
+    let data_obj = payload_obj["data"].as_object().unwrap();
+
+    // Read data.temperature
+    let temperature = data_obj["temperature"].as_f64().unwrap();
+    if temperature.is_nan() {
+        return 1;
+    }
+
+    // Read data.timestamp
+    let timestamp = data_obj["timestamp"].as_str().unwrap();
+    if timestamp.is_empty() {
+        return 1;
+    }
+
+    // Save the record in the SQL database
+    let _ = execute(
+        "INSERT INTO \"iot_data\" (device_id, timestamp, temperature) VALUES (?,?,?);",
+        &[&String(device_id.to_owned()), &Float64(temperature), &String(timestamp.to_owned())],
+    ).unwrap();
+
+    // Read back device ids for which temperature is less than 20
+    let results = query(
+        "SELECT device_id FROM \"iot_data\" WHERE temperature < 20;",
+        &[],
+    ).unwrap();
+
+    // Log the results
+    Log("Device ids where temperature < 20").unwrap();
+    Log(&results).unwrap();
+
+    0
+}
+```
 {% endtab %}
 
 {% tab title="Go" %}
