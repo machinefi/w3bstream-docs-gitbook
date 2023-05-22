@@ -19,11 +19,11 @@ The 'HelloWorld' template simply echoes the payload of any data message sent to 
 1. Click on the project card to access project details.
 2. From the left navigation panel, select '**Log**'.
 3. Click the small '**play**' icon in the top right of the log panel.
-4. Edit the payload to say '**My data**'.
+4. Edit the payload data to say '**My data**'.
 5. Click '**Submit**' to send the message and view the results in the console."
 
-<figure><img src="../.gitbook/assets/image (35).png" alt=""><figcaption></figcaption></figure>
-
-6. Check the log panel to verify that the "Hello World" project's logic has been executed and the message 'Hello World!' has been outputted:
-
 <figure><img src="../.gitbook/assets/image (22).png" alt=""><figcaption></figcaption></figure>
+
+6. Check the log panel to verify that the "Hello World" project's logic has been executed and your payload has been outputted:
+
+<figure><img src="../.gitbook/assets/image (19).png" alt=""><figcaption></figcaption></figure>
