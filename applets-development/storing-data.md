@@ -1,84 +1,76 @@
 # Storing Device Data
 
-Currently, as part of W3bstream's DevNet release, each W3bstream project is equipped with a dedicated key-value database and a SQL database. These databases serve as valuable resources for storing machine data, application status, and more.
+Currently, as part of W3bstream's DevNet release, each W3bstream project is equipped with a dedicated SQL database. This database serves as a valuable resource for storing machine data, application status, and more.
 
-However, it's important to note that this SQL database solution is temporary and intended for the DevNet phase. In the future, developers will have more options to store IoT data in a variety of locations, including decentralized storage systems. W3bstream will provide storage modules that enable applets to seamlessly access and interact with data stored in these storage environments.
+{% hint style="info" %}
+However, it's important to note that the SQL database solution is temporary and intended for the W3bstream DevNet phase. In the future, developers will have more options to store IoT data in a variety of locations, including decentralized storage systems. W3bstream will provide storage modules that enable applets to seamlessly access and interact with data stored in these storage environments.
 
+\
 This future enhancement will empower developers to leverage the benefits of the different storage solutions, while maintaining the flexibility and scalability needed for IoT applications.
+{% endhint %}
 
-## Using the key-value storage
+## Using the SQL database
 
-The key-value storage in W3bstream is specifically designed for storing data that can be retrieved using a unique key. This functionality proves useful for various purposes, such as storing application settings and maintaining status information.
+When you create a project in W3bstream, a dedicated SQL database is automatically created and made accessible to the project. This SQL database allows you to store and retrieve structured data for your project. To interact with the SQL database from your Applet, the SDKs provide two functions: `ExecSQL` and `QuerySQL`.
 
-To store an object called "`myObj`" in the key-value database, a W3bstream applet can utilize the `SetDB` function.&#x20;
+#### ExecSQL
 
-The example below demonstrates how you can store and retrieve an integer value from the key-value storage:
+The `ExecSQL` function is designed for executing queries that modify the database rows, such as inserting, deleting, or altering rows. It returns an error code or 0 on success. You can use `ExecSQL` to perform operations that modify the database structure or content.
+
+#### QuerySQL
+
+On the other hand, the `QuerySQL` function is suitable for running queries that retrieve data from the database. It is used when you expect the query to return a certain number of rows. You can use `QuerySQL` to fetch data from the SQL database based on specific conditions or criteria.
+
+#### Example: Storing and Retrieving Data
+
+Let's look at an example that demonstrates storing a record in the SQL database and reading data back from it, referring to the example payload we used in the[sending-messages-to-w3bstream.md](sending-messages-to-w3bstream.md "mention") section:
+
+
 
 {% tabs %}
 {% tab title="AssemblyScript" %}
 ```typescript
-import { GetDB, SetDB } from "@w3bstream/wasm-sdk";
+import { GetDataByRID, JSON, ExecSQL, QuerySQL, Log } from "@w3bstream/wasm-sdk";
+import { Float64, String } from "@w3bstream/wasm-sdk/assembly/sql";
 export { alloc } from "@w3bstream/wasm-sdk";
 
-export function my_habdler(rid: i32): i32 {
-  
-  let value = GetDB("users_count");
-
-  let users_count = value ? parseInt(value) : 0;
-
-  let result = SetDB("users_count", (i32(users_count) + 1));
-
+export function my_handler(rid: i32): i32 {
+  // F the message payload
+  const payload_str = GetDataByRID(rid);
+  const payload_obj = JSON.parse(payload_str) as JSON.Obj;
+  // Read the device_id from the payload object
+  const device_id = payload_obj.getString("device_id");
+  if (device_id == null) return 1;
+  // Get the data nested object from the payload
+  const data_obj = payload_obj.getObj("data") as JSON.Obj;
+  // Read data.temperature
+  const temperature = data_obj.getFloat("temperature");
+  if (temperature == null) return 1;
+  // Read data.timestamp
+  const timestamp = data_obj.getString("timestamp");
+  if (timestamp == null) return 1;
+  // Save the record in the SQL database
+  const value = ExecSQL(`INSERT INTO "iot_data" (device_id, timestamp, temperature) VALUES (?,?,?);`, 
+                        [ new String(device_id.valueOf()), 
+                          new Float64(temperature.valueOf()), 
+                          new String(timestamp.valueOf())
+                        ]
+                        );
+  // Read back device ids for which temperature is less than 20
+  const results = QuerySQL(`SELECT device_id FROM "iot_data" WHERE temperature < 20;`);
+  // Log the results
+  Log("Device ids where temperature < 20");
+  Log(results),
   return 0;
 }
 ```
 {% endtab %}
 
 {% tab title="Rust" %}
-```rust
-use anyhow::Result;
-use ws_sdk::database::kv::*;
 
-#[no_mangle]
-pub extern "C" fn my_handler(rid: i32) -> i32 {
-    let value = match get("users_count") {
-        Ok(data) => String::from_utf8_lossy(&data).to_string(),
-        Err(_) => String::new(),
-    };
-
-    let users_count = value.parse::<i32>().unwrap_or(0);
-
-    let result = set("users_count", (users_count + 1).to_string().into_bytes());
-
-    0
-}
-
-
-```
 {% endtab %}
 
 {% tab title="Go" %}
-```go
-package main
 
-import (
-	"fmt"
-
-	"github.com/machinefi/w3bstream-wasm-golang-sdk/database"
-	"github.com/machinefi/w3bstream-wasm-golang-sdk/log"
-)
-
-func my_handle(rid int32) int32 {
-	value, _ := database.Get("users_count")
-
-	usersCount, _ := strconv.Atoi(string(value))
-
-	w3bstream.Set("users_count", []byte(strconv.Itoa(usersCount+1)))
-
-	return 0
-}
-
-func main() {}
-
-```
 {% endtab %}
 {% endtabs %}

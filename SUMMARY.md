@@ -39,7 +39,7 @@
 * [Defining the message protocol](applets-development/sending-messages-to-w3bstream.md)
 * [Receiving data](applets-development/getting-events-data.md)
 * [Storing Device Data](applets-development/storing-data.md)
-* [Querying Stored Data](applets-development/querying-stored-data.md)
+* [Using the Key-Value DB](applets-development/using-the-key-value-db.md)
 * [Reacting to blockchain events](applets-development/reacting-to-blockchain-events.md)
 * [Sending blockchain actions](applets-development/sending-blockchain-actions.md)
 * [Configuring W3bstream](applets-development/configuring-w3bstream.md)

@@ -24,9 +24,7 @@ As an example, let's consider a weather station device that periodically contrib
 {
   "data": {
      "temperature": 16.5,
-     "humidity": 45.1,
-     "pressure": 1012,
-     "timestamp": 1683744240
+     "timestamp": "1683744240"
   },
   "device_id": "WS1209ABC"
 } 
