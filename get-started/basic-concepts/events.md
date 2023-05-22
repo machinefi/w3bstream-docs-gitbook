@@ -11,4 +11,4 @@ W3bstream supports several event triggers, including:
 
 ## Event payload
 
-Every W3bstream event has a Payload attached to it: when a W3bstream event is emitted, and a matching Routing Strategy exists for that event, the event is sent to the appropriate Project's applet that contains the destination handler function. This allows developers to process the event and take necessary actions quickly and efficiently.
+Every W3bstream event has a Payload attached to it: when a W3bstream event is emitted, and a matching Event Routing strategy exists for that event, the event is sent to the appropriate Project that contains the destination handler function. This enables developers to efficiently process the payload of the event and take the necessary actions.
