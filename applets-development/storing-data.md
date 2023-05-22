@@ -23,9 +23,15 @@ On the other hand, the `QuerySQL` function is suitable for running queries that 
 
 #### Example: Storing and Retrieving Data
 
-Let's look at an example that demonstrates storing a record in the SQL database and reading data back from it, referring to the example payload we used in the[sending-messages-to-w3bstream.md](sending-messages-to-w3bstream.md "mention") section:
+Before you can start using the database, it's important to create the necessary tables to store your data. In our example, we'll be using the payload discussed in the previous section[sending-messages-to-w3bstream.md](sending-messages-to-w3bstream.md "mention"). From the Data section of the project editor in W3bstream Studio, we'll create a database table named "`iot_data`" with three columns: "`device_id`" (string), "`temperature`" (float64), and "`timestamp`" (string).
 
+To learn how to create database tables, you can watch the short video tutorial in the how-to section:
 
+{% content-ref url="../get-started/w3bstream-studio/create-database-tables.md" %}
+[create-database-tables.md](../get-started/w3bstream-studio/create-database-tables.md)
+{% endcontent-ref %}
+
+Let's look at an example that demonstrates storing a record in the SQL database and reading data back from it:
 
 {% tabs %}
 {% tab title="AssemblyScript" %}
