@@ -2,6 +2,10 @@
 
 The W3bstream Applet SDK for AssemblyScript is a set of tools and libraries that enable developers to create W3bstream applets using the AssemblyScript programming language.&#x20;
 
+## Reference Docs
+
+{% embed url="https://github.com/machinefi/w3bstream-wasm-assemblyscript-sdk#w3bstreamwasm-sdk" %}
+
 ## Requirements
 
 Before you can use the W3bstream Applet KIT for AssemblyScript, you need to have the following tools installed on your system:

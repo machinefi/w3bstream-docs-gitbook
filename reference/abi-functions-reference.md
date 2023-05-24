@@ -4,14 +4,7 @@ The following is a list of all host functions exported by the W3bstream VM. You 
 
 For functions that require it, please note that the allowed values for `chain_id` are:
 
-| chain\_id | Network                   |
-| --------- | ------------------------- |
-| `4690`    | IoTeX Testnet             |
-| `4689`    | IoTeX Mainnet             |
-| `1`       | Ethereum Mainnet          |
-| `5`       | Ethereum Testnet (Goerli) |
-| `137`     | Polygon Mainnet           |
-| `80001`   | Polygon Testnet (Mumbai)  |
+<table><thead><tr><th width="163">chain_id</th><th>Network</th></tr></thead><tbody><tr><td><code>4690</code></td><td>IoTeX Testnet</td></tr><tr><td><code>4689</code></td><td>IoTeX Mainnet</td></tr><tr><td><code>1</code></td><td>Ethereum Mainnet</td></tr><tr><td><code>5</code></td><td>Ethereum Testnet (Goerli)</td></tr><tr><td><code>137</code></td><td>Polygon Mainnet</td></tr><tr><td><code>80001</code></td><td>Polygon Testnet (Mumbai)</td></tr></tbody></table>
 
 ### ws\_log
 

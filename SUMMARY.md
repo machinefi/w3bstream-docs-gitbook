@@ -34,7 +34,7 @@
 * [W3bstream Applet KITs](applets-development/w3bstream-applet-kits/README.md)
   * [AssemblyScript](applets-development/w3bstream-applet-kits/assemblyscript.md)
   * [Rust](applets-development/w3bstream-applet-kits/rust.md)
-  * [Go](applets-development/w3bstream-applet-kits/go.md)
+  * [Golang](applets-development/w3bstream-applet-kits/golang.md)
 * [Creating the Project](applets-development/creating-the-project.md)
 * [Configuring Devices](applets-development/configuring-devices.md)
 * [Defining the message protocol](applets-development/sending-messages-to-w3bstream.md)
@@ -42,7 +42,7 @@
 * [Storing Device Data](applets-development/storing-data.md)
 * [Using the Key-Value DB](applets-development/using-the-key-value-db.md)
 * [Reacting to blockchain events](applets-development/reacting-to-blockchain-events.md)
-* [Sending blockchain actions](applets-development/sending-blockchain-actions.md)
+* [Interact with blockchain](applets-development/sending-blockchain-actions.md)
 
 ## ⚙ Client Device SDKs
 

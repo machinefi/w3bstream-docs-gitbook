@@ -10,7 +10,7 @@ The easiest way to access the W3bstream DevNet is to open a MetaMask-enabled bro
 [**https://devnet.w3bstream.com**](https://devnet.w3bstream.com)
 {% endhint %}
 
-<figure><img src="../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (2) (2).png" alt=""><figcaption></figcaption></figure>
 
 To access your projects page, you must log in with your MetaMask account. It is important to note that using the same account each time will ensure continued access to your projects. You may want to consider creating a dedicated MetaMask account specifically for W3bstream.
 
