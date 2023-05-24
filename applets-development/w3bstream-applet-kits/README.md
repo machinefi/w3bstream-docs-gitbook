@@ -10,7 +10,7 @@ W3bstream supports several programming languages, allowing developers to create 
 
 * [AssemblyScript](assemblyscript.md)
 * [Rust](rust.md)
-* [Go](golang.md)
+* [Go](go.md)
 
 For each of these languages, a development KIT provides a set libraries that enable developers to interact with the W3bstream network and create W3bstream applets.&#x20;
 
@@ -22,6 +22,6 @@ The W3bstream Applet SDK for AssemblyScript is a set of tools and libraries that
 
 The W3bstream Applet KIT for Rust is a set of tools and libraries that enable developers to create W3bstream applets using the Rust programming language. For more information on using the Rust KIT, please see the [Rust KIT documentation](rust.md).
 
-#### [Applet KIT for Go](golang.md)
+#### [Applet KIT for Go](go.md)
 
-The W3bstream Applet KIT for Go is a set of tools and libraries that enable developers to create W3bstream applets using the Go programming language. For more information on using the Go KIT, please see the [Go KIT documentation](golang.md).
+The W3bstream Applet KIT for Go is a set of tools and libraries that enable developers to create W3bstream applets using the Go programming language. For more information on using the Go KIT, please see the [Go KIT documentation](go.md).

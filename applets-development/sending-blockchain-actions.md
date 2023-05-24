@@ -64,7 +64,34 @@ export function my_handler(rid: i32): i32 {
   );
   Log("Transaction Hash" + Hash);
   return 0;
-}m
+}
+```
+{% endtab %}
+{% endtabs %}
+
+## Read smart contracts
+
+The `CallContract` function in W3bstream allows you to call smart contract _view_ or _pure_ functions and read the return value. The following example demonstrates how this works:
+
+{% tabs %}
+{% tab title="AssemblyScript" %}
+```typescript
+import { CallContract, GetDataByRID, Log, SendTx } from "@w3bstream/wasm-sdk";
+import { hexToAddress, hexToBool, hexToUtf8 } from "@w3bstream/wasm-sdk/assembly/utility";
+
+export { alloc } from "@w3bstream/wasm-sdk";
+
+export function stmy_handler(rid: i32): i32 {
+  const ERC20Addr = "0xa00744882684c3e4747faefd68d283ea44099d03";
+  const BalanceOfHex = CallContract(4690, ERC20Addr, `0x70a082310000000000000000000000009117f5ef4156709092f79740a97b1638ca399a00`);
+
+  Log("ERC20 Balance of address is:" + parseInt(balanceOfHex, 16).toString());
+
+  const SymbolHex = CallContract(4689, ERC20Addr, `0x95d89b41`);
+  Log("Token Symbol is:" + hexToUtf8(symbolHex));
+  
+  return 0;
+}
 ```
 {% endtab %}
 {% endtabs %}
