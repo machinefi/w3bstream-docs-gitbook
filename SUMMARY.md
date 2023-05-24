@@ -42,7 +42,7 @@
 * [Storing Device Data](applets-development/storing-data.md)
 * [Using the Key-Value DB](applets-development/using-the-key-value-db.md)
 * [Reacting to blockchain events](applets-development/reacting-to-blockchain-events.md)
-* [Interact with blockchain](applets-development/sending-blockchain-actions.md)
+* [Interacting with blockchain](applets-development/sending-blockchain-actions.md)
 
 ## ⚙ Client Device SDKs
 

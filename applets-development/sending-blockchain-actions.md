@@ -1,4 +1,4 @@
-# Interact with blockchain
+# Interacting with blockchain
 
 In W3bstream, Applets have the powerful ability to interact with blockchains using the `SendTx` function provided by the [Applet Kit of your language of choice](w3bstream-applet-kits/). This functionality enables developers to send raw transactions to any supported blockchain.
 
@@ -24,7 +24,7 @@ To access the address of your operator account, simply navigate to the Settings 
 **Please ensure that your W3bstream operator address is funded with the native token of the respective blockchain networks to enable successful transaction sending for your projects.**
 {% endhint %}
 
-## Send native token transfers
+## Sending native token transfers
 
 The following example demonstrates how to send a native token transfer from your applet:
 
@@ -44,7 +44,7 @@ export function start(rid: i32): i32 {
 {% endtab %}
 {% endtabs %}
 
-## Execute smart contract functions
+## Executing smart contract functions
 
 It's also possible to use `SendTx` to execute a smart contract function by providing the encoded  transaction payload. The following example demonstrates this:
 
@@ -69,7 +69,7 @@ export function my_handler(rid: i32): i32 {
 {% endtab %}
 {% endtabs %}
 
-## Read smart contracts
+## Reading smart contracts
 
 The `CallContract` function in W3bstream allows you to call smart contract _view_ or _pure_ functions and read the return value. The following example demonstrates how this works:
 
