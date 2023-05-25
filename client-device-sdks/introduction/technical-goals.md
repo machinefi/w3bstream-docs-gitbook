@@ -1,6 +1,6 @@
 # Technical goals
 
-The _WSIoTSDK_ is designed with the following technical objectives in mind:
+The _W3bstream IoT SDK_ (or _WSIoTSDK for short)_ is designed with the following technical objectives in mind:
 
 * **Openness**: _WSIoTSDK_ is completely open-source and contributions from IoT communities are highly encouraged.
 * **Trustworthiness**: _WSIoTSDK_ is implemented by following industry-standard security best practices and recommended application programming interfaces (APIs).

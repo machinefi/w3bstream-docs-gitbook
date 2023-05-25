@@ -34,12 +34,14 @@ The following example demonstrates how to send a native token transfer from your
 import { Log, SendTx } from "@w3bstream/wasm-sdk";
 export { alloc } from "@w3bstream/wasm-sdk";
 
+const RECIPIENT_ADDRESS = `0x9117f5EF4156709092f79740a97b1638cA399A00`;
+  
 export function start(rid: i32): i32 {
-  const RecipientAddress = `9117f5EF4156709092f79740a97b1638cA399A00`;
-  const res = SendTx(4690, RecipientAddress, "10", "");
-  Log("wasm send tx result:" + res);
+  // Send 10 IOTX from the opeartor account
+  const hash = SendTx(4690, RECIPIENT_ADDRESS, "10", "");
+  Log("Tx Hash: " + hash);
   return 0;
-}p
+}
 ```
 {% endtab %}
 {% endtabs %}

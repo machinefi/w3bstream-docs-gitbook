@@ -2,7 +2,13 @@
 
 ## Components of the SDK
 
-_WSIoTSDK_ is made up of three main components: Communication and Messaging, Identity and Credential Services, and Cryptography. The current version of the SDK only includes the Cryptography component, while the other two will be available in a future version.
+The W3bstream IoT SDK provides a reference implementation of the ARM Platform Security Architecture API. It is assumed that the reader is familiar with the specification, which can be found at [Platform Security Architecture Resources](https://developer.arm.com/architectures/security-architectures/platform-security-architecture).
+
+The SDK is made up of several main components: Communication and Messaging, Identity and Credential Services, and Cryptography Services and Primitives.
+
+{% hint style="info" %}
+The current version of the SDK only includes the Cryptography component, while the remaining components will be available in a future version.
+{% endhint %}
 
 <figure><img src="../../.gitbook/assets/image (11).png" alt=""><figcaption></figcaption></figure>
 

@@ -1,23 +1,18 @@
-# Quick Start
+# Linux Embedded
 
-#### Prerequisites
-
-_WSIoTSDK_ provides a reference implementation of the ARM Platform Security Architecture API.\
-It is assumed that the reader is familiar with the specification, that can be found at [Platform Security Architecture Resources](https://developer.arm.com/architectures/security-architectures/platform-security-architecture).
-
-#### Set up the build environment
+### Set up the build environment
 
 Iotex SDK officially supports a limited set of build environments and setups. In this context, official support means that the environments listed below are actively used by team members and active developers, hence users should be able to recreate the same configurations by following the instructions described below.\
 In case of problems, the Iotex SDK team provides support only for these environments, but building in other environments can still be possible.
 
 The following environments are supported:
 
-**Docker container (Ubuntu 22.04)**
+### **Docker container (Ubuntu 22.04)**
 
-Install the VSCode [Remote: Dev containers extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers).\
-Open the repository inside VSCode and click the "Open Workspace in Container" pop up that appears. More info on using dev containers in VSCode in the [VSCode documentation](https://code.visualstudio.com/docs/devcontainers/containers#\_open-an-existing-workspace-in-a-container).
+Install the VS Code [Remote: Dev containers extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers).\
+Open the repository inside VS Code and click the "Open Workspace in Container" pop up that appears. More info on using dev containers in VS Code in the [VS Code documentation](https://code.visualstudio.com/docs/devcontainers/containers#\_open-an-existing-workspace-in-a-container).
 
-**Linux (Ubuntu 18.04 or 22.04)**
+### **Linux (Ubuntu 18.04 or 22.04)**
 
 Run the following command to install the required dependencies:
 
@@ -25,7 +20,7 @@ Run the following command to install the required dependencies:
 sudo apt-get install -y cmake git curl wget build-essential libssl-dev python3
 ```
 
-**Windows 11 x64**
+### **Windows 11 x64**
 
 Install the following dependencies:
 
@@ -34,7 +29,7 @@ Install the following dependencies:
 * MinGW32: [https://sourceforge.net/projects/mingw-w64/files/](https://sourceforge.net/projects/mingw-w64/files/)
 * Python3 and pip (included by default): [https://www.python.org/downloads/](https://www.python.org/downloads/)
 
-#### Get the source code
+### Get the source code
 
 Run the following command to clone the repository:
 
@@ -42,7 +37,7 @@ Run the following command to clone the repository:
 git clone https://github.com/machinefi/w3bstream-iot-sdk.git
 ```
 
-#### Build
+### Build
 
 The build process is managed by CMake. The build can be customized by passing CMake options.\
 Below is a description of the most common ones. For a full list of CMake options see the main [CMakeLists.txt](https://github.com/machinefi/w3bstream-iot-sdk/blob/main/CMakeLists.txt):
@@ -96,3 +91,9 @@ TOTAL FAILED    : 0
 TOTAL SKIPPED   : 2
 ******************************************
 ```
+
+### Examples
+
+Examples to demonstrate the usage of the SDK can be found in the [examples' folder](https://github.com/machinefi/w3bstream-iot-sdk/tree/main/examples) of the SDK. Each example contains a README file with usage instructions:
+
+{% embed url="https://github.com/machinefi/w3bstream-iot-sdk/tree/main/examples" %}
