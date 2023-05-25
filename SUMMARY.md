@@ -46,16 +46,17 @@
 
 ## ⚙ Client Device SDKs
 
-* [IoT Client SDKs](client-device-sdks/introduction/README.md)
-  * [Technical goals](client-device-sdks/introduction/technical-goals.md)
-  * [Business Goals](client-device-sdks/introduction/business-goals.md)
-  * [Technical Framework](client-device-sdks/introduction/technical-framework.md)
-  * [Key Product Features](client-device-sdks/introduction/key-product-features.md)
-* [Mobile Devices](client-device-sdks/mobile-devices.md)
-* [Pebble Tracker](client-device-sdks/pebble-tracker.md)
-* [Linux Embedded](client-device-sdks/embedded-sdks.md)
-* [ESP32](client-device-sdks/esp32.md)
-* [Arduino](client-device-sdks/arduino.md)
+* [IoT Client SDKs](client-device-sdks/introduction.md)
+  * [Technical goals](client-device-sdks/embedded-sdks/technical-goals.md)
+  * [Business Goals](client-device-sdks/embedded-sdks/business-goals.md)
+  * [Technical Framework](client-device-sdks/embedded-sdks/technical-framework.md)
+  * [Key Product Features](client-device-sdks/embedded-sdks/key-product-features.md)
+* [Platforms](client-device-sdks/platforms/README.md)
+  * [Mobile Devices](client-device-sdks/platforms/mobile-devices.md)
+  * [Linux Embedded](client-device-sdks/platforms/embedded-sdks.md)
+  * [ESP32](client-device-sdks/platforms/esp32.md)
+  * [Arduino](client-device-sdks/platforms/arduino.md)
+  * [Pebble Tracker](client-device-sdks/platforms/pebble-tracker.md)
 
 ## 📦 Ecosystem
 

@@ -4,12 +4,12 @@ W3bstream currently offers an **iOS** and an **Android** Client SDKs to sign and
 
 ### iOS Client SDK
 
-For installation and usage guides, check out the GitHub repository below:&#x20;
+For installation and usage guides, please check out the GitHub repository below:
 
 {% embed url="https://github.com/machinefi/w3bstream-ios-sdk" %}
 
 ### Android Client SDK
 
-For installation and usage guides, check out the GitHub repository below:&#x20;
+For installation and usage guides, please check out the GitHub repository below:&#x20;
 
 {% embed url="https://github.com/machinefi/w3bstream-android-sdk" %}
