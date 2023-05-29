@@ -17,7 +17,7 @@
   * [Event Routing Strategies](get-started/basic-concepts/event-strategies.md)
   * [Device Accounts](get-started/basic-concepts/publishers.md)
   * [Message Protocol](get-started/basic-concepts/message-api.md)
-* [Access W3bstream](get-started/running-a-node.md)
+* [Access W3bstream](get-started/access-w3bstream.md)
 * [Deploy "Hello World"](get-started/deploying-an-applet.md)
 * [How-to Videos](get-started/w3bstream-studio/README.md)
   * [Creating Projects](get-started/w3bstream-studio/creating-projects.md)
