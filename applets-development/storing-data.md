@@ -27,8 +27,8 @@ Before you can start using the database, it's important to create the necessary 
 
 To learn how to create database tables, you can watch the short video tutorial in the how-to section:
 
-{% content-ref url="../get-started/w3bstream-studio/create-database-tables.md" %}
-[create-database-tables.md](../get-started/w3bstream-studio/create-database-tables.md)
+{% content-ref url="../get-started/video-how-to/create-database-tables.md" %}
+[create-database-tables.md](../get-started/video-how-to/create-database-tables.md)
 {% endcontent-ref %}
 
 Let's look at an example that demonstrates storing a record in the SQL database and reading data back from it:
