@@ -1,9 +1,5 @@
 # About W3bstream
 
-{% hint style="info" %}
-**Notice**: This documentation portal is a Work in Progress and subject to change frequently.
-{% endhint %}
-
 ## Overview
 
 {% embed url="https://youtu.be/X4Zj-mc7dpU" %}
