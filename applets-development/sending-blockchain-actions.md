@@ -69,6 +69,26 @@ export function my_handler(rid: i32): i32 {
 }
 ```
 {% endtab %}
+
+{% tab title="Rust" %}
+```rust
+use ws_sdk::blockchain::*;
+use ws_sdk::log::log_info;
+
+pub extern "C" fn start(rid: i32) -> i32 {
+    const CONTRACT_ADDR = `0xb73eE6EB5b1984c78CCcC49eA7Ad773E71d74F51`;
+    const hash = send_tx(
+        4690, 
+        CONTRACT_ADDR, 
+        "0",
+        "40c10f1900000000000000000000000000000000000000000000000000000000000f4240")?;
+
+    log_info(&format!("Transaction hash: {}, hash))?;
+
+    return 0;
+}
+```
+{% endtab %}
 {% endtabs %}
 
 ## Reading smart contracts
