@@ -68,7 +68,6 @@
 
 ## 📚 Additional Resources
 
-* [Run W3bstream locally](additional-resources/run-w3bstream-locally.md)
 * [Landing Page](https://w3bstream.com/)
 * [Developer Portal](https://developers.iotex.io/)
 * [Apply for a Grant](https://developers.iotex.io/grants)
