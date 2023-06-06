@@ -10,8 +10,8 @@ The Smart Contract Event Monitor is an internal W3bstream module designed to emi
 
 &#x20;You can learn how to create a Smart Contract Monitor by following our detailed guide.
 
-{% content-ref url="../get-started/video-how-to/triggering-events/monitoring-smart-contracts.md" %}
-[monitoring-smart-contracts.md](../get-started/video-how-to/triggering-events/monitoring-smart-contracts.md)
+{% content-ref url="../get-started/w3bstream-studio/triggering-events/monitoring-smart-contracts.md" %}
+[monitoring-smart-contracts.md](../get-started/w3bstream-studio/triggering-events/monitoring-smart-contracts.md)
 {% endcontent-ref %}
 
 ## Blockchain Height Monitor
@@ -20,6 +20,6 @@ The Blockchain Height Monitor is another internal W3bstream module that enables 
 
 To learn how to create a Blockchain Height Monitor, refer to our short video in the how-to section.
 
-{% content-ref url="../get-started/video-how-to/triggering-events/monitoring-blockchain-height.md" %}
-[monitoring-blockchain-height.md](../get-started/video-how-to/triggering-events/monitoring-blockchain-height.md)
+{% content-ref url="../get-started/w3bstream-studio/triggering-events/monitoring-blockchain-height.md" %}
+[monitoring-blockchain-height.md](../get-started/w3bstream-studio/triggering-events/monitoring-blockchain-height.md)
 {% endcontent-ref %}

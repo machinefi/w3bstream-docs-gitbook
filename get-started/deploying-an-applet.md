@@ -8,11 +8,11 @@ When creating a DePIN project using W3bstream, you can organize your logic into 
 4. Choose the 'HelloWorld' template.
 5. Click the 'Submit' button to create your new project."
 
-<figure><img src="../.gitbook/assets/image (7).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (7) (6).png" alt=""><figcaption></figcaption></figure>
 
 Once the project is created, it will be listed in the "Projects" tab:
 
-<figure><img src="../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (4) (6).png" alt=""><figcaption></figcaption></figure>
 
 The 'HelloWorld' template simply echoes the payload of any data message sent to the project into the Project's console. To send some test messages and view the results:
 

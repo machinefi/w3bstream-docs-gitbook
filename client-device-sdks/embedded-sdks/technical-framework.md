@@ -10,7 +10,7 @@ The SDK is made up of several main components: Communication and Messaging, Iden
 The current version of the SDK only includes the Cryptography component, while the remaining components will be available in a future version.
 {% endhint %}
 
-<figure><img src="../../.gitbook/assets/image (11).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (11) (5).png" alt=""><figcaption></figcaption></figure>
 
 ## The Cryptography component
 

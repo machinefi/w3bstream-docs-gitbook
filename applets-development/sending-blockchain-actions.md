@@ -10,11 +10,11 @@ In the following sections, we will explore in detail how to utilize the `SendTx`
 
 ## The Operator Address
 
-When you deploy your first W3bstream Project from your Metamask account, a blockchain account called the "Operator Account" is automatically generated and associated with your login account. The operator account, managed by W3bstream, plays a significant role authorizing transactions sent from your projects.
+When you deploy a W3bstream Project from your Metamask account, a blockchain account called the "Operator Account" is automatically generated and assigned to your project. The operator account is managed by W3bstream, and plays a significant role, authorizing transactions sent from your projects.
 
+{% hint style="info" %}
 This process enables smart contracts to uniquely identify and trust the sender as the authorized W3bstream project, supposed to provide proofs to the blockchain layer of the DePIN application.
-
-
+{% endhint %}
 
 To access the address of your operator account, simply navigate to the Settings section of your Projects. There, you will find the specific address associated with your operator account. This information is essential for verifying the origin of transactions and maintaining the integrity of your project's interactions with the blockchain.
 

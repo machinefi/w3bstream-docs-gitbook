@@ -6,7 +6,6 @@
 * [Why W3bstream](introduction/why-w3bstream.md)
 * [Supported Blockchains](introduction/supported-blockchains.md)
 * [Roadmap](introduction/roadmap.md)
-* [Contribute on GitHub](https://github.com/machinefi/w3bstream#w3bstream)
 
 ## 🚀 Get Started
 
@@ -19,15 +18,15 @@
   * [Message Protocol](get-started/basic-concepts/message-api.md)
 * [Access W3bstream](get-started/access-w3bstream.md)
 * [Deploy "Hello World"](get-started/deploying-an-applet.md)
-* [How-to Videos](get-started/video-how-to/README.md)
-  * [Creating Projects](get-started/video-how-to/creating-projects.md)
-  * [Adding Devices](get-started/video-how-to/adding-publishers.md)
-  * [Triggering Events](get-started/video-how-to/triggering-events/README.md)
-    * [Monitoring Smart Contracts](get-started/video-how-to/triggering-events/monitoring-smart-contracts.md)
-    * [Monitoring Blockchain Height](get-started/video-how-to/triggering-events/monitoring-blockchain-height.md)
-    * [Sending Test Data](get-started/video-how-to/triggering-events/testing-events.md)
-  * [Routing Events](get-started/video-how-to/creating-strategies.md)
-  * [Create Database Tables](get-started/video-how-to/create-database-tables.md)
+* [W3bstream Studio](get-started/w3bstream-studio/README.md)
+  * [Creating Projects](get-started/w3bstream-studio/creating-projects.md)
+  * [Adding Devices](get-started/w3bstream-studio/adding-publishers.md)
+  * [Triggering Events](get-started/w3bstream-studio/triggering-events/README.md)
+    * [Monitoring Smart Contracts](get-started/w3bstream-studio/triggering-events/monitoring-smart-contracts.md)
+    * [Monitoring Blockchain Height](get-started/w3bstream-studio/triggering-events/monitoring-blockchain-height.md)
+    * [Sending Test Data](get-started/w3bstream-studio/triggering-events/testing-events.md)
+  * [Routing Events](get-started/w3bstream-studio/creating-strategies.md)
+  * [Create Database Tables](get-started/w3bstream-studio/create-database-tables.md)
 
 ## 👨💻 Applets Development
 
@@ -43,6 +42,15 @@
 * [Using the Key-Value DB](applets-development/using-the-key-value-db.md)
 * [Reacting to blockchain events](applets-development/reacting-to-blockchain-events.md)
 * [Interacting with blockchain](applets-development/sending-blockchain-actions.md)
+* [Advanced Concepts](applets-development/advanced-concepts/README.md)
+  * [Token Proofs](applets-development/advanced-concepts/token-proofs.md)
+  * [Trusted IoT Data](applets-development/advanced-concepts/trusted-iot-data.md)
+
+## 📊 Trusted Metrics Service
+
+* [About Trusted Metrics](trusted-metrics-service/about-trusted-metrics.md)
+* [Querying Data](trusted-metrics-service/querying-data.md)
+* [Data Visualization](trusted-metrics-service/data-visualization.md)
 
 ## ⚙ Client Device SDKs
 
@@ -57,10 +65,6 @@
   * [ESP32](client-device-sdks/platforms/esp32.md)
   * [Arduino](client-device-sdks/platforms/arduino.md)
   * [Pebble Tracker](client-device-sdks/platforms/pebble-tracker.md)
-
-## 📦 Ecosystem
-
-* [Trusted GPS Location](https://iotex.gitbook.io/trustedlocation)
 
 ## 📚 Additional Resources
 
