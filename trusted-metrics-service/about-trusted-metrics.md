@@ -4,9 +4,9 @@ W3bstream's Trusted Metrics is a powerful service that enables developers to sea
 
 Additionally, developers have the flexibility to utilize pre-built dashboards provided by IoTeX, leverage public dashboard services like [DePINDD](https://depindd.com/), or create their custom dashboards, tailored to their specific needs.&#x20;
 
-Developers can conveniently access project metrics through an API, allowing seamless integration with other systems and enabling further analysis and visualization of the collected data
+Developers can conveniently access project metrics through an API, allowing seamless integration with other systems and enabling further analysis and visualization of the collected data.
 
-<figure><img src="../.gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/img_v2_252d5929-cc31-4fc4-ad20-5c1092bb000h.jpg" alt=""><figcaption></figcaption></figure>
 
 ### Aggregated Metrics
 

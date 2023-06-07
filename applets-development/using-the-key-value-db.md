@@ -8,21 +8,20 @@ The example below demonstrates how you can store and retrieve an integer value f
 
 {% tabs %}
 {% tab title="AssemblyScript" %}
-```typescript
-import { GetDB, SetDB } from "@w3bstream/wasm-sdk";
+<pre class="language-typescript"><code class="lang-typescript">import { GetDB, SetDB } from "@w3bstream/wasm-sdk";
 export { alloc } from "@w3bstream/wasm-sdk";
 
 export function my_habdler(rid: i32): i32 {
-  
+  // Read the data stored under the key "users_count"
   let value = GetDB("users_count");
-
-  let users_count = value ? parseInt(value) : 0;
-
+<strong>  // Convert the string to i32
+</strong>  let users_count = value ? parseInt(value) : 0;
+  // store the new value
   let result = SetDB("users_count", (i32(users_count) + 1));
 
   return 0;
 }
-```
+</code></pre>
 {% endtab %}
 
 {% tab title="Rust" %}
@@ -34,11 +33,11 @@ use ws_sdk::log::log_info;
 pub extern "C" fn my_handler(_rid: i32) -> i32 {
     // Read the data stored under the key "users_count"
     let value = get("users_count").unwrap_or("0".into());
-    // Convert the value to string and parse it to i32
+    // Convert the bytes vector to string and parse it to i32
     let int_value = String::from_utf8(value).unwrap().parse::<i32>().unwrap();
     // Log the value
     log_info(&format!("Current users count: {}", int_value));
-    // Increment and store the incremented the value
+    // Increment and store the incremented the value as string bytes
     let result = set("users_count", (int_value + 1).to_string().into_bytes());
 
     0
