@@ -27,23 +27,25 @@ export function my_habdler(rid: i32): i32 {
 
 {% tab title="Rust" %}
 ```rust
-use anyhow::Result;
-use ws_sdk::database::kv::*;
+use ws_sdk::database::kv::{get, set};
+use ws_sdk::log::log_info;
 
 #[no_mangle]
-pub extern "C" fn my_handler(rid: i32) -> i32 {
-    let value = match get("users_count") {
-        Ok(data) => String::from_utf8_lossy(&data).to_string(),
-        Err(_) => String::new(),
-    };
-
-    let users_count = value.parse::<i32>().unwrap_or(0);
-
-    let result = set("users_count", (users_count + 1).to_string().into_bytes());
+pub extern "C" fn my_handler(_rid: i32) -> i32 {
+    // Read the data stored under the key "users_count"
+    let value = get("users_count").unwrap_or("0".into());
+    // Convert the value to string and parse it to i32
+    let int_value = String::from_utf8(value).unwrap().parse::<i32>().unwrap();
+    // Log the value
+    log_info(&format!("Current users count: {}", int_value));
+    // Increment and store the incremented the value
+    let result = set("users_count", (int_value + 1).to_string().into_bytes());
 
     0
 }
 
+// Add a main() if required by the compiler
+fn main() { }
 
 ```
 {% endtab %}
