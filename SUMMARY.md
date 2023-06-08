@@ -30,7 +30,7 @@
 
 ## 👨💻 Applets Development
 
-* [W3bstream Applet KITs](applets-development/w3bstream-applet-kits/README.md)
+* [W3bstream Applet Kits](applets-development/w3bstream-applet-kits/README.md)
   * [AssemblyScript](applets-development/w3bstream-applet-kits/assemblyscript.md)
   * [Rust](applets-development/w3bstream-applet-kits/rust.md)
   * [Golang](applets-development/w3bstream-applet-kits/go.md)

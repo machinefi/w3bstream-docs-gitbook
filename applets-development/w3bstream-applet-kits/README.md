@@ -1,4 +1,4 @@
-# W3bstream Applet KITs
+# W3bstream Applet Kits
 
 In this guide, we will go through the process of building a simple W3bstream Applet and deploying it to the W3bstream DevNet.
 
@@ -12,16 +12,16 @@ W3bstream supports several programming languages, allowing developers to create 
 * [Rust](rust.md)
 * [Go](go.md)
 
-For each of these languages, a development KIT provides a set libraries that enable developers to interact with the W3bstream network and create W3bstream applets.&#x20;
+For each of these languages, a development Kit provides a set libraries that enable developers to interact with the W3bstream network and create W3bstream applets.&#x20;
 
-#### [Applet KIT for AssemblyScript](assemblyscript.md)
+#### [Applet Kit for AssemblyScript](assemblyscript.md)
 
-The W3bstream Applet SDK for AssemblyScript is a set of tools and libraries that enable developers to create W3bstream applets using the AssemblyScript programming language. For more information on using the W3bstream Applet KIT for AssemblyScript, please see the [AssemblyScript KIT documentation](assemblyscript.md).
+The W3bstream Applet SDK for AssemblyScript is a set of tools and libraries that enable developers to create W3bstream applets using the AssemblyScript programming language. For more information on using the W3bstream Applet Kit for AssemblyScript, please see the [AssemblyScript Kit documentation](assemblyscript.md).
 
-#### [Applet KIT for Rust](rust.md)
+#### [Applet Kit for Rust](rust.md)
 
-The W3bstream Applet KIT for Rust is a set of tools and libraries that enable developers to create W3bstream applets using the Rust programming language. For more information on using the Rust KIT, please see the [Rust KIT documentation](rust.md).
+The W3bstream Applet Kit for Rust is a set of tools and libraries that enable developers to create W3bstream applets using the Rust programming language. For more information on using the Rust KIT, please see the [Rust Kit documentation](rust.md).
 
-#### [Applet KIT for Go](go.md)
+#### [Applet Kit for Go](go.md)
 
-The W3bstream Applet KIT for Go is a set of tools and libraries that enable developers to create W3bstream applets using the Go programming language. For more information on using the Go KIT, please see the [Go KIT documentation](go.md).
+The W3bstream Applet Kit for Go is a set of tools and libraries that enable developers to create W3bstream applets using the Go programming language. For more information on using the Go KIT, please see the [Go Kit documentation](go.md).
