@@ -8,7 +8,7 @@ The W3bstream Applet SDK for AssemblyScript is a set of tools and libraries that
 
 ## Requirements
 
-Before you can use the W3bstream Applet KIT for AssemblyScript, you need to have the following tools installed on your system:
+Before you can use the W3bstream Applet Kit for AssemblyScript, you need to have the following tools installed on your system:
 
 * Node.js (version 16 or later)
 * AssemblyScript (version 0.26.0 or later)
@@ -48,7 +48,7 @@ npx asinit . -y
 
 ## Installation
 
-Once you have created your AssemblyScript project, you can install the W3bstream Applet KIT by running the following command:
+Once you have created your AssemblyScript project, you can install the W3bstream Applet Kit by running the following command:
 
 ```
 npm install @w3bstream/wasm-sdk
@@ -66,6 +66,6 @@ The applet, in the form of a WASM file, is saved to the `build` folder.
 
 ## Contribute
 
-The source code of the W3bstream Applet KIT for AssemblyScript, including examples, can be found on GitHub at:
+The source code of the W3bstream Applet Kit for AssemblyScript, including examples, can be found on GitHub at:
 
 {% embed url="https://github.com/machinefi/w3bstream-wasm-assemblyscript-sdk" %}

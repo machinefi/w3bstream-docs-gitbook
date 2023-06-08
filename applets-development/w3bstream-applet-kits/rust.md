@@ -1,6 +1,6 @@
 # Rust
 
-The W3bstream Applet KIT for Rust is a set of tools and libraries that enable developers to create W3bstream applets using the Rust programming language. The KIT provides wrappers for W3bstream's host functions, allowing Rust developers to interact with the W3bstream network and build decentralized applications that leverage the power and flexibility of the IoTeX blockchain.
+The W3bstream Applet Kit for Rust is a set of tools and libraries that enable developers to create W3bstream applets using the Rust programming language. The Kit provides wrappers for W3bstream's host functions, allowing Rust developers to interact with the W3bstream network and build decentralized applications that leverage the power and flexibility of the IoTeX blockchain.
 
 ## Reference Docs
 
@@ -8,7 +8,7 @@ The W3bstream Applet KIT for Rust is a set of tools and libraries that enable de
 
 ## Requirements
 
-Before you can use the W3bstream Applet KIT for Rust, you need to have the following tools installed on your system:
+Before you can use the W3bstream Applet Kit for Rust, you need to have the following tools installed on your system:
 
 * Rust (version 1.55 or later)
 * Cargo (version 1.55 or later)
@@ -44,7 +44,7 @@ cd my-w3bstream-applet
 
 ## Installation
 
-You can install the W3bastream Applet KIT for Rust using cargo inside your project's folder:
+You can install the W3bastream Applet Kit for Rust using cargo inside your project's folder:
 
 ```
 cargo add ws-sdk 
@@ -62,6 +62,6 @@ The applet, in the form of a WASM file, is saved to `target/wasm32-wasi/release`
 
 ## Contribute
 
-The source code of the W3bstream Applet KIT for Rust, including examples, can be found on GitHub at:
+The source code of the W3bstream Applet Kit for Rust, including examples, can be found on GitHub at:
 
 {% embed url="https://github.com/machinefi/w3bstream-wasm-rust-sdk" %}
