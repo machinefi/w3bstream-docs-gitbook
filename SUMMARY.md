@@ -4,12 +4,12 @@
 
 * [About W3bstream](README.md)
 * [Why W3bstream](introduction/why-w3bstream.md)
-* [Blockchains Supported](introduction/blockchains-supported.md)
+* [Blockchains Supported](introduction/supported-blockchains.md)
 * [Roadmap](introduction/roadmap.md)
 
 ## 🚀 Get Started
 
-* [Basic concepts](get-started/basic-concepts/README.md)
+* [Basic Concepts](get-started/basic-concepts/README.md)
   * [Projects](get-started/basic-concepts/projects.md)
   * [Applets and Handlers](get-started/basic-concepts/applets-and-handlers.md)
   * [Event Triggers](get-started/basic-concepts/events.md)
