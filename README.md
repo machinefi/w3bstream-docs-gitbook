@@ -4,17 +4,17 @@
 
 {% embed url="https://youtu.be/X4Zj-mc7dpU" %}
 
-W3bstream is a general framework for connecting data generated in the physical world to the blockchain world.&#x20;
+W3bstream is a decentralized protocol that connects data generated in the physical world to the blockchain world.
 
-In a nutshell, W3bstream uses the [IoTeX blockchain](https://docs.iotex.io) to orchestrate a decentralized network of gateways (i.e., _"W3bstream nodes"_) that streams \[optionally encrypted] data from IoT devices and machines. On top of machine data, _proofs of real-world facts_ are generated, **to be used by dApps** **on different blockchains**.&#x20;
+In essence, W3bstream uses a decentralized network of nodes, which stream data from real word devices and machines. Proofs of real-world facts are generated on top of the data for utilization by dApps on various L1 and L2 blockchains.
 
 <figure><img src=".gitbook/assets/w3bstream-animation.gif" alt=""><figcaption></figcaption></figure>
 
-Blockchain developers can build their dApps getting access to trusted real-world data using the W3bstream framework.
+Blockchain developers can leverage the W3bstream framework to access trusted real-world data for their dApps.
 
 ## W3bstream Node architecture
 
-To support a wide range of applications and business requirements, a W3bstream node includes the following connectivity, computing, storage, and consensus components, for interacting with the IoT devices, blockchain, and node operators:
+To cater to a wide range of applications and business requirements, a W3bstream node encompasses the following connectivity, computing, storage, and consensus components. These interact with IoT devices, the blockchain, and node operators:
 
 <figure><img src=".gitbook/assets/image (1) (4) (1).png" alt=""><figcaption><p>W3bstream Node Architecture</p></figcaption></figure>
 
@@ -68,9 +68,9 @@ The SSI wallet implements decentralized identifiers and verifiable credentials-r
 
 ## Lifecycle
 
-The W3bstream Network incentivizes communities to run nodes for supporting the growing ecosystem of MachineFi dApps. Depending on the requirements of a specific dApp, a certain number of W3bstream nodes might be employed to serve it: such subnet of W3bstream node will start operating when the sufficient number of community nodes will have joined.
+The W3bstream Network encourages communities to run nodes to support the burgeoning ecosystem of MachineFi dApps. Depending on a specific dApp's requirements, a certain number of W3bstream nodes might be employed to serve it. Such a subnet of W3bstream nodes will commence operation when a sufficient number of community nodes have joined.
 
-Any community member who is interested in operating a W3bstream node could provision a virtual machine on the cloud or set up a local server.
+Any community member interested in operating a W3bstream node could provision a virtual machine on the cloud or set up a local server.
 
 
 
