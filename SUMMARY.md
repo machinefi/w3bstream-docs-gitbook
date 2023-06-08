@@ -4,7 +4,7 @@
 
 * [About W3bstream](README.md)
 * [Why W3bstream](introduction/why-w3bstream.md)
-* [Supported Blockchains](introduction/supported-blockchains.md)
+* [Blockchains Supported](introduction/blockchains-supported.md)
 * [Roadmap](introduction/roadmap.md)
 
 ## 🚀 Get Started
