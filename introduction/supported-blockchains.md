@@ -1,6 +1,7 @@
 # Supported Blockchains
 
-W3bstream is designed to be chain-agnostic. It currently supports 3 different blockchains and the respective testnets:
+W3bstream is designed to be chain-agnostic. It currently supports the following blockchains:
 
 * IoTeX Mainnet & Testnet
-* Ethereum Mainnet and &#x20;
+* Ethereum Mainnet
+* Polygon Mainnet
