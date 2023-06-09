@@ -1,5 +1,5 @@
 # Data Visualization
 
 {% hint style="info" %}
-TBD
+This section is coming soon.
 {% endhint %}
