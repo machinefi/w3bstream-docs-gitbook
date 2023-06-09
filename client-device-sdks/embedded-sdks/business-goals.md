@@ -1,6 +1,6 @@
 # Business Goals
 
-_WSIoTSDK_ is designed keeping the following business objectives in mind:
+W_3IoTSDK_ is designed keeping the following business objectives in mind:
 
 * **New business opportunities**: It will enable small and medium size IoT device manufacturers and solution providers to join the Web3 evolution and unlock new business opportunities.
 * **Innovation**: It will facilitate IoT developers to build innovative Web3 applications for emerging machine economies.

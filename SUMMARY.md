@@ -58,7 +58,6 @@
   * [Technical goals](client-device-sdks/embedded-sdks/technical-goals.md)
   * [Business Goals](client-device-sdks/embedded-sdks/business-goals.md)
   * [Technical Framework](client-device-sdks/embedded-sdks/technical-framework.md)
-  * [Key Product Features](client-device-sdks/embedded-sdks/key-product-features.md)
 * [Platforms](client-device-sdks/platforms/README.md)
   * [Mobile Devices](client-device-sdks/platforms/mobile-devices.md)
   * [Linux Embedded](client-device-sdks/platforms/embedded-sdks.md)

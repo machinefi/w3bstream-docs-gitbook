@@ -10,8 +10,6 @@ The SDK is made up of several main components: Communication and Messaging, Iden
 The current version of the SDK only includes the Cryptography component, while the remaining components will be available in a future version.
 {% endhint %}
 
-<figure><img src="../../.gitbook/assets/image (11) (5).png" alt=""><figcaption></figcaption></figure>
-
 ## The Cryptography component
 
 The Cryptography component of the WSIoTSDK consists of several modules that enable developers to build secure systems. These modules include:
@@ -23,7 +21,7 @@ The Cryptography component of the WSIoTSDK consists of several modules that enab
 5. **Tooling:** a set of tools, scripts, and examples to configure, build, and test the SDK.
 6. **Root of Trust:** a foundation of the SDK that ensures the integrity of the security services.
 
-The Cryptographic component of the SDK is designed with modularity in mind, allowing developers to create custom configurations based on their specific hardware and application needs. Different modules can be selectively included in each configuration, providing developers with flexibility to tailor their solution while minimizing unnecessary features. Each configuration is optimized for a particular type of board and application, offering a flexible and efficient approach to implementation.\
+The Cryptographic component of the SDK is designed with modularity in mind, allowing developers to create custom configurations based on their specific hardware and application needs. Different modules can be selectively included in each configuration, providing developers with flexibility to tailor their solution while minimising unnecessary features. Each configuration is optimized for a particular type of board and application, offering a flexible and efficient approach to implementation.\
 The SDK also includes configuration presets that are specifically designed for popular boards and applications, offering a quick and easy way for developers to get started without having to create a custom configuration from scratch. However, users have the flexibility to create their own configurations if the provided ones don't meet their specific needs.
 
 Below are the some of the configuration presets that come with the SDK:

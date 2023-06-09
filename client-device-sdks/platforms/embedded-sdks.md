@@ -1,6 +1,6 @@
 # Linux Embedded
 
-### Set up the build environment
+Set up the build environment
 
 Iotex SDK officially supports a limited set of build environments and setups. In this context, official support means that the environments listed below are actively used by team members and active developers, hence users should be able to recreate the same configurations by following the instructions described below.\
 In case of problems, the Iotex SDK team provides support only for these environments, but building in other environments can still be possible.
@@ -34,18 +34,18 @@ Install the following dependencies:
 Run the following command to clone the repository:
 
 ```bash
-git clone https://github.com/machinefi/w3bstream-iot-sdk.git
+git clone https://github.com/machinefi/web3-iot-sdk.git
 ```
 
 ### Build
 
 The build process is managed by CMake. The build can be customized by passing CMake options.\
-Below is a description of the most common ones. For a full list of CMake options see the main [CMakeLists.txt](https://github.com/machinefi/w3bstream-iot-sdk/blob/main/CMakeLists.txt):
+For a full list of CMake options see the main [CMakeLists.tx](https://github.com/machinefi/w3bstream-iot-sdk/blob/main/CMakeLists.txt). Below is a description of the most common ones:
 
 * **CRYPTO\_IMPL:** the crypto library to use. Possible values: "MbedTLS" or "TinyCrypt". Defaults to "MbedTLS". Note that TinyCrypt is not supported yet.
 * **BUILD\_IOTEX\_F:** build the IoTeX Firmware component. Defaults to ON.
 * **BUILD\_PSA\_TEST\_SUITE:** build the PSA Architecture test suite. Defaults to OFF.
-* **BUILD\_EXAMPLE\_DEVICE\_REGISTRATION:** build the device registration example. Defaults to OFF.
+* **BUILD\_EXAMPLE\_\<example\_name>:** build any of the examples in the examples directory. Defaults to OFF.
 * **GIT\_SUBMODULE\_UPDATE:** download or update any dependencies specified as submodules. Defaults to ON.
 
 For example, if you want to build the SDK using Iotex Firmware + MbedTLS + PSA test suite, you can run the following commands:
@@ -60,7 +60,7 @@ cmake --build build-out --target all
 Once the build finishes, you can run the tests executable using the following command:
 
 ```bash
-./build-output/test/psa-arch-tests-crypto
+./build-out/test/psa-arch-tests-crypto
 ```
 
 You should see output similar to the one below:
@@ -94,6 +94,4 @@ TOTAL SKIPPED   : 2
 
 ### Examples
 
-Examples to demonstrate the usage of the SDK can be found in the [examples' folder](https://github.com/machinefi/w3bstream-iot-sdk/tree/main/examples) of the SDK. Each example contains a README file with usage instructions:
-
-{% embed url="https://github.com/machinefi/w3bstream-iot-sdk/tree/main/examples" %}
+Examples to demonstrate the usage of the SDK can be found in the [examples](https://github.com/machinefi/web3-iot-sdk/tree/main/examples) of the SDK. Each example contains a README file with usage instructions.
