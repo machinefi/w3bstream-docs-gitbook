@@ -1,6 +1,8 @@
 # Aggregate Metrics
 
-Aggregate Metrics are performance metrics, including the number of registered devices, active devices, and the volume of data messages, that are automatically collected by W3bstream for every deployed project.&#x20;
+Aggregate Metrics consist of data related to the performance of W3bstream projects. This data includes the number of all registered devices and active devices at any given time, as well as information related to each data message received by a project.
+
+One of the key benefits is that these metrics are automatically collected by W3bstream for every deployed project, making it a convenient and efficient way to monitor and analyze project performance. This streamlined approach allows developers to focus on their core tasks while still gaining valuable insights into their project's performance.
 
 <figure><img src="../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
 
