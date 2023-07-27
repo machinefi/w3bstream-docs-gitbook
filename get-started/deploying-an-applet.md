@@ -8,7 +8,7 @@ When creating a DePIN project using W3bstream, you can organize your logic into 
 4. Choose the 'HelloWorld' template.
 5. Click the 'Submit' button to create your new project."
 
-<figure><img src="../.gitbook/assets/image (7) (6).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (7) (6) (1).png" alt=""><figcaption></figcaption></figure>
 
 Once the project is created, it will be listed in the "Projects" tab:
 

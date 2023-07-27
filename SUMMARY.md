@@ -49,9 +49,9 @@
 ## 📊 Trusted Metrics Service
 
 * [About Trusted Metrics](trusted-metrics-service/about-trusted-metrics.md)
-* [Aggregate Metrics](trusted-metrics-service/aggregate-metrics.md)
-* [Custom Metrics](trusted-metrics-service/custom-metrics.md)
-* [Querying Data](trusted-metrics-service/querying-data.md)
+* [Creating Queries](trusted-metrics-service/creating-queries.md)
+* [Building Dashboards](trusted-metrics-service/building-dashboards.md)
+* [Querying the API](trusted-metrics-service/querying-the-api.md)
 
 ## ⚙ Client Device SDKs
 
