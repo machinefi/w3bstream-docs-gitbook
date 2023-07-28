@@ -6,7 +6,7 @@ Trusted Metrics data can be easily queried by accessing the W3bstream Metrics po
 
 To access the Trusted Metrics Query Designer, open [metrics.w3bstream.com](https://metrics.w3bstream.com) and login with your GitHub account:
 
-<figure><img src="../.gitbook/assets/image (1) (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
 
 Once logged in, use the  <mark style="color:blue;">**`+`**</mark> button in the top-right corner of the page, and select [_**New Query**_](https://metrics.w3bstream.com/queries) to access the Query Designer:
 
