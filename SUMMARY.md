@@ -50,8 +50,10 @@
 
 * [About Trusted Metrics](trusted-metrics-service/about-trusted-metrics.md)
 * [Creating Queries](trusted-metrics-service/creating-queries.md)
+* [Query Examples](trusted-metrics-service/query-examples.md)
 * [Building Dashboards](trusted-metrics-service/building-dashboards.md)
 * [Querying the API](trusted-metrics-service/querying-the-api.md)
+* [Generating Data Metrics](trusted-metrics-service/generating-data-metrics.md)
 
 ## ⚙ Client Device SDKs
 
