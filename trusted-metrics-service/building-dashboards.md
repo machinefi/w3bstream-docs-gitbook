@@ -14,7 +14,7 @@ To create a visualization widget for a query, let's assume you have already gene
 
 1. Use the <mark style="color:blue;">**`New Visualization`**</mark> button to generate a Visualization for the query:
 
-<figure><img src="../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
 
 2. Select <mark style="color:blue;">**`Line Chart`**</mark> and then click <mark style="color:blue;">**`Submit`**</mark>
 
@@ -27,11 +27,11 @@ To create a visualization widget for a query, let's assume you have already gene
 4. If required, you can create more queries and Visualizations in the Query Designer.&#x20;
 5. Access your dashboards by clicking on your profile menu in the top-right corner of the window and selecting the profile icon (or click the "`+`" button if you haven't created a dashboard yet).
 
-<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
 
 6. Once your dashboard is open, easily add a set of visualizations you have previously created and configure them in the best layout that suits your needs. &#x20;
 
-<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption><p>Add a new Visualization to the Dashboard</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (2).png" alt=""><figcaption><p>Add a new Visualization to the Dashboard</p></figcaption></figure>
 
 <figure><img src="../.gitbook/assets/image (8).png" alt=""><figcaption><p>Layout and save your dashboard</p></figcaption></figure>
 

@@ -6,17 +6,17 @@ Trusted Metrics data can be easily queried by accessing the W3bstream Metrics po
 
 To access the Trusted Metrics Query Designer, open [metrics.w3bstream.com](https://metrics.w3bstream.com) and login with your GitHub account:
 
-<figure><img src="../.gitbook/assets/image (1) (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (2) (1).png" alt=""><figcaption></figcaption></figure>
 
 Once logged in, use the  <mark style="color:blue;">**`+`**</mark> button in the top-right corner of the page, and select [_**New Query**_](https://metrics.w3bstream.com/queries) to access the Query Designer:
 
-<figure><img src="../.gitbook/assets/image (4) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (4) (1) (2).png" alt=""><figcaption></figcaption></figure>
 
 ## Query Designer Overview
 
 The image below provides a quick overview of the main elements of the Query Designer that are relevant when you want to query the Trusted Metrics API.
 
-<figure><img src="../.gitbook/assets/image (5).png" alt=""><figcaption><p>Trusted Metrics Query Designer</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (5) (1).png" alt=""><figcaption><p>Trusted Metrics Query Designer</p></figcaption></figure>
 
 The **Queries List panel (1)**, located on the left side, displays a list of all queries that have already been created. You can select a query from this panel at any time to edit it.
 
@@ -45,4 +45,4 @@ The above query will return a single record as a result, providing the total num
 3. **Give a descriptive name to the query, like "**_**Total Devices**_**"**
 4. **Save the query and check that it's been added to the Queries List panel on the left side**
 
-<figure><img src="../.gitbook/assets/image (4).png" alt=""><figcaption><p>4 Steps to create a Trusted Metrics Query</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (4) (1).png" alt=""><figcaption><p>4 Steps to create a Trusted Metrics Query</p></figcaption></figure>
