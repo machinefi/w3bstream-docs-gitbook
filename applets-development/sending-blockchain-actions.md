@@ -18,7 +18,7 @@ This process enables smart contracts to uniquely identify and trust the sender a
 
 To access the address of your operator account, simply navigate to the Settings section of your Projects. There, you will find the specific address associated with your operator account. This information is essential for verifying the origin of transactions and maintaining the integrity of your project's interactions with the blockchain.
 
-<figure><img src="../.gitbook/assets/image (2) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (2) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 **Please ensure that your W3bstream operator address is funded with the native token of the respective blockchain networks to enable successful transaction sending for your projects.**

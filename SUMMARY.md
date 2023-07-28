@@ -54,6 +54,7 @@
 * [Building Dashboards](trusted-metrics-service/building-dashboards.md)
 * [Querying the API](trusted-metrics-service/querying-the-api.md)
 * [Generating Data Metrics](trusted-metrics-service/generating-data-metrics.md)
+* [The DePIN Explorer](trusted-metrics-service/the-depin-explorer.md)
 
 ## ⚙ Client Device SDKs
 
