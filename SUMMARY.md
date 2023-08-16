@@ -53,7 +53,7 @@
 * [Query Examples](trusted-metrics-service/query-examples.md)
 * [Building Dashboards](trusted-metrics-service/building-dashboards.md)
 * [Querying the API](trusted-metrics-service/querying-the-api.md)
-* [Generating Data Metrics](trusted-metrics-service/generating-data-metrics.md)
+* [Custom Data Metrics](trusted-metrics-service/custom-data-metrics.md)
 * [The DePIN Explorer](trusted-metrics-service/the-depin-explorer.md)
 
 ## ⚙ Client Device SDKs
@@ -62,12 +62,12 @@
   * [Technical goals](client-device-sdks/embedded-sdks/technical-goals.md)
   * [Business Goals](client-device-sdks/embedded-sdks/business-goals.md)
   * [Technical Framework](client-device-sdks/embedded-sdks/technical-framework.md)
-* [Platforms](client-device-sdks/platforms/README.md)
-  * [Mobile Devices](client-device-sdks/platforms/mobile-devices.md)
-  * [Linux Embedded](client-device-sdks/platforms/embedded-sdks.md)
-  * [ESP32](client-device-sdks/platforms/esp32.md)
-  * [Arduino](client-device-sdks/platforms/arduino.md)
-  * [Pebble Tracker](client-device-sdks/platforms/pebble-tracker.md)
+* [Supported Platforms](client-device-sdks/supported-platforms/README.md)
+  * [Mobile Devices](client-device-sdks/supported-platforms/mobile-devices.md)
+  * [Linux Embedded](client-device-sdks/supported-platforms/embedded-sdks.md)
+  * [ESP32](client-device-sdks/supported-platforms/esp32.md)
+  * [Arduino](client-device-sdks/supported-platforms/arduino.md)
+  * [Pebble Tracker](client-device-sdks/supported-platforms/pebble-tracker.md)
 
 ## 📚 Additional Resources
 

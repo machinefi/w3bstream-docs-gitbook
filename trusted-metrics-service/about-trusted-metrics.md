@@ -22,6 +22,6 @@ Device Metrics are available for all W3bstream projects, and they consist of the
 
 One of the key benefits of Device Metrics is that they are automatically collected for each W3bstream project. This streamlined approach allows developers to focus on building their project logic, while still gaining valuable insights on the performances out-of-the-box.
 
-### Data Metrics
+### Custom Data Metrics
 
-Data Metrics provide developers with the flexibility to generate and transmit project-specific metrics from within their applets. These custom metrics can be derived from the actual data collected from devices, allowing developers to gain deeper insights into the performance and behavior of their projects.
+Custom Data Metrics provide developers with the flexibility to generate and transmit project-specific metrics from within their applets. These custom metrics can be derived from the actual data collected from devices, allowing developers to gain deeper insights into the performance and behavior of their projects.

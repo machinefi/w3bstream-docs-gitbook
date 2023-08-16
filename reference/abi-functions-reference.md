@@ -167,3 +167,18 @@ pub fn ws_send_tx(chain_id: i32, payload_ptr: *const u8, payload_size: i32, retu
 */
 pub fn ws_call_contract(chain_id: i32, ptr: *const u8, size: i32, return_ptr: *const *mut u8, return_size: *const i32, ) -> i32;
 ```
+
+### ws\_submit\_metrics
+
+```rust
+/**
+  Submit Custom Metrics
+  Submit Custom Data Metrics to the Trusted Metrics service.
+    
+  @param ptr The address in memory where the JSON data is stored (as a string)
+  @param size The length of the JSON data
+  @return 0 if no errors.
+*/
+pub fn ws_submit_metrics(ptr: *const u8, size: i32) -> i32;
+
+```
