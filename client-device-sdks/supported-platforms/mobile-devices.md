@@ -1,6 +1,6 @@
-# Mobile Devices
+# Mobile SDKs
 
-W3bstream currently offers an **iOS** and an **Android** Client SDKs to sign and send data messages to W3bstream nodes.&#x20;
+W3bstream currently offers **iOS** and **Android** Client SDKs designed to facilitate seamless integration between your mobile apps and the W3bstream ecosystem. It enables developers to easily sign and send messages to their W3bstream projects.
 
 ### iOS Client SDK
 
