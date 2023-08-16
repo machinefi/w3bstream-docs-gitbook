@@ -1,4 +1,4 @@
-# Roadmap
+# W3bstream Roadmap
 
 The development of W3bstream will span until Q2 2024. During this time, the “_Devnet Seed_”  release will morph into a modular, scalable, and decentralized architecture that will accommodate multiple applications across different verticals.\
 
@@ -56,7 +56,7 @@ The development of W3bstream will span until Q2 2024. During this time, the “_
 {% hint style="success" %}
 ### What's next?
 
-Checkout the [**Get Started**](../client-device-sdks/introduction.md) section to learn how to run a W3bstream node.
+Checkout the [**Get Started**](../client-sdks/introduction/) section to learn how to run a W3bstream node.
 
 Learn about the fundamentals of [**programming** ](../get-started/basic-concepts/)a W3bstream node.
 {% endhint %}

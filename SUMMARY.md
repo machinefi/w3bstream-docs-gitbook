@@ -56,18 +56,21 @@
 * [Custom Data Metrics](trusted-metrics-service/custom-data-metrics.md)
 * [The DePIN Explorer](trusted-metrics-service/the-depin-explorer.md)
 
-## ⚙ Client Device SDKs
+## ⚙ Client SDKs
 
-* [IoT Client SDKs](client-device-sdks/introduction.md)
-  * [Technical goals](client-device-sdks/embedded-sdks/technical-goals.md)
-  * [Business Goals](client-device-sdks/embedded-sdks/business-goals.md)
-  * [Technical Framework](client-device-sdks/embedded-sdks/technical-framework.md)
-* [Supported Platforms](client-device-sdks/supported-platforms/README.md)
-  * [Mobile Devices](client-device-sdks/supported-platforms/mobile-devices.md)
-  * [Linux Embedded](client-device-sdks/supported-platforms/embedded-sdks.md)
-  * [ESP32](client-device-sdks/supported-platforms/esp32.md)
-  * [Arduino](client-device-sdks/supported-platforms/arduino.md)
-  * [Pebble Tracker](client-device-sdks/supported-platforms/pebble-tracker.md)
+* [PC Client SDKs](client-sdks/pc-client-sdks/README.md)
+  * [Node JS](client-sdks/pc-client-sdks/node-js.md)
+  * [Python](client-sdks/pc-client-sdks/python.md)
+  * [Go lang](client-sdks/pc-client-sdks/go-lang.md)
+* [Mobile SDKs](client-sdks/mobile-sdks.md)
+* [IoT Client SDKs](client-sdks/introduction/README.md)
+  * [Technical goals](client-sdks/introduction/technical-goals.md)
+  * [Business Goals](client-sdks/introduction/business-goals.md)
+  * [Technical Framework](client-sdks/introduction/technical-framework.md)
+  * [Linux Embedded](client-sdks/introduction/embedded-sdks.md)
+  * [ESP32](client-sdks/introduction/esp32.md)
+  * [Arduino](client-sdks/introduction/arduino.md)
+  * [Pebble Tracker](client-sdks/introduction/pebble-tracker.md)
 
 ## 📚 Additional Resources
 

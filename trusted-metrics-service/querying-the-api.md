@@ -16,7 +16,7 @@ Once your queries are defined and saved, you can generate unique API endpoints f
 
 Before you can query Trusted Metrics from your client applications, you first need to create an API Key from your [profile settings page](https://metrics-staging.w3bstream.com/settings/api):&#x20;
 
-<figure><img src="../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (3) (4).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 Notice that you only need a single API key to query multiple endpoints. However, it is advisable to create a different API key for each of your client applications that need to interact with Trusted Metrics.
@@ -31,7 +31,7 @@ Follow these simple steps:
 1. In the Queries List panel on the left side, select the query you want to access.
 2. Click the API button.
 
-<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
 
 3. In the next dialog, copy the API Endpoint for the query
 
