@@ -34,6 +34,7 @@
   * [AssemblyScript](applets-development/w3bstream-applet-kits/assemblyscript.md)
   * [Rust](applets-development/w3bstream-applet-kits/rust.md)
   * [Golang](applets-development/w3bstream-applet-kits/go.md)
+  * [TypeScript/Javascript](applets-development/w3bstream-applet-kits/typescript-javascript.md)
 * [Creating the Project](applets-development/creating-the-project.md)
 * [Configuring Devices](applets-development/configuring-devices.md)
 * [Defining the message protocol](applets-development/sending-messages-to-w3bstream.md)
