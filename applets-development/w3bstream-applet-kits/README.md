@@ -1,7 +1,5 @@
 # W3bstream Applet Kits
 
-In this guide, we will go through the process of building a simple W3bstream Applet and deploying it to the W3bstream DevNet.
-
 {% hint style="info" %}
 If you are interested in learning how to build a complete DePIN project, including hardware and blockchain components, you can check out the [IoTeX Developer Portal](https://developers.iotex.io) for more content.
 {% endhint %}
@@ -12,7 +10,7 @@ W3bstream supports several programming languages, allowing developers to create 
 * [Rust](rust.md)
 * [Go](go.md)
 
-For each of these languages, a development Kit provides a set libraries that enable developers to interact with the W3bstream network and create W3bstream applets.&#x20;
+For each of these languages, a development Kit provides a set of libraries that enable developers to interact with the W3bstream network and create W3bstream applets.&#x20;
 
 #### [Applet Kit for AssemblyScript](assemblyscript.md)
 

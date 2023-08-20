@@ -30,6 +30,7 @@
 
 ## 👨💻 Applets Development
 
+* [W3bstream Studio Walkthrough](applets-development/w3bstream-studio-walkthrough.md)
 * [W3bstream Applet Kits](applets-development/w3bstream-applet-kits/README.md)
   * [AssemblyScript](applets-development/w3bstream-applet-kits/assemblyscript.md)
   * [Rust](applets-development/w3bstream-applet-kits/rust.md)
