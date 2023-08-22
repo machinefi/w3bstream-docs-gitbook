@@ -14,7 +14,7 @@ Once your queries are defined and saved, you can generate unique API endpoints f
 
 ## Create a Client API Key
 
-Before you can query Trusted Metrics from your client applications, you first need to create an API Key from your [profile settings page](https://metrics-staging.w3bstream.com/settings/api):&#x20;
+Before you can query Trusted Metrics from your client applications, you first need to create an API Key from your [profile settings page](https://depinscan.io/settings/api):&#x20;
 
 <figure><img src="../.gitbook/assets/image (3) (4).png" alt=""><figcaption></figcaption></figure>
 

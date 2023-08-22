@@ -56,7 +56,7 @@
 * [Building Dashboards](trusted-metrics-service/building-dashboards.md)
 * [Querying the API](trusted-metrics-service/querying-the-api.md)
 * [Custom Data Metrics](trusted-metrics-service/custom-data-metrics.md)
-* [The DePIN Explorer](trusted-metrics-service/the-depin-explorer.md)
+* [DePINscan](trusted-metrics-service/depinscan.md)
 
 ## ⚙ Client SDKs
 
