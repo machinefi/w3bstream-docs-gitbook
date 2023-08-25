@@ -90,7 +90,7 @@ pub extern "C" fn start(rid: i32) -> i32 {
 ```
 {% endtab %}
 
-{% tab title="Rust" %}
+{% tab title="Go" %}
 ```go
 package main
 
