@@ -2,7 +2,7 @@
 
 <figure><img src="../.gitbook/assets/Screen Shot 2023-08-22 at 2.08.24 PM.png" alt=""><figcaption><p>The DePIN Global Map showing active devices around the world in real time</p></figcaption></figure>
 
-[**DePINscan**](https://depinscan.io/) is a public good product powered by W3bstream, and it's meant to be a place for DePIN projects, enthusiasts, developers, and investors to learn about all the latest info in the DePIN sector.
+[**DePINscan**](https://depinscan.io/) DePINscan is the first microservice built on top of W3bstream as a public good, and it's meant to be a place for DePIN projects, enthusiasts, developers, and investors to learn about all the latest developments in the DePIN sector.
 
 [**DePINscan**](https://depinscan.io/) works as an aggregate data platform that leverages the [_Trusted Metrics_ service](broken-reference) to provide information about a project's data flow, number of devices, and token-related information as well as the DePIN sector as a whole.&#x20;
 
