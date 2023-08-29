@@ -14,6 +14,10 @@ The Trusted Metrics service offered by W3bstream provides several benefits for d
 2. **SQL Queries**: Trusted Metrics supports the `SQL` query language, making it easy for developers to retrieve and analyze metrics data.
 3. **Serverless Architecture**: The Trusted Metrics service operates on a serverless architecture, eliminating the need for developers to manage infrastructure or worry about scalability.&#x20;
 
+By leveraging _**Trusted Metrics**_ in your application, you'll be able to maximize your project's exposure to VCs, researchers, retail investors, as well as new potential users in your community.&#x20;
+
+<figure><img src="../.gitbook/assets/Screen Shot 2023-08-29 at 2.24.30 PM.png" alt=""><figcaption></figcaption></figure>
+
 ## Types of Metrics
 
 ### Device Metrics
