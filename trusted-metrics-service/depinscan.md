@@ -26,9 +26,9 @@ Adding your project to DePINscan is simple. If your DePIN project is already pow
 
 {% hint style="info" %}
 **What if my DePIN project doesn't use W3bstream yet? 🤔**\
-If your DePIN project is not leveraging W3bstream yet, but you'd still like your off-chain data to be displayed in the DePINscan dashboard, and you'd like your devices to show on the global map, you'll have to simply create a new [W3bstream Project](../get-started/w3bstream-studio/creating-projects.md). \
+If your DePIN project is not leveraging W3bstream yet, but you'd still like your off-chain data to be displayed in the DePINscan dashboard, and you'd like your devices to show on the global map, you'll have to simply create a new [W3bstream Project](../applets-development/creating-the-project.md). \
 \
-Once created, you'll have to generate a new API key in your [account settings](https://devnet.w3bstream.com/setting) and use it, together with your W3bstream project's HTTPS endpoint and your device ID to send data via one of our[ client SDKs](broken-reference).&#x20;
+Once created, you'll have to generate a new API key in your [account settings](https://devnet.w3bstream.com/setting) and use it, together with your W3bstream project's HTTPS endpoint and your device ID to send data via one of our [client SDKs](../client-sdks/pc-client-sdks/).&#x20;
 {% endhint %}
 
 ### Showing Your Devices in the DePINscan Global Map
