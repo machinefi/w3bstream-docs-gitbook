@@ -18,7 +18,9 @@ To be Verified on DePINscan, your DePIN project logic must be deployed on W3bstr
 
 #### Step 2: Access your w3bstream project ID&#x20;
 
-Find and note your W3bstream Project ID from the settings page in W3bstream Studio.&#x20;
+Find and note your W3bstream Project ID from the settings page in W3bstream Studio:
+
+<figure><img src="../../.gitbook/assets/image (44).png" alt=""><figcaption></figcaption></figure>
 
 #### Step 3: Begin the verification process&#x20;
 
