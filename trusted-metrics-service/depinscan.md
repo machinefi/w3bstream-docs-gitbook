@@ -9,3 +9,5 @@ Click to Visit depinscan.io
 <figure><img src="../.gitbook/assets/image (2).png" alt=""><figcaption><p>DePINscan Global Map of devices and Projects List</p></figcaption></figure>
 
 Beyond serving as a dynamic visualization tool, DePINscan is also a centralized hub for any DePIN project, enthusiasts, developers, and investors, ensuring they remain updated with sector advancements. Furthermore, DePINscan exemplifies what can be achieved using the Trusted Metrics API service from W3bstream.
+
+The subsequent sections of this documentation will guide you through the steps to get your project listed on DePINscan, integrate with the device map, and achieve "Verified" status for your project data on DePINscan.
