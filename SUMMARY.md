@@ -56,7 +56,10 @@
 * [Building Dashboards](trusted-metrics-service/building-dashboards.md)
 * [Querying the API](trusted-metrics-service/querying-the-api.md)
 * [Custom Data Metrics](trusted-metrics-service/custom-data-metrics.md)
-* [DePINscan](trusted-metrics-service/depinscan.md)
+* [DePINscan](trusted-metrics-service/depinscan/README.md)
+  * [Getting Listed](trusted-metrics-service/depinscan/getting-listed.md)
+  * [Integrating the Device Map](trusted-metrics-service/depinscan/integrating-the-device-map.md)
+  * [Getting Verified](trusted-metrics-service/depinscan/getting-verified.md)
 
 ## ⚙ Client SDKs
 

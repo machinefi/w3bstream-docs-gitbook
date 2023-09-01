@@ -31,7 +31,7 @@ Follow these simple steps:
 1. In the Queries List panel on the left side, select the query you want to access.
 2. Click the API button.
 
-<figure><img src="../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (3) (2).png" alt=""><figcaption></figcaption></figure>
 
 3. In the next dialog, copy the API Endpoint for the query
 
