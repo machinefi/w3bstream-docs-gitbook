@@ -1,6 +1,6 @@
 # Getting Verified
 
-In the era of decentralization, trust is paramount and the DePIN space is no exception. For this reason, DePINscan provides a "Verification" feature for DePIN projects with their off-chain logic deployed on W3bstream.&#x20;
+In the era of decentralization, trust is paramount and the DePIN space is no exception. For this reason, DePINscan provides a "Verification" feature for DePIN projects that have their logic deployed on W3bstream.&#x20;
 
 {% hint style="success" %}
 **Verification ensures that the device stats shown on DePINscan for a certain project are aligned in real time with the data read from W3bstream, which elevates the credibility of your project.**
