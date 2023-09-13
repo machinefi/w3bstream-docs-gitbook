@@ -2,9 +2,11 @@
 
 ## Overview
 
-{% embed url="https://youtu.be/X4Zj-mc7dpU" %}
+[**W3bstream**](https://w3bstream.com/) is a decentralized protocol that connects data generated in the physical world to the blockchain world. To learn more about the vision behind W3bstream through the words of the IoTeX co-founder and CEO, Raullen Chai, have a look at the video linked below: 👇
 
-W3bstream is a decentralized protocol that connects data generated in the physical world to the blockchain world.
+{% hint style="info" %}
+### [**The W3bstream Vision** ](https://www.youtube.com/watch?v=X4Zj-mc7dpU\&t=1s)
+{% endhint %}
 
 In essence, W3bstream uses a decentralized network of nodes, which stream data from real word devices and machines. Proofs of real-world facts are generated on top of the data for utilization by dApps on various L1 and L2 blockchains.
 
@@ -16,7 +18,7 @@ Blockchain developers can leverage the W3bstream framework to access trusted rea
 
 To cater to a wide range of applications and business requirements, a W3bstream node encompasses the following connectivity, computing, storage, and consensus components. These interact with IoT devices, the blockchain, and node operators:
 
-<figure><img src=".gitbook/assets/image (1) (4) (1).png" alt=""><figcaption><p>W3bstream Node Architecture</p></figcaption></figure>
+<figure><img src=".gitbook/assets/ws runtime.jpeg" alt=""><figcaption></figcaption></figure>
 
 <details>
 
