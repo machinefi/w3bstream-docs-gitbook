@@ -1,6 +1,6 @@
 # Getting Listed
 
-Whether your DePIN project is deployed on a W3bstream node or operates on a centralized cloud infrastructure, DePINscan can enhance your visibility.&#x20;
+Whether your [**DePIN**](https://iotex.io/blog/what-are-decentralized-physical-infrastructure-networks-depin/) project is deployed on a W3bstream node or operates on a centralized cloud infrastructure, [**DePINscan**](https://depinscan.io/) can enhance your visibility.&#x20;
 
 List your project on the portal, [harness the beautiful device map](integrating-the-device-map.md), and for those projects hosted on W3bstream, [secure a "_Verified Devices_" badge](getting-verified.md), showcasing trusted data to investors interested in understanding your project's reach and magnitude.&#x20;
 
