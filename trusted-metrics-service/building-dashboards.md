@@ -14,7 +14,7 @@ To create a visualization widget for a query, let's assume you have already gene
 
 1. Use the <mark style="color:blue;">**`New Visualization`**</mark> button to generate a Visualization for the query:
 
-<figure><img src="../.gitbook/assets/image (2) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (2) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 2. Select <mark style="color:blue;">**`Line Chart`**</mark> and then click <mark style="color:blue;">**`Submit`**</mark>
 
