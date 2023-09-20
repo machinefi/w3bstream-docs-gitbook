@@ -8,8 +8,8 @@ Currently, W3bstream supports the following blockchains:
 
 ### Mainnets
 
-<table><thead><tr><th width="200">Blockchain</th><th>Chain Id</th></tr></thead><tbody><tr><td><strong>IoTeX</strong></td><td>4689</td></tr><tr><td><strong>Ethereum</strong></td><td>1</td></tr><tr><td><strong>Polygon</strong></td><td>137</td></tr></tbody></table>
+<table><thead><tr><th width="200">Blockchain</th><th>Chain Id</th></tr></thead><tbody><tr><td><a href="https://iotex.io">IoTeX</a></td><td>4689</td></tr><tr><td><a href="https://ethereum.org">Ethereum</a></td><td>1</td></tr><tr><td><a href="https://polygon.technology/home">Polygon</a></td><td>137</td></tr><tr><td><a href="https://www.optimism.io">Optimism</a></td><td>10</td></tr><tr><td><a href="https://base.org">Base</a></td><td>8453</td></tr><tr><td><a href="https://solana.com/it">Solana</a></td><td>-</td></tr></tbody></table>
 
 ### Testnets
 
-<table><thead><tr><th width="204">Blockchain</th><th>Chain Id</th></tr></thead><tbody><tr><td><strong>IoTeX Testnet</strong></td><td>4690</td></tr><tr><td><strong>Ethereum Goerli</strong></td><td>5</td></tr><tr><td><strong>Polygon Mumbai</strong></td><td>80001</td></tr></tbody></table>
+<table><thead><tr><th width="204">Blockchain</th><th>Chain Id</th></tr></thead><tbody><tr><td>IoTeX Testnet</td><td>4690</td></tr><tr><td>Ethereum Goerli</td><td>5</td></tr><tr><td>Polygon Mumbai</td><td>80001</td></tr><tr><td>Arbitrum Goerli</td><td>421613</td></tr><tr><td>Arbitrum One</td><td>42161</td></tr><tr><td>Optimism Goerli</td><td>420</td></tr><tr><td>Base Goerli</td><td>84531</td></tr><tr><td>Solana Devnet</td><td>-</td></tr><tr><td>Solana Testnet</td><td>-</td></tr></tbody></table>
