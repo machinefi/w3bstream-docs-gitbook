@@ -20,5 +20,24 @@ Before sending data to a specific project in W3bstream using the MQTT Broker, yo
 
 ## MQTT Message
 
+The format of the MQTT message is as follows:
+
+```json
+{
+  "events": [
+    {
+      "header": {
+        "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJQYXlsb2FkIjoiNDUwNTI4NzAxMjc2NTcwMyIsImlzcyI6InNydi1hcHBsZXQtbWdyIiwiZXhwIjoxNjY4Mzk4MDYxfQ._Q5ZaBP5FSa09s0FCn7CBcMCty9hkM5TDu5q1wTvwB8",
+        "event_type": "BINDING",
+        "timestamp": 1667343986249
+      },
+      "payload": "Your application data"
+    },
+    ...
+  ]
+}
+```
+
 ## Encoding
 
+Given that MQTT protocol is often used for data transmission in situations where publishers may have hardware or network constraints, **the message must be Base64 encoded**. It serves to reduce the size of the data, making it more efficient to transmit.
