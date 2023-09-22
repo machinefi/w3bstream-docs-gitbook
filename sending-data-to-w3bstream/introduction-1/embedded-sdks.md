@@ -1,6 +1,12 @@
 # Linux Embedded
 
-Set up the build environment
+{% hint style="info" %}
+**Notice**: The Linux Embedded Client SDK does not include a W3bstream Client object. To create API calls, you will need to utilize the HTTP/MQTT clients directly. Detailed examples can be located within the SDK repository for your reference.
+
+[Go to the examples folder...](https://github.com/machinefi/web3-iot-sdk/tree/main/examples)
+{% endhint %}
+
+## Set up the build environment
 
 Iotex SDK officially supports a limited set of build environments and setups. In this context, official support means that the environments listed below are actively used by team members and active developers, hence users should be able to recreate the same configurations by following the instructions described below.\
 In case of problems, the Iotex SDK team provides support only for these environments, but building in other environments can still be possible.
@@ -29,7 +35,7 @@ Install the following dependencies:
 * MinGW32: [https://sourceforge.net/projects/mingw-w64/files/](https://sourceforge.net/projects/mingw-w64/files/)
 * Python3 and pip (included by default): [https://www.python.org/downloads/](https://www.python.org/downloads/)
 
-### Get the source code
+## Get the source code
 
 Run the following command to clone the repository:
 
@@ -37,7 +43,7 @@ Run the following command to clone the repository:
 git clone https://github.com/machinefi/web3-iot-sdk.git
 ```
 
-### Build
+## Build
 
 The build process is managed by CMake. The build can be customized by passing CMake options.\
 For a full list of CMake options see the main [CMakeLists.tx](https://github.com/machinefi/w3bstream-iot-sdk/blob/main/CMakeLists.txt). Below is a description of the most common ones:
@@ -92,6 +98,6 @@ TOTAL SKIPPED   : 2
 ******************************************
 ```
 
-### Examples
+## Examples
 
 Examples to demonstrate the usage of the SDK can be found in the [examples](https://github.com/machinefi/web3-iot-sdk/tree/main/examples) of the SDK. Each example contains a README file with usage instructions.

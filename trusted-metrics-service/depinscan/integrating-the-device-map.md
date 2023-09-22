@@ -44,7 +44,7 @@ Once you've deployed your W3bstream project and set up an event routing to relay
 
 For W3bstream-native projects where devices send the data to W3bstream, the device location message can originate from the device itself. Alternatively, you can also transmit the message from your cloud infrastructure.&#x20;
 
-The W3bstream [PC Client SDK](../../client-sdks/pc-client-sdks/) simplifies the process of relaying messages to a W3bstream project from your backend. This SDK is compatible with Node JS, Python, and Go Lang.
+The W3bstream [PC Client SDK](../../sending-data-to-w3bstream/pc-client-sdks/) simplifies the process of relaying messages to a W3bstream project from your backend. This SDK is compatible with Node JS, Python, and Go Lang.
 
 Here's a sample of how to embed device location data into a W3bstream data message and transmit it to your W3bstream project using Node JS:
 

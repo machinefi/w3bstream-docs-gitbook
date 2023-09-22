@@ -6,14 +6,14 @@ Here's an overview of how it works.
 
 ## Using W3bstream Client SDKs
 
-In the previous section [message-api.md](../get-started/basic-concepts/message-api.md "mention") we discussed the messaging format specified by the W3bstream API. Each W3bstream message contains a payload string field, which is intended to hold the actual data sent by a smart device to our project and to be processed by a handler.
+In the previous section [http-api.md](../sending-data-to-w3bstream/w3bstream-data-api/http-api.md "mention") we discussed the messaging format specified by the W3bstream API. Each W3bstream message contains a payload string field, which is intended to hold the actual data sent by a smart device to our project and to be processed by a handler.
 
 To simplify the process of sending data to your W3bstream project, we recommend utilizing a W3bstream Client SDK tailored for your specific device. By doing so, you won't need to concern yourself with the intricacies of the W3bstream messaging protocol. Instead, you can focus on providing the relevant data for your application, including the target project name, event type, and device authentication token.
 
 If you're unsure which W3bstream Client SDK is suitable for your device, please refer to our documentation for additional guidance and information.
 
-{% content-ref url="../client-device-sdks/introduction.md" %}
-[introduction.md](../client-device-sdks/introduction.md)
+{% content-ref url="../sending-data-to-w3bstream/introduction-1/" %}
+[introduction-1](../sending-data-to-w3bstream/introduction-1/)
 {% endcontent-ref %}
 
 ## Example message

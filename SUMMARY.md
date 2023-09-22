@@ -15,7 +15,6 @@
   * [Event Triggers](get-started/basic-concepts/events.md)
   * [Event Routing Strategies](get-started/basic-concepts/event-strategies.md)
   * [Device Accounts](get-started/basic-concepts/publishers.md)
-  * [Message Protocol](get-started/basic-concepts/message-api.md)
 * [Access W3bstream](get-started/access-w3bstream.md)
 * [Deploy "Hello World"](get-started/deploying-an-applet.md)
 * [W3bstream Studio](get-started/w3bstream-studio/README.md)
@@ -27,6 +26,7 @@
     * [Sending Test Data](get-started/w3bstream-studio/triggering-events/testing-events.md)
   * [Routing Events](get-started/w3bstream-studio/creating-strategies.md)
   * [Create Database Tables](get-started/w3bstream-studio/create-database-tables.md)
+  * [Create API Keys](get-started/w3bstream-studio/create-api-keys.md)
 
 ## 👨💻 Applets Development
 
@@ -48,6 +48,26 @@
   * [Token Proofs](applets-development/advanced-concepts/token-proofs.md)
   * [Trusted IoT Data](applets-development/advanced-concepts/trusted-iot-data.md)
 
+## ⚙ Sending Data to W3bstream
+
+* [Introduction](sending-data-to-w3bstream/introduction.md)
+* [W3bstream Data API](sending-data-to-w3bstream/w3bstream-data-api/README.md)
+  * [HTTP API](sending-data-to-w3bstream/w3bstream-data-api/http-api.md)
+  * [MQTT Broker](sending-data-to-w3bstream/w3bstream-data-api/mqtt-broker.md)
+* [PC Client SDKs](sending-data-to-w3bstream/pc-client-sdks/README.md)
+  * [Node JS](sending-data-to-w3bstream/pc-client-sdks/node-js.md)
+  * [Python](sending-data-to-w3bstream/pc-client-sdks/python.md)
+  * [Go lang](sending-data-to-w3bstream/pc-client-sdks/go-lang.md)
+* [IoT Client SDKs](sending-data-to-w3bstream/introduction-1/README.md)
+  * [Technical goals](sending-data-to-w3bstream/introduction-1/technical-goals.md)
+  * [Business Goals](sending-data-to-w3bstream/introduction-1/business-goals.md)
+  * [Technical Framework](sending-data-to-w3bstream/introduction-1/technical-framework.md)
+  * [Linux Embedded](sending-data-to-w3bstream/introduction-1/embedded-sdks.md)
+  * [ESP32](sending-data-to-w3bstream/introduction-1/esp32.md)
+  * [Arduino](sending-data-to-w3bstream/introduction-1/arduino.md)
+  * [Pebble Tracker](sending-data-to-w3bstream/introduction-1/pebble-tracker.md)
+* [Mobile Client SDKs](sending-data-to-w3bstream/mobile-client-sdks.md)
+
 ## 📊 Trusted Metrics Service
 
 * [About Trusted Metrics](trusted-metrics-service/about-trusted-metrics.md)
@@ -60,22 +80,6 @@
   * [Getting Listed](trusted-metrics-service/depinscan/getting-listed.md)
   * [Integrating the Device Map](trusted-metrics-service/depinscan/integrating-the-device-map.md)
   * [Getting Verified](trusted-metrics-service/depinscan/getting-verified.md)
-
-## ⚙ Client SDKs
-
-* [Mobile SDKs](client-device-sdks/supported-platforms/mobile-devices.md)
-* [PC Client SDKs](client-sdks/pc-client-sdks/README.md)
-  * [Node JS](client-sdks/pc-client-sdks/node-js.md)
-  * [Python](client-sdks/pc-client-sdks/python.md)
-  * [Go lang](client-sdks/pc-client-sdks/go-lang.md)
-* [IoT Client SDKs](client-device-sdks/introduction.md)
-  * [Technical goals](client-device-sdks/embedded-sdks/technical-goals.md)
-  * [Business Goals](client-device-sdks/embedded-sdks/business-goals.md)
-  * [Technical Framework](client-device-sdks/embedded-sdks/technical-framework.md)
-  * [Linux Embedded](client-device-sdks/supported-platforms/embedded-sdks.md)
-  * [ESP32](client-device-sdks/supported-platforms/esp32.md)
-  * [Arduino](client-device-sdks/supported-platforms/arduino.md)
-  * [Pebble Tracker](client-device-sdks/supported-platforms/pebble-tracker.md)
 
 ## 📚 Additional Resources
 
