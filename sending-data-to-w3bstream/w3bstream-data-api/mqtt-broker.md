@@ -1,9 +1,5 @@
 # MQTT Broker
 
-{% hint style="info" %}
-This section is work in progress and will be published soon
-{% endhint %}
-
 ## Introduction
 
 W3bstream's MQTT broker service is the ideal method for transmitting data to a W3bstream project when the data publisher is a constrained device with limitations on data volume or bandwidth, such as a cellular IoT device.
