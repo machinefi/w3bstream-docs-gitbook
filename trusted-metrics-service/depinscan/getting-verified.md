@@ -26,4 +26,4 @@ Find and note your W3bstream Project ID from the settings page in W3bstream Stud
 
 Complete the form below and make sure you fill in your Project ID to kickstart your verification journey:
 
-{% embed url="https://iotx.typeform.com/to/rHAu197l?typeform-source=docs.w3bstream.com" %}
+[https://iotx.typeform.com/to/rHAu197l](https://iotx.typeform.com/to/rHAu197l)
