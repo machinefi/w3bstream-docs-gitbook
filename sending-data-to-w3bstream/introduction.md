@@ -16,9 +16,15 @@ Once a publisher is authorized, an authentication token is assigned to it, that 
 
 When your architecture involves a cloud server or any backend where data publishers are already sending their data and you want to leverage W3bstream for verifiable processing in this scenario, you should use the API Key functionality.
 
+W3bstream Studio allows you to create multiple API Keys with dedicated permissions, enabling the integration of an existing cloud/backend with your W3bstream projects and, among other things, send events on behalf of the actual publishers.
+
+{% hint style="success" %}
+See the [**Create API Key section**](../get-started/w3bstream-studio/create-api-keys.md) of the W3bstream Studio tutorial to learn how to generate an API Key
+{% endhint %}
+
 By authenticating your API call using an API Key with the appropriate permissions to manage publishers, you can indicate the ID of the publisher to which the data belongs. W3bstream will automatically create new publishers when necessary.
 
-W3bstream Studio allows you to create multiple API Keys with dedicated permissions, enabling the integration of an existing cloud/backend to send data to a W3bstream project on behalf of multiple publishers using a single API Key.
+
 
 {% hint style="info" %}
 It's important to note that API Keys are only supported when sending data through the HTTPS API.
