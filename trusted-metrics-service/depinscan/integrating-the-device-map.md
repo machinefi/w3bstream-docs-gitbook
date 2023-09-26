@@ -42,7 +42,9 @@ For demonstration purposes, in the screenshot below we'll utilize the `DEFAULT` 
 
 Once you've deployed your W3bstream project and set up an event routing to relay location data to the Trusted Metrics service, the final step is to embed the actual device location data within a W3bstream message directed at that specific event in your project.
 
-For W3bstream-native projects where devices send the data to W3bstream, the device location message can originate from the device itself. Alternatively, you can also transmit the message from your cloud infrastructure.&#x20;
+{% hint style="success" %}
+You can refer to the [**Sending Data to W3bstream**](broken-reference) section to learn how to send device data to your W3bstream project
+{% endhint %}
 
 The W3bstream [PC Client SDK](../../sending-data-to-w3bstream/pc-client-sdks/) simplifies the process of relaying messages to a W3bstream project from your backend. This SDK is compatible with Node JS, Python, and Go Lang.
 
