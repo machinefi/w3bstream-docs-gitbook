@@ -8,11 +8,13 @@
 ### [**The W3bstream Vision** ](https://www.youtube.com/watch?v=X4Zj-mc7dpU\&t=1s)
 {% endhint %}
 
-In essence, W3bstream uses a decentralized network of nodes, which stream data from real word devices and machines. Proofs of real-world facts are generated on top of the data for utilization by dApps on various L1 and L2 blockchains.
+In essence, W3bstream uses a decentralized network of nodes, which receives and processes data from real-world "data publishers". These could be devices, machines, or any other source. ZK-proofs of real-world facts can then be generated on top of the data for utilization by dApps on various L1 and L2 blockchains.
 
 <figure><img src=".gitbook/assets/w3bstream-animation.gif" alt=""><figcaption></figcaption></figure>
 
-Blockchain developers can leverage the W3bstream framework to access trusted real-world data for their dApps.
+{% hint style="success" %}
+Blockchain developers can leverage the W3bstream framework to receive and process raw data to generate ZK-proofs and dispatch them to any of the supported chains to trigger dApp behaviors.
+{% endhint %}
 
 ## W3bstream Node architecture
 
