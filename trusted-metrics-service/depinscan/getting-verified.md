@@ -12,9 +12,13 @@ A "Verified" badge on DePINscan isn't merely symbolic. It signifies reliability,
 
 This guide shows the procedure and prerequisites for obtaining this badge, ensuring that your project stands out:
 
-#### Step 1: Deployment on w3bstream
+#### Step 1: Integrating the Device Map
 
-To be Verified on DePINscan, your DePIN project logic must be deployed on W3bstream.&#x20;
+The first step to earn the _**"Verified Integration"**_ badge is to complete the [Device Map Integration](integrating-the-device-map.md) in the previous step.&#x20;
+
+{% hint style="info" %}
+Make sure you've successfully completed the Device Map Integration before moving on!&#x20;
+{% endhint %}
 
 #### Step 2: Access your w3bstream project ID&#x20;
 
@@ -24,6 +28,6 @@ Find and note your W3bstream Project ID from the settings page in W3bstream Stud
 
 #### Step 3: Begin the verification process&#x20;
 
-Complete the form below and make sure you fill in your Project ID to kickstart your verification journey:
+Complete the form below and make sure you fill in your **Project ID** to earn the **Verified Integration Badge**
 
-[https://iotx.typeform.com/to/rHAu197l](https://iotx.typeform.com/to/rHAu197l)
+{% embed url="https://iotx.typeform.com/to/rHAu197l" %}

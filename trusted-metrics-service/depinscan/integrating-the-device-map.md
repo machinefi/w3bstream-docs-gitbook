@@ -8,10 +8,6 @@ For decentralized systems where location affects performance or service availabi
 
 ## DePINscan's Device Map
 
-{% hint style="info" %}
-If you want to get your devices to show on the DePINscan map, please make sure your project [has been listed](getting-listed.md) first.
-{% endhint %}
-
 Since a global device map crystallizes the decentralized nature of DePIN projects, DePINscan introduces an intuitive and visually appealing global device map that any DePIN project can integrate.
 
 <figure><img src="../../.gitbook/assets/image (40).png" alt=""><figcaption></figcaption></figure>
