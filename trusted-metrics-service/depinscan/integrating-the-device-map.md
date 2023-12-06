@@ -18,21 +18,27 @@ To integrate your DePIN project's device locations with the DePINscan map, follo
 
 ## Integration of Device Locations with the DePINscan Map
 
-If your DePIN project isn't hosted on a W3bstream node, initiate by creating a W3bstream project using the provided link:
+If your DePIN project isn't hosted on a W3bstream node, start by creating a new W3bstream project in W3bstream Studio by using the link below:&#x20;
 
 {% hint style="success" %}
-[Create a new "_Hello World_" Project in W3bstream Studio](../../get-started/deploying-an-applet.md)
+[W3bstream Studio](https://devnet.w3bstream.com/)
 {% endhint %}
 
 This project's sole function is to receive device location data and relay it to the Trusted Metrics API.
 
 ### Step 1: Activating device location data collection
 
-Once your W3bstream project is up and running, you either have to [set up a new event routing](../../get-started/w3bstream-studio/creating-strategies.md) or select an existing one on the project's **Events** page. Regardless of your choice, remember to reference the event name when submitting the location data message as highlighted in the subsequent section.
+The easiest way of activating the device location data collection is to use the **DePIN Integration Template** in the modal that will appear when creating a new project (as shown in the image below):&#x20;
 
-For demonstration purposes, in the screenshot below we'll utilize the `DEFAULT` event. Proceed by clicking the `EDIT` button corresponding to the chosen routing, then activate the option to forward device location data to the Trusted Metrics API:
+<figure><img src="../../.gitbook/assets/Screen Shot 2023-12-06 at 11.17.51 AM.png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/Screenshot 2023-09-01 alle 17.20.46.png" alt=""><figcaption></figcaption></figure>
+Once your W3bstream project is up and running, you'll notice that the **Default** event routing strategy in the **Events** tab, is already set to **Auto Collect** the location metrics (see image below):&#x20;
+
+<figure><img src="../../.gitbook/assets/Screen Shot 2023-12-06 at 11.07.24 AM.png" alt=""><figcaption></figcaption></figure>
+
+You can always edit your **Event Routing** strategy, but this default one is enough for your project to receive location data and get integrated in [DePINscan](https://depinscan.io/).&#x20;
+
+It's now time to send this location data to your newly created W3bstream project.&#x20;
 
 ### Step 2: Transmitting device location data
 
