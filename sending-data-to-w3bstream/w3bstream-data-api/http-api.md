@@ -101,7 +101,7 @@ The API Key (Bearer) with read/write access permissions to publishers
 {% endswagger-parameter %}
 
 {% swagger-parameter in="path" name="eventType" %}
-In this scenario the eventType in the URL must be equal to "PU-SH_DA-TA"
+In this scenario the **eventType** in the URL must be equal to "`DA-TA_PU-SH`"
 {% endswagger-parameter %}
 
 {% swagger-parameter in="path" name="timestamp" %}
@@ -135,7 +135,7 @@ A string field including the actual data to be sent to the target W3bstream proj
 
 **URL**
 
-[https://devnet-prod-api.w3bstream.com/event/eth\_0x2c37a2cbcfaccdd0625b4e3151d6260149ee866b\_energy\_sharing](https://devnet-prod-api.w3bstream.com/event/eth\_0x2c37a2cbcfaccdd0625b4e3151d6260149ee866b\_energy\_sharing)
+https://devnet-prod-api.w3bstream.com/event/eth\_0x2c37a2cbcfaccdd0625b4e3151d6260149ee866b\_energy\_sharing?eventType=DA-TA\_PU-SH
 
 **Header**
 
@@ -148,6 +148,7 @@ A string field including the actual data to be sent to the target W3bstream proj
 ```json
 [
     { 
+        device_id: "UNIQUE_DEVICE_ID"
         Temperature: 24.3,
         Latitude: 118.65789
         Longitude: 94.223321
