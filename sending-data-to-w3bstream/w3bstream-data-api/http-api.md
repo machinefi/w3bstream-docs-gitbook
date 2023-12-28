@@ -23,7 +23,7 @@ Before sending data to a specific project in W3bstream using the HTTP API, you w
 Sends a data payload to a specific W3bstream project for processing
 {% endswagger-description %}
 
-{% swagger-parameter in="header" name="Authentication" required="true" %}
+{% swagger-parameter in="header" name="Authorization" required="true" %}
 The publisher authentication token (Bearer)
 {% endswagger-parameter %}
 
@@ -51,7 +51,7 @@ The timestamp when the message was sent by the client
 **Header**
 
 ```json
-{ Authentication: Bearer w3b_MV8 ... I8Jg}
+{ Authorization: Bearer w3b_MV8 ... I8Jg}
 ```
 
 **Body**
@@ -102,7 +102,7 @@ This API facilitates the transmission of data from a single source (usually a cl
 Sends a data payload on behalf of publishers to a specific W3bstream project for processing
 {% endswagger-description %}
 
-{% swagger-parameter in="header" name="Authentication" required="true" %}
+{% swagger-parameter in="header" name="Authorization" required="true" %}
 The API Key (Bearer) with read/write access permissions to publishers
 {% endswagger-parameter %}
 
@@ -146,7 +146,7 @@ https://devnet-prod-api.w3bstream.com/event/eth\_0x2c37a2cbcfaccdd0625b4e3151d62
 **Header**
 
 ```json
-{ Authentication: Bearer w3b_MV8 ... I8Jg}
+{ Authorization: Bearer w3b_MV8 ... I8Jg}
 ```
 
 **Body**
